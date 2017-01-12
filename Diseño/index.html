@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mundocente</title>
+    <link type="text/css" rel="stylesheet" href="dist/semantic.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="dist/semantic.min.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
+    
+</head>
+
+
+
+
+
+<body id="inicio">
+
+<div class="ui large top fixed hidden navbar-fixed secondary pointing menu" style="background-color: white;">
+    
+        <div href="#" class="header item">
+            <img class="logo" src="images/icono.png">
+            Mundocente
+        </div>
+          <a class="item" href="#inicio">
+            Inicio
+          </a>
+          <a class="item active" href="#servicios">
+            Servicios
+          </a>
+          <a class="item" href="#recientes">
+            Recientes
+          </a>
+
+          <a class="item" href="#contactos">
+            Contáctanos
+          </a>
+
+          <div class="right menu">
+            <a class="ui item" onclick="mostrarModellogin()">
+              Iniciar sesión
+            </a>
+            <a class="ui item" onclick="mostrarModelregistro()">
+              Registrarme
+            </a>
+          </div>
+          
+        
+        
+
+
+
+
+
+</div>
+
+
+
+
+
+<div class="banner">
+
+    <div class="ui secondary inverted menu container navbar">
+
+        <a class="item">
+            Eventos
+        </a>
+        <a class="item">
+            Convocatorias
+        </a>
+        <a class="item">
+            Revistas
+        </a>
+        <div class="right menu">
+
+            <a class="ui item active" onclick="mostrarModelregistro()">
+                Regístrate
+            </a>
+        </div>
+    </div>
+  
+
+
+
+
+
+<div class="ui equal width grid">
+
+
+<!--    boton izquierdo-->
+
+<div class="column" >
+        <a onclick="moverbannerizquierda()">
+            <div  data-animation="flip" data-direction="left" title="Flip Left" style="padding-top: 100%;padding-right: 88%;"><i class="left long arrow icon" style="color: white;"></i></div>
+        </a>
+</div>
+
+
+    
+
+    <div class="ui shape masthead center aligned stackable grid" >
+
+    <div class="sides column" >
+        <div class="ui header side active">
+            <div class="ui text container">
+            <h1 class="ui header">
+                <i class="calendar icon"></i>
+            </h1>
+            <h2>Evento de sistemas de control de calidad ISO9000.</h2>
+            <div class="ui huge primary button">Enlace <i class="right arrow icon"></i></div>
+        </div>
+        </div>
+
+
+         <div class="ui header side ">
+            <div class="ui text container">
+            <h1 class="ui header">
+                <i class="calendar icon"></i>
+            </h1>
+            <h2>Taller sobre artes plásticas.</h2>
+            <div class="ui huge primary button">Enlace <i class="right arrow icon"></i></div>
+        </div>
+        </div>
+
+        <div class="ui header side ">
+            <div class="ui text container">
+            <h1 class="ui header">
+                <i class="newspaper icon"></i>
+            </h1>
+            <h2>Revista sistemas de calidad</h2>
+            <div class="ui huge primary button">Enlace <i class="right arrow icon"></i></div>
+        </div>
+        </div>
+
+         <div class="ui header side ">
+            <div class="ui text container">
+            <h1 class="ui header">
+                <i class="announcement icon"></i>
+            </h1>
+            <h2>convocatoria de Docente de planta.</h2>
+            <div class="ui huge primary button">Enlace <i class="right arrow icon"></i></div>
+        </div>
+        </div>
+
+
+    </div>
+        
+
+    </div>
+
+    
+<!--    boton derecho-->
+
+<div class="column" >
+    <a onclick="moverbannerderecha()">
+        <div  data-animation="flip" data-direction="right" title="Flip Right" style="padding-top: 100%;padding-left: 88%;"><i class="right long arrow icon" style="color: white;"></i></div>
+    </a>
+</div>
+
+
+</div>
+        
+    
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div id="servicios"></div>
+<br>
+<br>
+
+
+
+
+
+<!--                                 **************************descripción servicios   -->
+
+
+
+<br>
+
+<h4 class="ui horizontal divider">
+        descripción
+    </h4>
+    <br>
+
+<div class="ui container" >
+    
+    <!--     opciones servicios-->
+    <div class="ui equal width stackable center aligned grid">
+        <div class="column">
+            <h2 class="ui icon header">
+                <i class="newspaper icon"></i>
+                <div class="content">
+                    Revistas
+                    <div class="sub header">Manage your account settings and set e-mail preferences.</div>
+                </div>
+            </h2>
+        </div>
+        <div class="column">
+            <h2 class="ui icon header">
+                <i class="announcement icon"></i>
+                <div class="content">
+                    Convocatorias
+                    <div class="sub header">Manage your account settings and set e-mail preferences.</div>
+                </div>
+            </h2>
+        </div>
+        <div class="column">
+            <h2 class="ui icon header">
+                <i class="calendar icon"></i>
+                <div class="content">
+                    Eventos
+                    <div class="sub header">Manage your account settings and set e-mail preferences.</div>
+                </div>
+            </h2>
+        </div>
+
+    </div>
+</div>
+
+
+<!--    final de descripción de servicios-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--    ************************            inicio de lista de recientes -->
+
+<div  id="recientes"></div>
+<br>
+<br>
+
+<br>
+
+<h4 class="ui horizontal divider">
+    recientes
+</h4>
+
+<br>
+<br>
+<br>
+
+
+
+<div class="ui container">
+
+
+<!--revistas-->
+
+<div class="ui grid">
+  <div class="four wide column">
+       <div class="ui card">
+              <div class="content">
+              <i class="right floated newspaper icon"></i>
+                <div class="header">Revista de ciencia</div>
+                <div class="meta">Hace dos días</div>
+                <div class="description">
+                  <p>Aquí irá el resumen de por ejemplo ón o cualquier texto corto qe se necesite.</p>
+                </div>
+              </div>
+              <div class="extra content">
+                <span class="left floated like">
+                  <i class="hand pointer icon"></i>
+                  78 Visitas
+                </span>
+                <a href="#">
+                    <span class="right floated star">
+                  <i class="linkify icon"></i>
+                  Enlace
+                </span>
+                </a>
+              </div>
+            </div>      
+  </div>
+  <div class="four wide column">
+       <div class="ui card">
+              <div class="content">
+              <i class="right floated  newspaper icon"></i>
+                <div class="header">Revista de ciencia</div>
+                <div class="meta">Hace dos días</div>
+                <div class="description">
+                  <p>Aquí irá el resumen de por ejemplo una revista  u otra cosa otra cosa otra cosa cosa cosa y otra cosatra cosa otra cosa cosa cosa y otra cosao la descripción o cualquier texto corto qe se necesite.</p>
+                </div>
+              </div>
+              <div class="extra content">
+                <span class="left floated like">
+                  <i class="hand pointer icon"></i>
+                  78 Visitas
+                </span>
+                <a href="#">
+                    <span class="right floated star">
+                  <i class="linkify icon"></i>
+                  Enlace
+                </span>
+                </a>
+              </div>
+            </div>
+  </div>
+  <div class="four wide column">
+       <div class="ui card">
+              <div class="content">
+              <i class="right floated announcement icon"></i>
+                <div class="header">Convocatoria de ciencia</div>
+                <div class="meta">Hace dos días</div>
+                <div class="description">
+                  <p>Aquí irá el resumen de por ejemplo una revista o la descripción o cualquier texto corto qe se necesite.</p>
+                </div>
+              </div>
+              <div class="extra content">
+                <span class="left floated like">
+                  <i class="hand pointer icon"></i>
+                  2 Visitas
+                </span>
+                <a href="#">
+                    <span class="right floated star">
+                  <i class="linkify icon"></i>
+                  Enlace
+                </span>
+                </a>
+              </div>
+            </div>
+  </div>
+  <div class="four wide column">
+       <div class="ui card">
+              <div class="content">
+              <i class="right floated  newspaper icon"></i>
+                <div class="header">Revista de ciencia</div>
+                <div class="meta">Hace dos días</div>
+                <div class="description">
+                  <p>Aquí irá el resumen de por ejemplo una revista o la descripción o cualquier texto corto qe se necesite.</p>
+                </div>
+              </div>
+              <div class="extra content">
+                <span class="left floated like">
+                  <i class="hand pointer icon"></i>
+                  78 Visitas
+                </span>
+                <a href="#">
+                    <span class="right floated star">
+                  <i class="linkify icon"></i>
+                  Enlace
+                </span>
+                </a>
+              </div>
+            </div>
+  </div>
+</div>
+
+
+
+
+
+<!--   eventos   -->
+
+
+
+
+<div class="ui grid">
+  <div class="four wide column">
+       <div class="ui card">
+              <div class="content">
+              <i class="right floated calendar icon"></i>
+                <div class="header">Evento de ciencia</div>
+                <div class="meta">Hace dos días</div>
+                <div class="description">
+                  <p>Aquí irá el resumen de por ejemplo una Evento o la descripción o cualquier texto corto qe se necesite.</p>
+                </div>
+              </div>
+              <div class="extra content">
+                <span class="left floated like">
+                  <i class="hand pointer icon"></i>
+                  19 Visitas
+                </span>
+                <a href="#">
+                    <span class="right floated star">
+                  <i class="linkify icon"></i>
+                  Enlace
+                </span>
+                </a>
+              </div>
+            </div>      
+  </div>
+  <div class="four wide column">
+       <div class="ui card">
+              <div class="content">
+              <i class="right floated  newspaper icon"></i>
+                <div class="header">Revista de ciencia</div>
+                <div class="meta">Hace dos días</div>
+                <div class="description">
+                  <p>Aquí irá el resumen de por ejemplo una Evento o la descripción o cualquier texto corto qe se necesite.</p>
+                </div>
+              </div>
+              <div class="extra content">
+                <span class="left floated like">
+                  <i class="hand pointer icon"></i>
+                  19 Visitas
+                </span>
+                <a href="#">
+                    <span class="right floated star">
+                  <i class="linkify icon"></i>
+                  Enlace
+                </span>
+                </a>
+              </div>
+            </div>
+  </div>
+  <div class="four wide column">
+       <div class="ui card">
+              <div class="content">
+              <i class="right floated calendar icon"></i>
+                <div class="header">Evento de ciencia</div>
+                <div class="meta">Hace dos días</div>
+                <div class="description">
+                  <p>Aquí irá el resumen de por ejemplo una Evento o la descripción o cualquier texto corto qe se necesite.</p>
+                </div>
+              </div>
+              <div class="extra content">
+                <span class="left floated like">
+                  <i class="hand pointer icon"></i>
+                  36 Visitas
+                </span>
+                <a href="#">
+                    <span class="right floated star">
+                  <i class="linkify icon"></i>
+                  Enlace
+                </span>
+                </a>
+              </div>
+            </div>
+  </div>
+  <div class="four wide column">
+       <div class="ui card">
+              <div class="content">
+              <i class="right floated calendar icon"></i>
+                <div class="header">Evento de ciencia</div>
+                <div class="meta">Hace dos días</div>
+                <div class="description">
+                  <p>Aquí irá el resumen de por ejemplo una Evento o la descripción o cualquier texto corto qe se necesite.</p>
+                </div>
+              </div>
+              <div class="extra content">
+                <span class="left floated like">
+                  <i class="hand pointer icon"></i>
+                  36 Visitas
+                </span>
+                <a href="#">
+                    <span class="right floated star">
+                  <i class="linkify icon"></i>
+                  Enlace
+                </span>
+                </a>
+              </div>
+            </div>
+  </div>
+</div>
+    
+   
+</div>
+
+
+
+<!--    ************************            final de lista de recientes -->
+
+
+
+
+
+
+
+
+
+
+<!---                             Inicio de contactos         -->
+
+
+
+
+
+<div id="contactos"></div>
+<br>
+<br>
+<br>
+
+
+<h4 class="ui horizontal divider">
+    Contactos
+</h4>
+
+
+
+<div class="ui container">
+    
+
+        <div class="description">
+            <div class="ui header">
+
+                <div class="ui middle aligned center aligned grid">
+                    <div class="column">
+                        <h2 class="ui teal image header">
+                            <img src="images/icono.png" class="image">
+                            <div class="content">
+                                Mundocente
+                            </div>
+                        </h2>
+                        <form class="ui large form">
+                            <div class="ui stacked segment">
+                                <div class="field">
+                                    <div class="ui left icon input">
+                                        <i class="user icon"></i>
+                                        <input type="text" name="email" placeholder="Correo"
+                                               style="width: 100%">
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="ui left icon input">
+                                        <i class="lock icon"></i>
+                                        <input type="password" name="password" placeholder="Contraseña"
+                                               style="width: 100%">
+                                    </div>
+                                </div>
+                                <div class="ui fluid large teal submit button">Enviar</div>
+                            </div>
+
+                            <div class="ui error message"></div>
+
+                        </form>
+
+                        
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+</div>
+
+<!--                                Fin de contactos-->
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<br>
+<br>
+<br>
+
+
+<div class="ui container">
+
+
+ <div class="ui equal width stackable center aligned grid" style="font-size: 30px;">
+        <div class="column">
+            <div class="statistic">
+                <div class="value">
+                  <i class="student icon"></i> 550
+                </div>
+                <div class="label">
+                  Docentes
+                </div>
+              </div>
+        </div>
+
+         <div class="column">
+            <div class="statistic">
+                <div class="value">
+                  <i class="announcement icon"></i> 101
+                </div>
+                <div class="label">
+                  Convocatorias
+                </div>
+              </div>
+        </div>
+
+         <div class="column">
+            <div class="statistic">
+                <div class="value">
+                  <i class="newspaper icon"></i> 3603
+                </div>
+                <div class="label">
+                  Revistas
+                </div>
+              </div>
+        </div>
+
+         <div class="column">
+            <div class="statistic">
+                <div class="value">
+                  <i class="calendar icon"></i> 23
+                </div>
+                <div class="label">
+                  Eventos
+                </div>
+              </div>
+        </div>
+      
+       
+
+    </div>
+
+
+
+
+
+
+ 
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+<!--***************************************************** model de registro -->
+
+
+<div class="ui modal registro">
+    <i class="close icon"></i>
+    <div class="header">
+        Formulario de Registro
+    </div>
+    <div class="image content">
+
+        <div class="description">
+            <div class="ui header">
+
+                <div class="ui middle aligned center aligned grid">
+                    <div class="column">
+                        <h2 class="ui teal image header">
+                            <img src="images/icono.png" class="image">
+                            <div class="content">
+                                Mundocente
+                            </div>
+                        </h2>
+                        <form class="ui large form">
+                            <div class="ui stacked segment">
+                                <div class="field">
+                                    <div class="ui left icon input">
+                                        <i class="user icon"></i>
+                                        <input type="text" name="email" placeholder="E-mail address"
+                                               style="width: 100%">
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="ui left icon input">
+                                        <i class="lock icon"></i>
+                                        <input type="password" name="password" placeholder="Password"
+                                               style="width: 100%">
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="ui left icon input">
+                                        <i class="user icon"></i>
+                                        <input type="text" name="email" placeholder="E-mail address"
+                                               style="width: 100%">
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="ui left icon input">
+                                        <i class="lock icon"></i>
+                                        <input type="password" name="password" placeholder="Password"
+                                               style="width: 100%">
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="ui left icon input">
+                                        <i class="user icon"></i>
+                                        <input type="text" name="email" placeholder="E-mail address"
+                                               style="width: 100%">
+                                    </div>
+                                </div>
+                                <div class="ui fluid large teal submit button">Registrar</div>
+                            </div>
+
+                            <div class="ui error message"></div>
+
+                        </form>
+
+                        <div class="ui message">
+                             <a href="#" onclick="mostrarModellogin()">Iniciar sesión</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--**************************  Termina model registro -->
+
+
+<!--***************************************************** model de login -->
+
+
+<div class="ui modal login">
+    <i class="close icon"></i>
+    <div class="header">
+        Formulario de Logueo
+    </div>
+    <div class="image content">
+
+        <div class="description">
+            <div class="ui header">
+
+                <div class="ui middle aligned center aligned grid">
+                    <div class="column">
+                        <h2 class="ui teal image header">
+                            <img src="images/icono.jpg" class="image">
+                            <div class="content">
+                                Mundocente
+                            </div>
+                        </h2>
+                        <form class="ui large form">
+                            <div class="ui stacked segment">
+                                <div class="field">
+                                    <div class="ui left icon input">
+                                        <i class="user icon"></i>
+                                        <input type="text" name="email" placeholder="Correo"
+                                               style="width: 100%">
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="ui left icon input">
+                                        <i class="lock icon"></i>
+                                        <input type="password" name="password" placeholder="Contraseña"
+                                               style="width: 100%">
+                                    </div>
+                                </div>
+                                <div class="ui fluid large teal submit button">Ingresar</div>
+                            </div>
+
+                            <div class="ui error message"></div>
+
+                        </form>
+
+                        <div class="ui message">
+                            ¿No tienes cuenta? <a href="#" onclick="mostrarModelregistro()">Regístrate</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--**************************  Termina model login -->
+
+
+</body>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+             var sale = 0;
+             if(sale==0){
+                iniciaMovimientobanner();
+                sale=1;
+             }
+    });
+
+    function iniciaMovimientobanner(){
+        setInterval(moverbannerderecha, 8000);   
+    }
+
+
+    function mostrarModellogin() {
+        $('.ui.login')
+            .modal('show')
+        ;
+    }
+
+    function mostrarModelregistro() {
+        $('.ui.registro')
+            .modal('show')
+        ;
+    }
+    function moverbannerizquierda(){
+        $('.shape').shape('flip left');
+    }
+    function moverbannerderecha(){
+        $('.shape').shape('flip right');
+    }
+
+
+</script>
+</html>
