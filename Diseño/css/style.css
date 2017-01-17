@@ -1,11 +1,10 @@
-.hidden.menu, .logo {
-    display: none;
+body, html {
+    background-color: #F1F1F1;
 }
 
 .banner {
-    background: url(../images/banner1.jpg) no-repeat fixed 0 0%/cover;
+    background: url(../images/Purple.jpg) no-repeat fixed 0 50%/cover;
     min-height: 700px;
-    padding: 1em 0;
 }
 
 .masthead {
