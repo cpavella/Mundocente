@@ -5,11 +5,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Mundocente</title>
-    <link type="text/css" rel="stylesheet" href="dist/semantic.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="dist/semantic.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="dist/semantic.min.js"></script>
+    <script type="text/javascript" src="js/ScrollMagic.min.js"></script>
     <script type="text/javascript" src="js/init.js"></script>
+    <script type="text/javascript" src="dist/semantic.js"></script>
+    <script type="text/javascript" src="js/parallax.js"></script>
+
 
 </head>
 
@@ -43,6 +46,48 @@
 </div>
 
 <div class="banner">
+    <ul id="scene" class="scene"
+        data-friction-x="0.1"
+        data-friction-y="0.1"
+        data-scalar-x="25"
+        data-scalar-y="15">
+        <li class="layer" data-depth="0.00"></li>
+        <li class="layer" data-depth="0.05">
+            <ul class="rope depth-10">
+                <li class="hanger position-3">
+                    <div class="board cloud-10 swing-1"></div>
+                </li>
+            </ul>
+        </li>
+        <li class="layer" data-depth="0.10">
+            <ul class="rope depth-30">
+                <li class="hanger position-6">
+                    <div class="board cloud-6 swing-2"></div>
+                </li>
+            </ul>
+        </li>
+        <li class="layer" data-depth="0.15">
+            <ul class="rope depth-50">
+                <li class="hanger position-4">
+                    <div class="board cloud-7 swing-3"></div>
+                </li>
+            </ul>
+        </li>
+        <li class="layer" data-depth="0.20">
+            <ul class="rope depth-70">
+                <li class="hanger position-7">
+                    <div class="board cloud-2 swing-4"></div>
+                </li>
+            </ul>
+        </li>
+        <li class="layer" data-depth="0.20">
+            <ul class="rope depth-100">
+                <li class="hanger position-5">
+                    <div class="board cloud-1 swing-5"></div>
+                </li>
+            </ul>
+        </li>
+    </ul>
     <!--<div class="ui secondary inverted menu container navbar">
         <a class="item">
             Eventos
@@ -608,11 +653,13 @@
 
 </body>
 
-<script type="text/javascript">
-<<<<<<< HEAD
+<script>
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene);
+</script>
 
-=======
-    /*var sale = 0;
+<script type="text/javascript">
+    var sale = 0;
     $(document).ready(function () {
 
         if (sale == 0) {
@@ -624,7 +671,6 @@
     function iniciaMovimientobanner() {
         setInterval(moverbannerderecha, 10000);
     }
->>>>>>> f19f580c3f2797a351068c82c09b4cabce6ea6ef
 
 
     function mostrarModellogin() {
@@ -643,8 +689,6 @@
     }
     function moverbannerderecha() {
         $('.shape').shape('flip right');
-    }*/
-
-
+    }
 </script>
 </html>
