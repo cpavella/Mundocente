@@ -30,6 +30,7 @@
   <link rel="stylesheet" type="text/css" href="dist/components/segment.css">
   <link rel="stylesheet" type="text/css" href="dist/components/dropdown.css">
   <link rel="stylesheet" type="text/css" href="dist/components/icon.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/sticky.css">
   <link rel="stylesheet" type="text/css" href="dist/components/form.css">
 
 
@@ -37,6 +38,10 @@
 
 <script type="text/javascript" src="dist/components/dropdown.js"></script>
 <script type="text/javascript" src="dist/components/accordion.js"></script>
+<script type="text/javascript" src="dist/components/visibility.js"></script>
+<script type="text/javascript" src="dist/components/sticky.js"></script>
+<script type="text/javascript" src="dist/components/form.js"></script>
+<script type="text/javascript" src="dist/components/checkbox.js"></script>
 
 
 
@@ -68,15 +73,70 @@ $('.ui.fluid.search.dropdown')
 ;
 
 
+$('.ui.checkbox')
+  .checkbox()
+;
+
+
 
 
 
     })
   ;
+
+
+  function mostrarfiltrorevistas(){
+  //document.getElementById("revistasfiltro").style.display = "block";
+  $('#revistasfiltro').toggle("slow");
+  
+}
+
+function mostrarfiltroconvocatorias(){
+ //document.getElementById("convocatoriasfiltro").style.display = "block";
+ $('#convocatoriasfiltro').toggle("slow");
+}
+
+function mostrarfiltroeventos(){
+  //document.getElementById("eventosfiltro").style.display = "block";
+$('#eventosfiltro').toggle("slow");
+}
+
   </script>
 
+  <style type="text/css">
+    #divdefiltro{
+      width: 47%;
+      overflow-y: scroll;
+      max-height: 88%;
+      height: auto;
+      background:#ffffff;
+    }
+    ::-webkit-scrollbar {
+    width: 10px;
+    background: #fff;
+    
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: rgba(150,150,150,0.9);
+    cursor: pointer;
+    border-radius:0px;
+  -moz-border-radius:0px;
+  -webkit-border-radius:0px;
+}
+ 
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(150,150,150,0.6);
+    cursor: pointer;
+}
+
+    
+  </style>
+
+  
+
 </head>
-<body>
+<body >
 
 <!-- ********************************************************************************* menu 1-->
 
@@ -122,293 +182,18 @@ $('.ui.fluid.search.dropdown')
 <br>
 
 
-<!-- ********************************************************************************* formulario de búsqueda filtrada-->
+<!-- *********************************************************************************-->
 
-<div class="ui fixed vertical menu" style="top: 65px;left: 15px;width: 270px;overflow-y: scroll;height: 88%;">
-
-  <div class="ui styled accordion">
-
-
-  <div class="title active"><i class="dropdown icon"></i>Revistas </div>
-  <div class="content active">
-
-    
-
-        
-<form class="ui form">
-  <h4 class="ui dividing header">Búsqueda avanzada</h4>
-  <div class="ui field">
-    <label>Palabra Clave</label>
-    <div class="fields">
-      <div class="sixteen wide field">
-        <input type="text" placeholder="Ingrese la palabra clave del título de publicación...">
-      </div>
-    </div>
-  </div>
-  <div class="two fields">
-   <div class="field">
-      <label>Universidad</label>
-    <div class="ui fluid multiple search selection dropdown">
-      <input type="hidden" name="receipt">
-      <i class="dropdown icon"></i>
-      <div class="default text">Uptc</div>
-    </div>
-   </div>
-
-    <div class="field">
-      <label>Ciudad</label>
-    <div class="ui fluid multiple search selection dropdown">
-      <input type="hidden" name="receipt">
-      <i class="dropdown icon"></i>
-      <div class="default text">Sede Tunja</div>
-    </div>
-   </div>
-
-  </div>
-  <div class="two fields">
-    <div class="field">
-      <label>Área</label>
-      <select class="ui fluid dropdown">
-        <option value="">Química</option>
-    <option value="AL">Física</option>
-    <option value="AK">Biología</option>
-    <option value="AZ">Software</option>
-    <option value="AR">Informática</option>
-    <option value="CA">Filosofía</option>
-    
-      </select>
-    </div>
-    <div class="field">
-      <label>Tema Específico</label>
-      <div class="ui fluid search selection dropdown">
-        <input type="hidden" name="country">
-        <i class="dropdown icon"></i>
-        <div class="default text">Seleccionar tema</div>
-        <div class="menu">
-          <div class="item" data-value="af"><i class="af flag"></i>Auditoría contable</div>
-          <div class="item" data-value="ax"><i class="ax flag"></i>Bases de datos</div>
-          <div class="item" data-value="al"><i class="al flag"></i>Bioingeniería</div>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-  <h4 class="ui dividing header">Fechas</h4>
-  <div class="field">
-    <label>Card Type</label>
-    <div class="ui selection dropdown">
-      <input type="hidden" name="card[type]">
-      <div class="default text">Type</div>
-      <i class="dropdown icon"></i>
-      <div class="menu">
-        <div class="item" data-value="visa"><i class="visa icon"></i> Visa </div>
-        <div class="item" data-value="amex"><i class="amex icon"></i> American Express </div>
-        <div class="item" data-value="discover"><i class="discover icon"></i> Discover </div>
-      </div>
-    </div>
-  </div>
-  <div class="fields">
-    <div class="seven wide field">
-      <label>Card Number</label>
-      <input type="text" name="card[number]" maxlength="16" placeholder="Card #">
-    </div>
-    <div class="three wide field">
-      <label>CVC</label>
-      <input type="text" name="card[cvc]" maxlength="3" placeholder="CVC">
-    </div>
-    <div class="six wide field">
-      <label>Expiration</label>
-      <div class="two fields">
-        <div class="field">
-          <select class="ui fluid search dropdown" name="card[expire-month]">
-            <option value="">Month</option>
-            <option value="1">January</option>
-            <option value="2">February</option>
-            <option value="3">March</option>
-            <option value="4">April</option>
-            <option value="5">May</option>
-            <option value="6">June</option>
-            <option value="7">July</option>
-            <option value="8">August</option>
-            <option value="9">September</option>
-            <option value="10">October</option>
-            <option value="11">November</option>
-            <option value="12">December</option>
-          </select>
-        </div>
-        <div class="field">
-          <input type="text" name="card[expire-year]" maxlength="4" placeholder="Year">
-        </div>
-      </div>
-    </div>
-  </div>
-   <h4 class="ui dividing header">Receipt</h4>
-   <div class="field">
-    <label>Send Receipt To:</label>
-    <div class="ui fluid multiple search selection dropdown">
-      <input type="hidden" name="receipt">
-      <i class="dropdown icon"></i>
-      <div class="default text">Saved Contacts</div>
-     
-    </div>
-  </div>
-   <div class="ui segment">
-    <div class="field">
-      <div class="ui toggle checkbox">
-            <input type="checkbox"  name="once">
-            <label>Once</label>
-          </div>
-    </div>
-  </div>
-  <div class="ui button" tabindex="0">Submit Order</div>
-</form>
-<br>
-        <div class="ui small basic icon buttons">
-          <button class="ui button"><i class="search icon"></i> Buscar</button>
-        </div>
-
-
-
-
-
-
-    
-  </div>
-
-
-
-
-
-
-  <div class="title"><i class="dropdown icon"></i> Convocatorias </div>
-  <div class="content">
-    
-     <select class="ui fluid dropdown">
-          <option value="">Universidad</option>
-          <option value="angular">Santo Tomás</option>
-          <option value="css">Juan de Castellanos</option>
-          <option value="design">Uniboyacá</option>
-        </select>
+<div class="ui container">
   
+  <div class="two column equal height ui grid" >
+  <div class="row" >
 
-        
-        
-    <br>
-      
-         <select class="ui fluid dropdown">
-          <option value="">Área</option>
-          <option value="angular">Química</option>
-          <option value="css">Sistemas</option>
-          <option value="design">Geografía</option>
-        </select>
-<br>
-        
-         <select class="ui fluid dropdown">
-          <option value="">Cargo</option>
-          <option value="angular">Abogado</option>
-          <option value="css">Profesor</option>
-          <option value="design">Científico</option>
-        </select>
+  <!-- ********************************************************************************* publicaciones-->
 
-        <br>
-        
-         <select class="ui fluid dropdown">
-          <option value="">Lugar</option>
-          <option value="angular">Tunja</option>
-          <option value="css">Profesor</option>
-          <option value="design">Científico</option>
-        </select>
-
-        <br>
-        
-         <select class="ui fluid dropdown">
-          <option value="">Suelda mínimo</option>
-          <option value="angular">Abogado</option>
-          <option value="css">Profesor</option>
-          <option value="design">Científico</option>
-        </select>
-
-        
-<br>
-        <div class="ui small basic icon buttons">
-          <button class="ui button"><i class="search icon"></i> Buscar</button>
-        </div>
-
-
-  </div>
-
-
-  <div class="title"><i class="dropdown icon"></i> Eventos </div>
-  <div class="content">
-    
-     <select class="ui fluid dropdown">
-          <option value="">Universidad</option>
-          <option value="angular">Santo Tomás</option>
-          <option value="css">Juan de Castellanos</option>
-          <option value="design">Uniboyacá</option>
-        </select>
-  
-        
-    <br>
-      
-         <select class="ui fluid dropdown">
-          <option value="">Área</option>
-          <option value="angular">Química</option>
-          <option value="css">Sistemas</option>
-          <option value="design">Geografía</option>
-        </select>
-<br>
-        
-         <select class="ui fluid dropdown">
-          <option value="">Lugar</option>
-          <option value="angular">Tunja</option>
-          <option value="css">Bogotá</option>
-          <option value="design">Medellín</option>
-        </select>
-
-        
-<br>
-        <div class="ui small basic icon buttons">
-          <button class="ui button"><i class="search icon"></i> Buscar</button>
-        </div>
-
-
-  </div>
-
-
-  <div class="title"><i class="dropdown icon"></i> Invitación a Proyectos </div>
-  <div class="content">
-    <p class="transition hidden">Búsquedas especializadas.</p>
-  </div>
-
-
-  <div class="title"><i class="dropdown icon"></i> Libros </div>
-  <div class="content">
-    <p class="transition hidden">Three common ways for a proshome. Lastly, finding your dog from a shelter, helps give a good home to a dog who may not find one so readily.</p>
-  </div>
-
-
-
-  <div class="title"><i class="dropdown icon"></i> Opción </div>
-  <div class="content">
-    <p class="transition hidden">Three common ways for a proshome. Lastly, finding your dog from a shelter, helps give a good home to a dog who may not find one so readily.</p>
-  </div>
-
-</div>
-</div>
-
-
-
-
-
-<!-- ********************************************************************************* publicaciones-->
-
-<div class="ui text container" >
-
-  
-    
-    <div class="wide column">
-      <div class="ui card menu"  style="width: 100%;">
+    <div class="main column">
+        <div class="wide column">
+      <div class="ui card menu" style="width: 100%;">
         <div class="content">
           
               
@@ -646,11 +431,370 @@ $('.ui.fluid.search.dropdown')
       </div>
 
     </div>
+</div>
+
+<!-- ********************************************************************************* Fin publicaciones-->
+
+
+
+    <div class="column" >
+      <div class="ui sticky segments fixed" id="divdefiltro">
+        <div class="ui segment">
+          
+          
+        
+<div class="ui form">
+  <h4 class="ui dividing header">Búsqueda avanzada</h4>
+   <div class="ui segment">
+    <div class="three fields">
+     <div class="field">
+         <div class="ui toggle checkbox" onclick="mostrarfiltrorevistas()">
+            <input type="checkbox" >
+            <label>Revista</label>
+        </div>
+      </div>
+      <div class="field">
+         <div class="ui toggle checkbox" onclick="mostrarfiltroconvocatorias()">
+            <input type="checkbox" >
+            <label>Convocatoria</label>
+        </div>
+      </div>
+       <div class="field">
+         <div class="ui toggle checkbox" onclick="mostrarfiltroeventos()">
+            <input type="checkbox" >
+            <label>Evento</label>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="three fields">
+     <div class="field">
+         <div class="ui toggle checkbox">
+            <input type="checkbox"  >
+            <label>Invitación a proyecto</label>
+        </div>
+      </div>
+      <div class="field">
+         <div class="ui toggle checkbox">
+            <input type="checkbox"  >
+            <label>Invitacion a evaluadores</label>
+        </div>
+      </div>
+       <div class="field">
+         <div class="ui toggle checkbox">
+            <input type="checkbox"  >
+            <label>Logros investigativos</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui field">
+    <label>Palabra Clave</label>
+    <div class="fields">
+      <div class="sixteen wide field">
+        <input type="text" placeholder="Ingrese la palabra clave del título de publicación...">
+      </div>
+    </div>
+  </div>
+  <div class="two fields">
+   <div class="field">
+      <label>Universidad</label>
+    <div class="ui fluid multiple search selection dropdown">
+      <input type="hidden" name="receipt">
+      <i class="dropdown icon"></i>
+      <div class="default text">Uptc</div>
+    </div>
+   </div>
+
+    <div class="field">
+      <label>Sede</label>
+    <div class="ui fluid multiple search selection dropdown">
+      <input type="hidden" name="receipt">
+      <i class="dropdown icon"></i>
+      <div class="default text">Tunja</div>
+    </div>
+   </div>
+
+  </div>
+  <div class="two fields">
+    <div class="field">
+      <label>Área</label>
+      <select class="ui fluid dropdown">
+        <option value="">Química</option>
+    <option value="AL">Física</option>
+    <option value="AK">Biología</option>
+    <option value="AZ">Software</option>
+    <option value="AR">Informática</option>
+    <option value="CA">Filosofía</option>
+    
+      </select>
+    </div>
+    <div class="field">
+      <label>Tema Específico</label>
+      <div class="ui fluid search selection dropdown">
+        <input type="hidden" name="country">
+        <i class="dropdown icon"></i>
+        <div class="default text">Seleccionar tema</div>
+        <div class="menu">
+          <div class="item" data-value="af"><i class="af flag"></i>Auditoría contable</div>
+          <div class="item" data-value="ax"><i class="ax flag"></i>Bases de datos</div>
+          <div class="item" data-value="al"><i class="al flag"></i>Bioingeniería</div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
   
+ 
+  <div id="revistasfiltro" style="display: none;">
+<h4 class="ui dividing header">Revistas</h4>
+ <div class="ui form">
+    <label>Tipo de indexación</label>
+    <br>
+    <br>
+   <div class="two fields">
+
+     <div class="field">
+    
+        <div class="ui slider checkbox">
+          <input type="checkbox" tabindex="0" class="hidden">
+          <label>A1</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="ui slider checkbox">
+          <input type="checkbox" tabindex="0" class="hidden">
+          <label>A2</label>
+        </div>
+      </div>
+   </div>
+      
+
+      
+<div class="two fields">
+     <div class="field">
+    
+        <div class="ui slider checkbox">
+          <input type="checkbox" tabindex="0" class="hidden">
+          <label>B</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="ui slider checkbox">
+          <input type="checkbox" tabindex="0" class="hidden">
+          <label>C</label>
+        </div>
+      </div>
+   </div>
+
+
+      <br>
+</div>
+
+    <div class="fields">
+    <div class="seven wide field">
+      <label>Día</label>
+      <input type="text" maxlength="16" placeholder="1">
+    </div>
+    <div class="six wide field">
+      <label>Mes</label>
+      <div class="two fields">
+        <div class="field">
+          <select class="ui fluid search dropdown" name="card[expire-Enero]">
+            <option value="">Enero</option>
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+        </div>
+        <div class="field">
+          <input type="text" name="card[expire-year]" maxlength="4" placeholder="Año">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  </div>
+
+   
+ 
+ <div id="convocatoriasfiltro" style="display: none;">
+<h4 class="ui dividing header">Convocatorias</h4>
+ <div class="field">
+   
+    
+      <label>Cargo</label>
+      <div class="ui fluid search selection dropdown">
+        <input type="hidden" name="country">
+        <i class="dropdown icon"></i>
+        <div class="default text">Seleccione cargo deseado</div>
+        <div class="menu">
+          <div class="item" data-value="af"><i class="af flag"></i>Docente de Física</div>
+          <div class="item" data-value="ax"><i class="ax flag"></i>Bases de datos</div>
+          <div class="item" data-value="al"><i class="al flag"></i>Bioingeniería</div>
+          
+        </div>
+      </div>
+    
+  </div>
+    <label>Fecha límite</label>
+    <div class="fields">
+
+    <div class="seven wide field">
+      <label>Día</label>
+      <input type="text" maxlength="16" placeholder="1">
+    </div>
+    <div class="six wide field">
+      <label>Mes</label>
+      <div class="two fields">
+        <div class="field">
+          <select class="ui fluid search dropdown" name="card[expire-Enero]">
+            <option value="">Enero</option>
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+        </div>
+        <div class="field">
+          <input type="text" name="card[expire-year]" maxlength="4" placeholder="Año">
+        </div>
+      </div>
+    </div>
+  </div>
 
 
    
+ </div>
+
+  
+
+
+<div id="eventosfiltro" style="display: none;">
+   <h4 class="ui dividing header">Eventos</h4>
+ <label>Fecha del evento</label>
+  <div class="fields">
+    <div class="seven wide field">
+      <label>Día</label>
+      <input type="text" maxlength="16" placeholder="1">
+    </div>
+    <div class="six wide field">
+      <label>Mes</label>
+      <div class="two fields">
+        <div class="field">
+          <select class="ui fluid search dropdown" name="card[expire-Enero]">
+            <option value="">Enero</option>
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+        </div>
+        <div class="field">
+          <input type="text" name="card[expire-year]" maxlength="4" placeholder="Año">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="two fields">
+   <div class="field">
+      <label>País</label>
+    <div class="ui fluid multiple search selection dropdown">
+      <input type="hidden" name="receipt">
+      <i class="dropdown icon"></i>
+      <div class="default text">Colombia</div>
+    </div>
+   </div>
+
+    <div class="field">
+      <label>Ciudad</label>
+    <div class="ui fluid multiple search selection dropdown">
+      <input type="hidden" name="receipt">
+      <i class="dropdown icon"></i>
+      <div class="default text">Bogotá</div>
+    </div>
+   </div>
+
+  </div>
 </div>
+   
+  
+  <div class="ui small basic icon buttons">
+          <button class="ui button" ><i class="search icon"></i> Buscar</button>
+        </div>
+</div>
+<br>
+        
+
+
+
+         
+           
+      
+          
+          
+        </div>
+      
+      
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+</div>
+
+
+
+<!-- ********************************************************************************* fin de formulario con filtros-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
