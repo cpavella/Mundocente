@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- Site Properties -->
+  <title>Fixed Menu Example - Semantic</title>
+
+  <link rel="stylesheet" type="text/css" href="dist/components/reset.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/site.css">
+
+  <link rel="stylesheet" type="text/css" href="dist/components/container.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/grid.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/header.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/card.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/search.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/input.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/label.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/image.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/menu.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/accordion.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/button.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/checkbox.css">
+
+  <link rel="stylesheet" type="text/css" href="dist/components/divider.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/list.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/segment.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/dropdown.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/icon.css">
+
+
+<script src="js/jquery.min.js"></script>
+
+<script type="text/javascript" src="dist/components/dropdown.js"></script>
+<script type="text/javascript" src="dist/components/accordion.js"></script>
+
+
+
+
+    <script>
+  $(document)
+    .ready(function() {
+      $('.ui.menu .ui.dropdown').dropdown({
+        on: 'hover'
+      });
+      $('.ui.menu a.item')
+        .on('click', function() {
+          $(this)
+            .addClass('active')
+            .siblings()
+            .removeClass('active')
+          ;
+        })
+      ;
+
+
+      $('.ui.accordion').accordion();
+
+
+$('.ui.fluid.search.dropdown')
+  .dropdown({
+    allowAdditions: true
+  })
+;
+
+
+
+
+
+    })
+  ;
+  </script>
+
+</head>
+<body>
+
+<!-- ********************************************************************************* menu 1-->
+
+  <div class="ui fixed menu">
+    <div class="ui container">
+      <a href="#" class="header item">
+        <img class="logo" src="images/icono.jpg">
+        Mundocente
+      </a>
+      <a href="#" class="item">Home</a>
+      <a href="#" class="item">Publicar</a>
+
+
+      
+        <div class="item">
+          <div class="ui transparent icon input">
+            <input type="text" placeholder="Buscar publicación...">
+            <i class="search link icon"></i>
+          </div>
+        </div>
+      
+
+      <div class="ui simple dropdown right item">
+        Perfil <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" href="#">Mi perfil</a>
+          <a class="item" href="#">Privacidad</a>
+          <a class="item" href="#">Mis publicaciones</a>
+          <a class="item" href="#">Publicaciones Guardadas</a>
+          <div class="divider"></div>
+          <div class="header">Opciones</div>
+          <div class="item">Configuración</div>
+          <a class="item" href="#">Cerrar sesión</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<!-- ********************************************************************************* formulario de búsqueda filtrada-->
+
+<div class="ui fixed vertical menu" style="top: 65px;left: 15px;width: 240px;">
+
+  <div class="ui styled accordion">
+
+
+  <div class="title active"><i class="dropdown icon"></i>Revistas </div>
+  <div class="content active">
+
+    
+
+
+  
+     <select class="ui fluid dropdown">
+          <option value="">Universidad</option>
+          <option value="angular">Santo Tomás</option>
+          <option value="css">Juan de Castellanos</option>
+          <option value="design">Uniboyacá</option>
+        </select>
+  
+
+  
+
+        
+        
+    <br>
+      
+         <select class="ui fluid dropdown">
+          <option value="">Área</option>
+          <option value="angular">Química</option>
+          <option value="css">Sistemas</option>
+          <option value="design">Geografía</option>
+        </select>
+<br>
+        
+         <select class="ui fluid dropdown">
+          <option value="">Cateóría</option>
+          <option value="angular">A</option>
+          <option value="css">B</option>
+          <option value="design">C2</option>
+        </select>
+
+        <br>
+        
+         <select class="ui fluid dropdown">
+          <option value="">Fecha</option>
+          <option value="angular">1995</option>
+          <option value="css">1994</option>
+          <option value="design">C2</option>
+        </select>
+<br>
+        <div class="ui small basic icon buttons">
+          <button class="ui button"><i class="search icon"></i> Buscar</button>
+        </div>
+
+
+
+    
+  </div>
+
+
+
+
+
+
+  <div class="title"><i class="dropdown icon"></i> Convocatorias </div>
+  <div class="content">
+    
+     <select class="ui fluid dropdown">
+          <option value="">Universidad</option>
+          <option value="angular">Santo Tomás</option>
+          <option value="css">Juan de Castellanos</option>
+          <option value="design">Uniboyacá</option>
+        </select>
+  
+
+        
+        
+    <br>
+      
+         <select class="ui fluid dropdown">
+          <option value="">Área</option>
+          <option value="angular">Química</option>
+          <option value="css">Sistemas</option>
+          <option value="design">Geografía</option>
+        </select>
+<br>
+        
+         <select class="ui fluid dropdown">
+          <option value="">Cargo</option>
+          <option value="angular">Abogado</option>
+          <option value="css">Profesor</option>
+          <option value="design">Científico</option>
+        </select>
+
+        <br>
+        
+         <select class="ui fluid dropdown">
+          <option value="">Lugar</option>
+          <option value="angular">Tunja</option>
+          <option value="css">Profesor</option>
+          <option value="design">Científico</option>
+        </select>
+
+        <br>
+        
+         <select class="ui fluid dropdown">
+          <option value="">Suelda mínimo</option>
+          <option value="angular">Abogado</option>
+          <option value="css">Profesor</option>
+          <option value="design">Científico</option>
+        </select>
+
+        
+<br>
+        <div class="ui small basic icon buttons">
+          <button class="ui button"><i class="search icon"></i> Buscar</button>
+        </div>
+
+
+  </div>
+
+
+  <div class="title"><i class="dropdown icon"></i> Eventos </div>
+  <div class="content">
+    
+     <select class="ui fluid dropdown">
+          <option value="">Universidad</option>
+          <option value="angular">Santo Tomás</option>
+          <option value="css">Juan de Castellanos</option>
+          <option value="design">Uniboyacá</option>
+        </select>
+  
+        
+    <br>
+      
+         <select class="ui fluid dropdown">
+          <option value="">Área</option>
+          <option value="angular">Química</option>
+          <option value="css">Sistemas</option>
+          <option value="design">Geografía</option>
+        </select>
+<br>
+        
+         <select class="ui fluid dropdown">
+          <option value="">Lugar</option>
+          <option value="angular">Tunja</option>
+          <option value="css">Bogotá</option>
+          <option value="design">Medellín</option>
+        </select>
+
+        
+<br>
+        <div class="ui small basic icon buttons">
+          <button class="ui button"><i class="search icon"></i> Buscar</button>
+        </div>
+
+
+  </div>
+
+
+  <div class="title"><i class="dropdown icon"></i> Invitación a Proyectos </div>
+  <div class="content">
+    <p class="transition hidden">Búsquedas especializadas.</p>
+  </div>
+
+
+  <div class="title"><i class="dropdown icon"></i> Libros </div>
+  <div class="content">
+    <p class="transition hidden">Three common ways for a proshome. Lastly, finding your dog from a shelter, helps give a good home to a dog who may not find one so readily.</p>
+  </div>
+
+
+
+  <div class="title"><i class="dropdown icon"></i> Opción </div>
+  <div class="content">
+    <p class="transition hidden">Three common ways for a proshome. Lastly, finding your dog from a shelter, helps give a good home to a dog who may not find one so readily.</p>
+  </div>
+
+</div>
+</div>
+
+
+
+
+
+<!-- ********************************************************************************* publicaciones-->
+
+<div class="ui text container" >
+
+  
+    
+    <div class="wide column">
+      <div class="ui card menu"  style="width: 100%;">
+        <div class="content">
+          
+              
+              <div class="ui right floated simple dropdown item">
+                 <i class="dropdown icon"></i>
+                <div class="menu">
+                  <a class="item" href="#">Guardar publicación</a>
+                  <a class="item" href="#">Denunciar Publicación</a>
+                  <a class="item" href="#">Mis publicaciones</a>
+                </div>
+              </div>
+
+
+          <a><div class="header"><h3 style="color: black;">Evento de ingeniería ambiental</h3></div></a>
+          <div class="meta">Ciencias naturales <span class=" floated star" title="Agregar área a favoritas"><i class="star icon"></i> </span></div>
+          <div class="description">
+            <p>Aquí va la descripción de la publicación con detalles.</p>
+          </div>
+        </div>
+        <div class="extra content">
+          <a><span class="left floated like" title="Me gusta esta publicación"><i class="like icon"></i>125 Me gusta </span></a>
+          <span class="right floated pointing up"><i class="pointing up icon"></i> 132 Visitas </span>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+<br>
+
+
+
+  <div class="wide column">
+      <div class="ui card menu"  style="width: 100%;">
+        <div class="content">
+          
+              
+              <div class="ui right floated simple dropdown item">
+                 <i class="dropdown icon"></i>
+                <div class="menu">
+                  <a class="item" href="#">Guardar publicación</a>
+                  <a class="item" href="#">Denunciar Publicación</a>
+                  <a class="item" href="#">Mis publicaciones</a>
+                </div>
+              </div>
+
+
+          <a><div class="header"><h3 style="color: black;">Convocatoria de docente de Física</h3></div></a>
+          <div class="meta">Física <span class=" floated star" title="Agregar área a favoritas"><i class="star icon"></i> </span></div>
+          <div class="description">
+            <p>Aquí va la descripción de la publicación con detalles.</p>
+          </div>
+        </div>
+        <div class="extra content">
+          <a><span class="left floated like" title="Me gusta esta publicación"><i class="like icon"></i>125 Me gusta </span></a>
+          <span class="right floated pointing up"><i class="pointing up icon"></i> 132 Visitas </span>
+        </div>
+      </div>
+
+    </div>
+
+
+    <br>
+
+
+
+  <div class="wide column">
+      <div class="ui card menu"  style="width: 100%;">
+        <div class="content">
+          
+              
+              <div class="ui right floated simple dropdown item">
+                 <i class="dropdown icon"></i>
+                <div class="menu">
+                  <a class="item" href="#">Guardar publicación</a>
+                  <a class="item" href="#">Denunciar Publicación</a>
+                  <a class="item" href="#">Mis publicaciones</a>
+                </div>
+              </div>
+
+
+          <a><div class="header"><h3 style="color: black;">Revista de Inteligencia Artificial</h3></div></a>
+          <div class="meta">Ingeniería de Sistemas <span class=" floated star" title="Agregar área a favoritas"><i class="star icon"></i> </span></div>
+          <div class="description">
+            <p>Aquí va la descripción de la publicación con detalles.</p>
+          </div>
+        </div>
+        <div class="extra content">
+          <a><span class="left floated like" title="Me gusta esta publicación"><i class="like icon"></i>125 Me gusta </span></a>
+          <span class="right floated pointing up"><i class="pointing up icon"></i> 132 Visitas </span>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+    <br>
+
+
+
+  <div class="wide column">
+      <div class="ui card menu"  style="width: 100%;">
+        <div class="content">
+          
+              
+              <div class="ui right floated simple dropdown item">
+                 <i class="dropdown icon"></i>
+                <div class="menu">
+                  <a class="item" href="#">Guardar publicación</a>
+                  <a class="item" href="#">Denunciar Publicación</a>
+                  <a class="item" href="#">Mis publicaciones</a>
+                </div>
+              </div>
+
+
+          <a><div class="header"><h3 style="color: black;">Revista de Inteligencia Artificial</h3></div></a>
+          <div class="meta">Ingeniería de Sistemas <span class=" floated star" title="Agregar área a favoritas"><i class="star icon"></i> </span></div>
+          <div class="description">
+            <p>Aquí va la descripción de la publicación con detalles.</p>
+          </div>
+        </div>
+        <div class="extra content">
+          <a><span class="left floated like" title="Me gusta esta publicación"><i class="like icon"></i>125 Me gusta </span></a>
+          <span class="right floated pointing up"><i class="pointing up icon"></i> 132 Visitas </span>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <br>
+
+
+
+  <div class="wide column">
+      <div class="ui card menu"  style="width: 100%;">
+        <div class="content">
+          
+              
+              <div class="ui right floated simple dropdown item">
+                 <i class="dropdown icon"></i>
+                <div class="menu">
+                  <a class="item" href="#">Guardar publicación</a>
+                  <a class="item" href="#">Denunciar Publicación</a>
+                  <a class="item" href="#">Mis publicaciones</a>
+                </div>
+              </div>
+
+
+          <a><div class="header"><h3 style="color: black;">Revista de Inteligencia Artificial</h3></div></a>
+          <div class="meta">Ingeniería de Sistemas <span class=" floated star" title="Agregar área a favoritas"><i class="star icon"></i> </span></div>
+          <div class="description">
+            <p>Aquí va la descripción de la publicación con detalles.</p>
+          </div>
+        </div>
+        <div class="extra content">
+          <a><span class="left floated like" title="Me gusta esta publicación"><i class="like icon"></i>125 Me gusta </span></a>
+          <span class="right floated pointing up"><i class="pointing up icon"></i> 132 Visitas </span>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <br>
+
+
+
+  <div class="wide column">
+      <div class="ui card menu"  style="width: 100%;">
+        <div class="content">
+          
+              
+              <div class="ui right floated simple dropdown item">
+                 <i class="dropdown icon"></i>
+                <div class="menu">
+                  <a class="item" href="#">Guardar publicación</a>
+                  <a class="item" href="#">Denunciar Publicación</a>
+                  <a class="item" href="#">Mis publicaciones</a>
+                </div>
+              </div>
+
+
+          <a><div class="header"><h3 style="color: black;">Revista de Inteligencia Artificial</h3></div></a>
+          <div class="meta">Ingeniería de Sistemas <span class=" floated star" title="Agregar área a favoritas"><i class="star icon"></i> </span></div>
+          <div class="description">
+            <p>Aquí va la descripción de la publicación con detalles.</p>
+          </div>
+        </div>
+        <div class="extra content">
+          <a><span class="left floated like" title="Me gusta esta publicación"><i class="like icon"></i>125 Me gusta </span></a>
+          <span class="right floated pointing up"><i class="pointing up icon"></i> 132 Visitas </span>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <br>
+
+
+
+  <div class="wide column">
+      <div class="ui card menu"  style="width: 100%;">
+        <div class="content">
+          
+              
+              <div class="ui right floated simple dropdown item">
+                 <i class="dropdown icon"></i>
+                <div class="menu">
+                  <a class="item" href="#">Guardar publicación</a>
+                  <a class="item" href="#">Denunciar Publicación</a>
+                  <a class="item" href="#">Mis publicaciones</a>
+                </div>
+              </div>
+
+
+          <a><div class="header"><h3 style="color: black;">Revista de Inteligencia Artificial</h3></div></a>
+          <div class="meta">Ingeniería de Sistemas <span class=" floated star" title="Agregar área a favoritas"><i class="star icon"></i> </span></div>
+          <div class="description">
+            <p>Aquí va la descripción de la publicación con detalles.</p>
+          </div>
+        </div>
+        <div class="extra content">
+          <a><span class="left floated like" title="Me gusta esta publicación"><i class="like icon"></i>125 Me gusta </span></a>
+          <span class="right floated pointing up"><i class="pointing up icon"></i> 132 Visitas </span>
+        </div>
+      </div>
+
+    </div>
+  
+
+
+   
+</div>
+
+
+
+
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="ui inverted vertical footer segment">
+    <div class="ui center aligned container">
+      <div class="ui stackable inverted divided grid">
+        <div class="three wide column">
+          <h4 class="ui inverted header">Group 1</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Link One</a>
+            <a href="#" class="item">Link Two</a>
+            <a href="#" class="item">Link Three</a>
+            <a href="#" class="item">Link Four</a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header">Group 2</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Link One</a>
+            <a href="#" class="item">Link Two</a>
+            <a href="#" class="item">Link Three</a>
+            <a href="#" class="item">Link Four</a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header">Group 3</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Link One</a>
+            <a href="#" class="item">Link Two</a>
+            <a href="#" class="item">Link Three</a>
+            <a href="#" class="item">Link Four</a>
+          </div>
+        </div>
+        <div class="seven wide column">
+          <h4 class="ui inverted header">Footer Header</h4>
+          <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+        </div>
+      </div>
+      <div class="ui inverted section divider"></div>
+      <img src="images/icono.jpg" class="ui centered mini image">
+      <div class="ui horizontal inverted small divided link list">
+        <a class="item" href="#">Site Map</a>
+        <a class="item" href="#">Contact Us</a>
+        <a class="item" href="#">Terms and Conditions</a>
+        <a class="item" href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
