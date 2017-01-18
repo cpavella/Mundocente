@@ -3,7 +3,7 @@ body, html {
 }
 
 .banner {
-    background: url(../images/Purple.jpg) no-repeat fixed 0 50%/cover;
+    background: url(../images/Purple.jpg) no-repeat /*fixed*/ 0 50%/cover;
     min-height: 700px;
 }
 
