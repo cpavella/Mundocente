@@ -15,90 +15,86 @@
   <link rel="stylesheet" type="text/css" href="dist/components/container.css">
   <link rel="stylesheet" type="text/css" href="dist/components/grid.css">
   <link rel="stylesheet" type="text/css" href="dist/components/header.css">
-  <link rel="stylesheet" type="text/css" href="dist/components/search.css">
-  <link rel="stylesheet" type="text/css" href="dist/components/input.css">
-  <link rel="stylesheet" type="text/css" href="dist/components/label.css">
   <link rel="stylesheet" type="text/css" href="dist/components/image.css">
   <link rel="stylesheet" type="text/css" href="dist/components/menu.css">
-  <link rel="stylesheet" type="text/css" href="dist/components/accordion.css">
-  <link rel="stylesheet" type="text/css" href="dist/components/button.css">
-  <link rel="stylesheet" type="text/css" href="dist/components/checkbox.css">
 
   <link rel="stylesheet" type="text/css" href="dist/components/divider.css">
   <link rel="stylesheet" type="text/css" href="dist/components/list.css">
   <link rel="stylesheet" type="text/css" href="dist/components/segment.css">
   <link rel="stylesheet" type="text/css" href="dist/components/dropdown.css">
   <link rel="stylesheet" type="text/css" href="dist/components/icon.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/transition.css">
+
+  <link rel="stylesheet" type="text/css" href="dist/components/input.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/checkbox.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/button.css">
+  
+  <link rel="stylesheet" type="text/css" href="dist/components/modal.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/dimmer.css">
+  
   <link rel="stylesheet" type="text/css" href="dist/components/sticky.css">
   <link rel="stylesheet" type="text/css" href="dist/components/form.css">
-  <link rel="stylesheet" type="text/css" href="dist/components/modal.css">
-  <link rel="stylesheet" type="text/css" href="dist/components/transition.css">
-  <link rel="stylesheet" type="text/css" href="dist/components/dimmer.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/input.css">
   <link rel="stylesheet" type="text/css" href="dist/components/card.css">
   <link rel="stylesheet" type="text/css" href="dist/components/loader.css">
 
+  
+  
+  
 
-<script src="js/jquery.min.js"></script>
 
-<script type="text/javascript" src="dist/components/dropdown.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="dist/components/transition.js"></script>
+  <script src="dist/components/dropdown.js"></script>
+  <script src="dist/components/visibility.js"></script>
+  <script type="text/javascript" src="dist/components/checkbox.js"></script>
 <script type="text/javascript" src="dist/components/accordion.js"></script>
-<script type="text/javascript" src="dist/components/visibility.js"></script>
 <script type="text/javascript" src="dist/components/sticky.js"></script>
 <script type="text/javascript" src="dist/components/form.js"></script>
-<script type="text/javascript" src="dist/components/checkbox.js"></script>
 <script type="text/javascript" src="dist/components/modal.js"></script>
-<script type="text/javascript" src="dist/components/transition.js"></script>
 <script type="text/javascript" src="dist/components/dimmer.js"></script>
 
-
-
-
-    <script>
+  <script>
   $(document)
     .ready(function() {
-      $('.ui.menu .ui.dropdown').dropdown({
+
+      // fix main menu to page on passing
+      $('.main.menu').visibility({
+        type: 'fixed'
+      });
+      $('.overlay').visibility({
+        type: 'fixed',
+        offset: 80
+      });
+
+      // lazy load images
+      $('.image').visibility({
+        type: 'image',
+        transition: 'vertical flip in',
+        duration: 500
+      });
+
+      $('.ui.fluid.search.dropdown')
+      .dropdown({
+        allowAdditions: true
+      })
+    ;
+
+      // show dropdown on hover
+      $('.main.menu  .ui.dropdown').dropdown({
         on: 'hover'
       });
-      $('.ui.menu a.item')
-        .on('click', function() {
-          $(this)
-            .addClass('active')
-            .siblings()
-            .removeClass('active')
-          ;
-        })
-      ;
-
-
-      $('.ui.accordion').accordion();
-
-
-$('.ui.fluid.search.dropdown')
-  .dropdown({
-    allowAdditions: true
-  })
-;
-
-
-$('.ui.checkbox')
-  .checkbox()
-;
-
-
-$('.special.cards .image').dimmer({
-  on: 'hover'
-});
 
 
 
-
-
-
-
+      $('.special.cards .image').dimmer({
+        on: 'hover'
+      });
 
 
     })
   ;
+
 
 
 
@@ -166,22 +162,73 @@ function mostrarmodelpublicador(){
   ;
 }
 
+
+function mostrarmodelbuscador(){
+  $('.ui.buscador')
+    .modal({
+      blurring: true
+    })
+    .modal('show')
+  ;
+}
+
+
   </script>
 
   <style type="text/css">
-   body {
-    background-color: #F2F2F2;
+
+  body {
+    background-color: #FFF7FF;
+  }
+  .main.container {
+    margin-top: 2em;
   }
 
-    #divdefiltro{
-      width: 40%;
-      overflow-y: scroll;
-      max-height: 88%;
-      height: auto;
-      background:#ffffff;
-    }
+  .main.menu {
+    margin-top: 4em;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    transition:
+      box-shadow 0.5s ease,
+      padding 0.5s ease
+    ;
+  }
+  .main.menu .item img.logo {
+    margin-right: 1.5em;
+  }
 
-    #modalpublicaciones{
+  .overlay {
+    float: left;
+    margin: 0em 3em 1em 0em;
+  }
+  .overlay .menu {
+    position: relative;
+    left: 0;
+    transition: left 0.5s ease;
+  }
+
+  .main.menu.fixed {
+    background-color: #FFFFFF;
+    border: 1px solid #DDD;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  .overlay.fixed .menu {
+    left: 800px;
+  }
+
+  .text.container .left.floated.image {
+    margin: 2em 2em 2em -4em;
+  }
+  .text.container .right.floated.image {
+    margin: 2em -4em 2em 2em;
+  }
+
+  .ui.footer.segment {
+    margin: 5em 0em 0em;
+    padding: 5em 0em;
+  }
+   #modalpublicaciones{
       overflow-y: scroll;
     }
 
@@ -205,14 +252,10 @@ function mostrarmodelpublicador(){
     background: rgba(150,150,150,0.6);
     cursor: pointer;
 }
-
-    
   </style>
 
-  
-
 </head>
-<body >
+<body>
 
 
 
@@ -221,457 +264,82 @@ function mostrarmodelpublicador(){
 
 
 
-<!-- ********************************************************************************* menu 1-->
 
-  <div class="ui borderless fixed menu" >
-    <div class="ui container">
-      <a href="#" class="header item">
+
+
+
+
+
+
+
+
+
+
+
+<!-- ********************************************************************************* menu 2-->
+
+  <div class="ui borderless main menu">
+
+    <div class="ui text container">
+      <div href="#" class="header item">
         <img class="logo" src="images/icono.jpg">
         Mundocente
-      </a>
-
-        
-
-
-      <a href="inicio2.html" class="item"><i class="home icon"></i> Inicio</a>
-      <a onclick="mostrarmodelpublicador()" class="item"><i class="write icon"></i>   Publicar </a>
-      <a href="#" class="item"><i class="alarm outline icon"></i> Notificaciones</a>
-
+      </div>
+      <a href="#" class="item">Inicio</a>
       
-
-      <div class="item" style="">
+        <div class="item">
           <div class="ui transparent icon input">
             <input type="text" placeholder="Buscar publicación...">
             <i class="search link icon"></i>
           </div>
         </div>
-
-      
-
-      <div class="ui simple dropdown right item">
-        Perfil <i class="dropdown icon"></i>
+      <a href="#" class="ui right floated dropdown item">
+        Dropdown <i class="dropdown icon"></i>
         <div class="menu">
-          <a class="item" href="#">Mi perfil</a>
-          <a class="item" href="#">Privacidad</a>
-          <a class="item" href="#">Mis publicaciones</a>
-          <a class="item" href="#">Publicaciones Guardadas</a>
+          <div class="item">Link Item</div>
+          <div class="item">Link Item</div>
           <div class="divider"></div>
-          <div class="header">Opciones</div>
-          <div class="item">Configuración</div>
-          <a class="item" href="#">Cerrar sesión</a>
+          <div class="header">Header Item</div>
+          <div class="item">
+            <i class="dropdown icon"></i>
+            Sub Menu
+            <div class="menu">
+              <div class="item">Link Item</div>
+              <div class="item">Link Item</div>
+            </div>
+          </div>
+          <div class="item">Link Item</div>
         </div>
-      </div>
+      </a>
     </div>
-  </div>
-
-
-<br>
-<br>
-<br>
-<br>
-
-
-<!-- ********************************************************************************* fin de menú 1-->
-
-<div class="ui container">
-  
-  <div class="two column equal height ui grid" >
-  <div class="row" >
-
-
-
-
-<!-- ********************************************************************************* columna de filtros -->
-
-    <div class="column" >
-      <div class="ui sticky segments fixed" id="divdefiltro">
-        <div class="ui segment">
-          
-          
-        
-<div class="ui form">
-  <h4 class="ui dividing header">Búsqueda avanzada</h4>
-   <div class="ui segment" style="background-color: #E8D8E2;">
-    <div class="two fields">
-     <div class="field">
-         <div class="ui toggle checkbox" onclick="mostrarfiltrorevistas()">
-            <input type="checkbox" >
-            <label>Revista</label>
-        </div>
-      </div>
-      <div class="field">
-         <div class="ui toggle checkbox" onclick="mostrarfiltroconvocatorias()">
-            <input type="checkbox" >
-            <label>Convocatoria</label>
-        </div>
-      </div>
-      
-    </div>
-
-    <div class="two fields">
-     
-       <div class="field">
-         <div class="ui toggle checkbox" onclick="mostrarfiltroeventos()">
-            <input type="checkbox" >
-            <label>Evento</label>
-        </div>
-      </div>
-       <div class="field">
-         <div class="ui toggle checkbox">
-            <input type="checkbox"  >
-            <label>Invitación a proyecto</label>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="two fields">
-    
-      <div class="field">
-         <div class="ui toggle checkbox">
-            <input type="checkbox"  >
-            <label>Invitación a ser evaluadores</label>
-        </div>
-      </div>
-       <div class="field">
-         <div class="ui toggle checkbox">
-            <input type="checkbox"  >
-            <label>Logros investigativos</label>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ui field">
-    <label>Palabra Clave</label>
-    <div class="fields">
-      <div class="sixteen wide field">
-        <input type="text" placeholder="Ingrese la palabra clave del título de publicación...">
-      </div>
-    </div>
-  </div>
-  <div class="two fields">
-   <div class="field">
-      <label>Universidad</label>
-    <div class="ui fluid multiple search selection dropdown">
-      <input type="hidden" name="receipt">
-      <i class="dropdown icon"></i>
-      <div class="default text">Uptc</div>
-      <div class="menu">
-          <div class="item" data-value="af"><i class="af flag"></i>Uptc</div>
-          <div class="item" data-value="ax"><i class="ax flag"></i>Nacional</div>
-          <div class="item" data-value="al"><i class="al flag"></i>UniBoyacá</div>
-          
-        </div>
-    </div>
-   </div>
-
-    <div class="field">
-      <label>Sede</label>
-    <div class="ui fluid multiple search selection dropdown">
-      <input type="hidden" name="receipt">
-      <i class="dropdown icon"></i>
-      <div class="default text">Sede de Universidad</div>
-      <div class="menu">
-          <div class="item" data-value="af"><i class="af flag"></i>Sede Tunja</div>
-          <div class="item" data-value="ax"><i class="ax flag"></i>Sede Duitama</div>
-          <div class="item" data-value="al"><i class="al flag"></i>Sede Sogamoso</div>
-          
-        </div>
-    </div>
-   </div>
-
-  </div>
-  <div class="two fields">
-    <div class="field">
-      <label>Área</label>
-      <select class="ui fluid dropdown">
-        <option value="">Química</option>
-    <option value="AL">Física</option>
-    <option value="AK">Biología</option>
-    <option value="AZ">Software</option>
-    <option value="AR">Informática</option>
-    <option value="CA">Filosofía</option>
-    
-      </select>
-    </div>
-    <div class="field">
-      <label>Tema Específico</label>
-      <div class="ui fluid search selection dropdown" >
-        <input type="hidden" name="country">
-        <i class="dropdown icon"></i>
-        <div class="default text">Seleccionar tema</div>
-        <div class="menu">
-          <div class="item" data-value="af"><i class="af flag"></i>Auditoría contable</div>
-          <div class="item" data-value="ax"><i class="ax flag"></i>Bases de datos</div>
-          <div class="item" data-value="al"><i class="al flag"></i>Bioingeniería</div>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-  
- 
-  <div id="revistasfiltro" style="display: none;">
-<h4 class="ui dividing header">Revistas</h4>
- <div class="ui form">
-    <label>Tipo de indexación</label>
-    <br>
-    <br>
-   <div class="two fields">
-
-     <div class="field">
-    
-        <div class="ui slider checkbox">
-          <input type="checkbox" tabindex="0" class="hidden">
-          <label>A1</label>
-        </div>
-      </div>
-
-      <div class="field">
-        <div class="ui slider checkbox">
-          <input type="checkbox" tabindex="0" class="hidden">
-          <label>A2</label>
-        </div>
-      </div>
-   </div>
-      
-
-      
-<div class="two fields">
-     <div class="field">
-    
-        <div class="ui slider checkbox">
-          <input type="checkbox" tabindex="0" class="hidden">
-          <label>B</label>
-        </div>
-      </div>
-
-      <div class="field">
-        <div class="ui slider checkbox">
-          <input type="checkbox" tabindex="0" class="hidden">
-          <label>C</label>
-        </div>
-      </div>
-   </div>
-
-
-      <br>
-</div>
-
-    <div class="fields">
-    <div class="seven wide field">
-      <label>Día</label>
-      
-      <div class="field">
-        <select class="ui fluid search dropdown" name="card[expire-Enero]">
-            <option value="">Seleccione el día</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-            <option value="16">16</option>
-          </select>
-      </div>
-    </div>
-    <div class="nine wide field">
-      <label>Mes</label>
-      <div class="two fields">
-        <div class="field">
-          <select class="ui fluid search dropdown" name="card[expire-Enero]">
-            <option value="">Enero</option>
-            <option value="1">January</option>
-            <option value="2">February</option>
-            <option value="3">March</option>
-            <option value="4">April</option>
-            <option value="5">May</option>
-            <option value="6">June</option>
-            <option value="7">July</option>
-            <option value="8">August</option>
-            <option value="9">September</option>
-            <option value="10">October</option>
-            <option value="11">November</option>
-            <option value="12">December</option>
-          </select>
-        </div>
-        <div class="field">
-              <div class="field">
-                <select class="ui fluid search dropdown" name="card[expire-Enero]">
-                  <option value="">2017</option>
-                  <option value="1">2017</option>
-                  <option value="2">2016</option>
-                  <option value="3">2015</option>
-                  <option value="4">2014</option>
-                  <option value="5">2013</option>
-                  <option value="6">2012</option>
-                  <option value="7">2011</option>
-                  <option value="8">2010</option>
-                  <option value="9">2009</option>
-                  <option value="10">2008</option>
-                  <option value="11">2007</option>
-                  <option value="12">2006</option>
-                </select>
-              </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
 
   </div>
 
-   
- 
- <div id="convocatoriasfiltro" style="display: none;">
-<h4 class="ui dividing header">Convocatorias</h4>
- <div class="field">
-   
-    
-      <label>Cargo</label>
-      <div class="ui fluid search selection dropdown">
-        <input type="hidden" name="country">
-        <i class="dropdown icon"></i>
-        <div class="default text">Seleccione cargo deseado</div>
-        <div class="menu">
-          <div class="item" data-value="af"><i class="af flag"></i>Docente de Física</div>
-          <div class="item" data-value="ax"><i class="ax flag"></i>Bases de datos</div>
-          <div class="item" data-value="al"><i class="al flag"></i>Bioingeniería</div>
-          
-        </div>
-      </div>
-    
-  </div>
-    <label>Fecha límite</label>
-    <div class="fields">
+<!-- ********************************************************************************* menu 2-->
 
-    <div class="seven wide field">
-      <label>Día</label>
-      <input type="text" maxlength="16" placeholder="1">
-    </div>
-    <div class="nine wide field">
-      <label>Mes</label>
-      <div class="two fields">
-        <div class="field">
-          <select class="ui fluid search dropdown" name="card[expire-Enero]">
-            <option value="">Enero</option>
-            <option value="1">January</option>
-            <option value="2">February</option>
-            <option value="3">March</option>
-            <option value="4">April</option>
-            <option value="5">May</option>
-            <option value="6">June</option>
-            <option value="7">July</option>
-            <option value="8">August</option>
-            <option value="9">September</option>
-            <option value="10">October</option>
-            <option value="11">November</option>
-            <option value="12">December</option>
-          </select>
-        </div>
-        <div class="field">
-          <input type="text" name="card[expire-year]" maxlength="4" placeholder="Año">
-        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="ui text container">
+
+    <div class="overlay">
+      <div class="ui labeled icon vertical menu">
+        <a class="item"  onclick="mostrarmodelbuscador()"><i class="search icon"></i> Buscar</a>
+        <a class="item" onclick="mostrarmodelpublicador()"><i class="write icon"></i> Publicar</a>
+        <a class="item"><i class="mail icon"></i> E-mail</a>
       </div>
     </div>
-  </div>
-
-
-   
- </div>
-
-  
-
-
-<div id="eventosfiltro" style="display: none;">
-   <h4 class="ui dividing header">Eventos</h4>
- <label>Fecha del evento</label>
-  <div class="fields">
-    <div class="seven wide field">
-      <label>Día</label>
-      <input type="text" maxlength="16" placeholder="1">
-    </div>
-    <div class="nine wide field">
-      <label>Mes</label>
-      <div class="two fields">
-        <div class="field">
-          <select class="ui fluid search dropdown" name="card[expire-Enero]">
-            <option value="">Enero</option>
-            <option value="1">January</option>
-            <option value="2">February</option>
-            <option value="3">March</option>
-            <option value="4">April</option>
-            <option value="5">May</option>
-            <option value="6">June</option>
-            <option value="7">July</option>
-            <option value="8">August</option>
-            <option value="9">September</option>
-            <option value="10">October</option>
-            <option value="11">November</option>
-            <option value="12">December</option>
-          </select>
-        </div>
-        <div class="field">
-          <input type="text" name="card[expire-year]" maxlength="4" placeholder="Año">
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-    <div class="two fields">
-   <div class="field">
-      <label>País</label>
-    <div class="ui fluid multiple search selection dropdown">
-      <input type="hidden" name="receipt">
-      <i class="dropdown icon"></i>
-      <div class="default text">Colombia</div>
-    </div>
-   </div>
-
-    <div class="field">
-      <label>Ciudad</label>
-    <div class="ui fluid multiple search selection dropdown">
-      <input type="hidden" name="receipt">
-      <i class="dropdown icon"></i>
-      <div class="default text">Bogotá</div>
-    </div>
-   </div>
-
-  </div>
-</div>
-   
-  
-  
-          <button class="ui button green" style="float: right;margin-bottom: 15px;"><i class="search icon"></i> Buscar</button>
-        
-</div>
-<br>
-        
-
-
-
-         
-           
-      
-          
-          
-        </div>
-      
-      
-      </div>
-    </div>
+     <p>Aquí agregar algún texto o alguna descripción, Aquí agregar algún texto o alguna descripción, Aquí agregar algún texto o alguna descripción, Aquí agregar algún texto o alguna descripción, Aquí agregar algún texto o alguna descripción, Aquí agregar algún texto o alguna descripción, Aquí agregar algún texto o alguna descripción, Aquí agregar algún texto o alguna descripción, Aquí agregar algún texto o alguna descripción, Aquí agregar algún texto o alguna descripción, Aquí agregar algún texto o alguna descripción, Aquí agregar algún texto o alguna descripción. </p>
 
 
 
@@ -688,7 +356,6 @@ function mostrarmodelpublicador(){
 
 
 
-     <!-- ********************************************************************************* publicaciones-->
 
 
 
@@ -698,15 +365,11 @@ function mostrarmodelpublicador(){
 
 
 
-
-
-
-
-
+<!--  ********************************************** Inicio de  publicaciones-->
 
 
     <div class="main column">
-        <div class="wide column">
+          <div class="wide column">
       <div class="ui card menu" style="width: 100%;">
         <div class="content">
           
@@ -734,9 +397,9 @@ function mostrarmodelpublicador(){
 
 
 
-               <div class="ui special cards">
+               <div class="ui special cards" >
 
-                  <div class="card">
+                  <div class="card" style="width: 100%;" style="width: 100%;">
                     <div class="blurring dimmable image">
                       <div class="ui dimmer">
                         <div class="content">
@@ -745,7 +408,7 @@ function mostrarmodelpublicador(){
                             </div>
                           </div>
                         </div>
-                        <img src="images/revista1.jpg">
+                        <img src="http://2.bp.blogspot.com/-UUh_IUY_SCE/U9r7sBX28LI/AAAAAAAAGlY/rPjFfy5chu0/s1600/revistas+cientificas.jpg">
                       </div>
                       </div>
                </div>
@@ -795,7 +458,7 @@ function mostrarmodelpublicador(){
 
            <div class="ui special cards">
 
-                  <div class="card">
+                  <div class="card" style="width: 100%;">
                     <div class="blurring dimmable image">
                       <div class="ui dimmer">
                         <div class="content">
@@ -851,7 +514,7 @@ function mostrarmodelpublicador(){
 
            <div class="ui special cards">
 
-                  <div class="card">
+                  <div class="card" style="width: 100%;">
                     <div class="blurring dimmable image">
                       <div class="ui dimmer">
                         <div class="content">
@@ -913,7 +576,7 @@ function mostrarmodelpublicador(){
 
                <div class="ui special cards">
 
-                  <div class="card">
+                  <div class="card" style="width: 100%;">
                     <div class="blurring dimmable image">
                       <div class="ui dimmer">
                         <div class="content">
@@ -922,7 +585,7 @@ function mostrarmodelpublicador(){
                             </div>
                           </div>
                         </div>
-                        <img src="images/revista1.jpg">
+                        <img src="http://2.bp.blogspot.com/-woWQgGH7N5Q/UEtqcpfRRTI/AAAAAAAAADk/bDbgOxh7jTs/s1600/IMAGEN4.jpg">
                       </div>
                       </div>
                </div>
@@ -972,7 +635,7 @@ function mostrarmodelpublicador(){
 
            <div class="ui special cards">
 
-                  <div class="card">
+                  <div class="card" style="width: 100%;">
                     <div class="blurring dimmable image">
                       <div class="ui dimmer">
                         <div class="content">
@@ -1028,7 +691,7 @@ function mostrarmodelpublicador(){
 
            <div class="ui special cards">
 
-                  <div class="card">
+                  <div class="card" style="width: 100%;">
                     <div class="blurring dimmable image">
                       <div class="ui dimmer">
                         <div class="content">
@@ -1054,21 +717,26 @@ function mostrarmodelpublicador(){
 
     </div>
 
-<br>
+    <br>
 
 <div class="ui active centered inline loader"></div>
 
 
 </div>
 
-<!-- ********************************************************************************* Fin publicaciones-->
+
+
+
+
+<!--  ********************************************** Fin de publicaciones-->
+
+
 
 
 
   </div>
 
 
-</div>
 
 
 
@@ -1080,51 +748,6 @@ function mostrarmodelpublicador(){
 
 
 
-
-
-
-
-
-
-
-</div>
-
-
-
-<!-- ********************************************************************************* fin de formulario con filtros-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
 
 
 
@@ -1497,9 +1120,454 @@ function mostrarmodelpublicador(){
 
 
 
+<!--- ******************************** *************    modal de buscador-->
 
 
 
+
+
+<div class="ui modal buscador">
+    <i class="close icon"></i>
+    <div class="header">
+        Búsqueda avanzada
+    </div>
+    <div class="image content" style="max-height:  350px;" id="modalpublicaciones">
+
+        <div class="description">
+            <div class="ui header">
+
+                                  
+
+
+
+
+
+
+
+<!--   ¨***************************************************** Búsqueda avanzada-->
+
+
+
+  <div class="ui main text container">
+    
+    
+    <div class="column" >
+      <div class="ui sticky segments " >
+        <div class="ui segment">
+          
+          
+        
+<div class="ui form">
+  
+   <div class="ui segment">
+    <div class="two fields">
+     <div class="field">
+         <div class="ui toggle checkbox" onclick="mostrarfiltrorevistas()">
+            <input type="checkbox" >
+            <label>Revista</label>
+        </div>
+      </div>
+      <div class="field">
+         <div class="ui toggle checkbox" onclick="mostrarfiltroconvocatorias()">
+            <input type="checkbox" >
+            <label>Convocatoria</label>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="two fields">
+     
+       <div class="field">
+         <div class="ui toggle checkbox" onclick="mostrarfiltroeventos()">
+            <input type="checkbox" >
+            <label>Evento</label>
+        </div>
+      </div>
+       <div class="field">
+         <div class="ui toggle checkbox">
+            <input type="checkbox"  >
+            <label>Invitación a proyecto</label>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="two fields">
+    
+      <div class="field">
+         <div class="ui toggle checkbox">
+            <input type="checkbox"  >
+            <label>Invitación a ser evaluadores</label>
+        </div>
+      </div>
+       <div class="field">
+         <div class="ui toggle checkbox">
+            <input type="checkbox"  >
+            <label>Logros investigativos</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui field">
+    <label>Palabra Clave</label>
+    <div class="fields">
+      <div class="sixteen wide field">
+        <input type="text" placeholder="Ingrese la palabra clave del título de publicación...">
+      </div>
+    </div>
+  </div>
+  <div class="two fields">
+   <div class="field">
+      <label>Universidad</label>
+    <div class="ui fluid multiple search selection dropdown">
+      <input type="hidden" name="receipt">
+      <i class="dropdown icon"></i>
+      <div class="default text">Uptc</div>
+      <div class="menu">
+          <div class="item" data-value="af"><i class="af flag"></i>Uptc</div>
+          <div class="item" data-value="ax"><i class="ax flag"></i>Nacional</div>
+          <div class="item" data-value="al"><i class="al flag"></i>UniBoyacá</div>
+          
+        </div>
+    </div>
+   </div>
+
+    <div class="field">
+      <label>Sede</label>
+    <div class="ui fluid multiple search selection dropdown">
+      <input type="hidden" name="receipt">
+      <i class="dropdown icon"></i>
+      <div class="default text">Sede de Universidad</div>
+      <div class="menu">
+          <div class="item" data-value="af"><i class="af flag"></i>Sede Tunja</div>
+          <div class="item" data-value="ax"><i class="ax flag"></i>Sede Duitama</div>
+          <div class="item" data-value="al"><i class="al flag"></i>Sede Sogamoso</div>
+          
+        </div>
+    </div>
+   </div>
+
+  </div>
+  <div class="two fields">
+    <div class="field">
+      <label>Área</label>
+      <select class="ui fluid dropdown">
+        <option value="">Química</option>
+    <option value="AL">Física</option>
+    <option value="AK">Biología</option>
+    <option value="AZ">Software</option>
+    <option value="AR">Informática</option>
+    <option value="CA">Filosofía</option>
+    
+      </select>
+    </div>
+    <div class="field">
+      <label>Tema Específico</label>
+      <div class="ui fluid search selection dropdown" >
+        <input type="hidden" name="country">
+        <i class="dropdown icon"></i>
+        <div class="default text">Seleccionar tema</div>
+        <div class="menu">
+          <div class="item" data-value="af"><i class="af flag"></i>Auditoría contable</div>
+          <div class="item" data-value="ax"><i class="ax flag"></i>Bases de datos</div>
+          <div class="item" data-value="al"><i class="al flag"></i>Bioingeniería</div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+  <div id="revistasfiltro" style="display: none;">
+<h4 class="ui dividing header">Revistas</h4>
+ <div class="ui form">
+    <label>Tipo de indexación</label>
+    <br>
+    <br>
+   <div class="two fields">
+
+     <div class="field">
+    
+        <div class="ui slider checkbox">
+          <input type="checkbox" tabindex="0" class="hidden">
+          <label>A1</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="ui slider checkbox">
+          <input type="checkbox" tabindex="0" class="hidden">
+          <label>A2</label>
+        </div>
+      </div>
+   </div>
+      
+
+      
+<div class="two fields">
+     <div class="field">
+    
+        <div class="ui slider checkbox">
+          <input type="checkbox" tabindex="0" class="hidden">
+          <label>B</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="ui slider checkbox">
+          <input type="checkbox" tabindex="0" class="hidden">
+          <label>C</label>
+        </div>
+      </div>
+   </div>
+
+
+      <br>
+</div>
+
+    <div class="fields">
+    <div class="seven wide field">
+      <label>Día</label>
+      
+      <div class="field">
+        <select class="ui fluid search dropdown" name="card[expire-Enero]">
+            <option value="">Seleccione el día</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+          </select>
+      </div>
+    </div>
+    <div class="nine wide field">
+      <label>Mes</label>
+      <div class="two fields">
+        <div class="field">
+          <select class="ui fluid search dropdown" name="card[expire-Enero]">
+            <option value="">Enero</option>
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+        </div>
+        <div class="field">
+              <div class="field">
+                <select class="ui fluid search dropdown" name="card[expire-Enero]">
+                  <option value="">2017</option>
+                  <option value="1">2017</option>
+                  <option value="2">2016</option>
+                  <option value="3">2015</option>
+                  <option value="4">2014</option>
+                  <option value="5">2013</option>
+                  <option value="6">2012</option>
+                  <option value="7">2011</option>
+                  <option value="8">2010</option>
+                  <option value="9">2009</option>
+                  <option value="10">2008</option>
+                  <option value="11">2007</option>
+                  <option value="12">2006</option>
+                </select>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  </div>
+
+   
+ 
+ <div id="convocatoriasfiltro" style="display: none;">
+<h4 class="ui dividing header">Convocatorias</h4>
+ <div class="field">
+   
+    
+      <label>Cargo</label>
+      <div class="ui fluid search selection dropdown">
+        <input type="hidden" name="country">
+        <i class="dropdown icon"></i>
+        <div class="default text">Seleccione cargo deseado</div>
+        <div class="menu">
+          <div class="item" data-value="af"><i class="af flag"></i>Docente de Física</div>
+          <div class="item" data-value="ax"><i class="ax flag"></i>Bases de datos</div>
+          <div class="item" data-value="al"><i class="al flag"></i>Bioingeniería</div>
+          
+        </div>
+      </div>
+    
+  </div>
+    <label>Fecha límite</label>
+    <div class="fields">
+
+    <div class="seven wide field">
+      <label>Día</label>
+      <input type="text" maxlength="16" placeholder="1">
+    </div>
+    <div class="nine wide field">
+      <label>Mes</label>
+      <div class="two fields">
+        <div class="field">
+          <select class="ui fluid search dropdown" name="card[expire-Enero]">
+            <option value="">Enero</option>
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+        </div>
+        <div class="field">
+          <input type="text" name="card[expire-year]" maxlength="4" placeholder="Año">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+   
+ </div>
+
+  
+
+
+<div id="eventosfiltro" style="display: none;">
+   <h4 class="ui dividing header">Eventos</h4>
+ <label>Fecha del evento</label>
+  <div class="fields">
+    <div class="seven wide field">
+      <label>Día</label>
+      <input type="text" maxlength="16" placeholder="1">
+    </div>
+    <div class="nine wide field">
+      <label>Mes</label>
+      <div class="two fields">
+        <div class="field">
+          <select class="ui fluid search dropdown" name="card[expire-Enero]">
+            <option value="">Enero</option>
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+        </div>
+        <div class="field">
+          <input type="text" name="card[expire-year]" maxlength="4" placeholder="Año">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="two fields">
+   <div class="field">
+      <label>País</label>
+    <div class="ui fluid multiple search selection dropdown">
+      <input type="hidden" name="receipt">
+      <i class="dropdown icon"></i>
+      <div class="default text">Colombia</div>
+    </div>
+   </div>
+
+    <div class="field">
+      <label>Ciudad</label>
+    <div class="ui fluid multiple search selection dropdown">
+      <input type="hidden" name="receipt">
+      <i class="dropdown icon"></i>
+      <div class="default text">Bogotá</div>
+    </div>
+   </div>
+
+  </div>
+</div>
+
+   
+  
+  
+          <button class="ui button green" style="float: right;margin-bottom: 15px;"><i class="search icon"></i> Buscar</button>
+        
+</div>
+<br>
+        
+
+
+
+         
+           
+      
+          
+          
+        </div>
+      
+      
+      </div>
+
+    </div>
+
+    
+  </div>
+
+
+
+
+<!--  ************************************************************* Fin de búsqueda avanzada-->
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+     
+</div>
+
+
+
+<!--                      final de modal de buscador-->
 
 
 
