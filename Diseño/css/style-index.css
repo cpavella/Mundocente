@@ -1,3 +1,22 @@
+::-webkit-scrollbar {
+    width: 8px;
+    background: #fff;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(150, 150, 150, 0.9);
+    cursor: pointer;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(150, 150, 150, 0.6);
+    cursor: pointer;
+}
+
 .banner {
     background: url(../images/fondo.jpg) no-repeat /*fixed*/ 0 0%/cover;
     /*background-color:#48284A;*/
@@ -395,7 +414,7 @@
 }
 
 .services h1.ui.header {
-    font-size: 3.45em;
+    font-size: 3.40em;
     color: #d94362;
 }
 
@@ -404,10 +423,39 @@
 }
 
 .services .ui.two.column.grid h2 .sub.header{
-    color: #ffffde;
+    color: #EEEEEE;
 }
 
 .services .ui.grid{
     padding-top: 2em;
     padding-bottom: 2em;
 }
+
+.recent-publications {
+    background-color: #EEEEEE;
+    padding-top: 3em;
+    padding-bottom: 4em;
+}
+
+.recent-publications h1.ui.header {
+    font-size: 3.40em;
+    color: #d94362;
+}
+
+.recent-publications .ui.grid .row {
+    padding-top: 3em;
+}
+
+.recent-publications .ui.grid .ui.card.menu {
+    height: 100%;
+    width: 100%;
+}
+
+.recent-publications .ui.grid .content h4{
+    color: #d94362;
+}
+
+.recent-publications .ui.grid .content .description p{
+    color: #242533;
+}
+

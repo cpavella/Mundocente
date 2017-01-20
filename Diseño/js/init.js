@@ -14,4 +14,8 @@ $(document).ready(function () {
             $('.navbar-fixed').transition('fade');
         }
     });
+
+    $('.dropdown')
+        .dropdown()
+    ;
 });
