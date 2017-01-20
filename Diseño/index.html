@@ -4,23 +4,25 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Mundocente</title>
-    <link rel="stylesheet" href="dist/semantic.css">
+    <link rel="stylesheet" href="dist/semantic.min.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/ScrollMagic.min.js"></script>
     <script type="text/javascript" src="js/init.js"></script>
-    <script type="text/javascript" src="dist/semantic.js"></script>
+    <script type="text/javascript" src="dist/semantic.min.js"></script>
     <script type="text/javascript" src="js/parallax.js"></script>
-
+    <script type="text/javascript" src="js/jquery.scrollme.js"></script>
 
 </head>
 
 <body id="inicio">
-<div class="ui large fixed hidden navbar-fixed secondary <!--pointing--> above menu" style="background-color: #F1F1F1;">
+<div class="ui large fixed hidden navbar-fixed secondary inverted <!--pointing--> above menu" style="background-color: #1D1E2C;">
     <div class="ui container">
         <div href="#" class="header item">
-            <img style="width: 175px" class="logo" src="images/logo.png">
+            <img style="width: 175px" class="logo" src="images/nombre.png">
         </div>
         <a class="item" href="#inicio">
             Inicio
@@ -45,136 +47,203 @@
     </div>
 </div>
 
-<div class="banner">
-    <div class="ui container">
-        <ul id="scene" class="scene"
-            data-friction-x="0.1"
-            data-friction-y="0.1"
-            data-scalar-x="25"
-            data-scalar-y="15">
-            <li class="layer" data-depth="0.00"></li>
-            <li class="layer" data-depth="0.05">
-                <ul class="rope depth-10">
-                    <li class="hanger position-3">
-                        <div class="board cloud-10 swing-1"></div>
-                    </li>
-                </ul>
-            </li>
-            <li class="layer" data-depth="0.10">
-                <ul class="rope depth-20">
-                    <li class="hanger position-7">
-                        <div class="board cloud-6 swing-2"></div>
-                    </li>
-                </ul>
-            </li>
-            <li class="layer" data-depth="0.15">
-                <ul class="rope depth-40">
-                    <li class="hanger position-4">
-                        <div class="board cloud-7 swing-3"></div>
-                    </li>
-                </ul>
-            </li>
-            <li class="layer" data-depth="0.20">
-                <ul class="rope depth-70">
-                    <li class="hanger position-8">
-                        <div class="board cloud-2 swing-4"></div>
-                    </li>
-                </ul>
-            </li>
-            <li class="layer" data-depth="0.20">
-                <ul class="rope depth-100">
-                    <li class="hanger position-5">
-                        <div class="board cloud-1 swing-5"></div>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <!--<div class="ui secondary inverted menu container navbar">
-        <a class="item">
-            Eventos
-        </a>
-        <a class="item">
-            Convocatorias
-        </a>
-        <a class="item">
-            Revistas
-        </a>
-        <div class="right menu">
+<!-- Banner -->
 
-            <a class="ui item active" onclick="mostrarModelregistro()">
-                Regístrate
-            </a>
-        </div>
-    </div>-->
-    <!--<div class="ui equal width grid">
-        &lt;!&ndash;    boton izquierdo&ndash;&gt;
-        <div class="column">
-            <a onclick="moverbannerizquierda()">
-                <div data-animation="flip" data-direction="left" title="Flip Left"
-                     style="padding-top: 100%;padding-right: 88%;"><i class="left long arrow icon"
-                                                                      style="color: white;"></i></div>
-            </a>
-        </div>
-        <div class="ui shape masthead center aligned stackable grid">
-            <div class="sides column">
-                <div class="ui header side active">
-                    <div class="ui text container">
-                        <h1 class="ui header">
-                            <i class="calendar icon"></i>
-                        </h1>
-                        <h2>Evento de sistemas de control de calidad ISO9000.</h2>
-                        <div class="ui huge primary button">Enlace <i class="right arrow icon"></i></div>
-                    </div>
-                </div>
-                <div class="ui header side ">
-                    <div class="ui text container">
-                        <h1 class="ui header">
-                            <i class="calendar icon"></i>
-                        </h1>
-                        <h2>Taller sobre artes plásticas.</h2>
-                        <div class="ui huge primary button">Enlace <i class="right arrow icon"></i></div>
-                    </div>
-                </div>
-                <div class="ui header side ">
-                    <div class="ui text container">
-                        <h1 class="ui header">
-                            <i class="newspaper icon"></i>
-                        </h1>
-                        <h2>Revista sistemas de calidad</h2>
-                        <div class="ui huge primary button">Enlace <i class="right arrow icon"></i></div>
-                    </div>
-                </div>
-                <div class="ui header side ">
-                    <div class="ui text container">
-                        <h1 class="ui header">
-                            <i class="announcement icon"></i>
-                        </h1>
-                        <h2>convocatoria de Docente de planta.</h2>
-                        <div class="ui huge primary button">Enlace <i class="right arrow icon"></i></div>
-                    </div>
+<div class="banner">
+    <div class="ui container" >
+        <div>
+            <ul id="scene" class="scene"
+                data-friction-x="0.1"
+                data-friction-y="0.1"
+                data-scalar-x="25"
+                data-scalar-y="15">
+                <li class="layer" data-depth="0.00"></li>
+                <li class="layer" data-depth="0.03">
+                    <ul class="rope depth-10">
+                        <li class="hanger position-3">
+                            <div class="board cloud-10 swing-5"></div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="layer" data-depth="0.08">
+                    <ul class="rope depth-20">
+                        <li class="hanger position-7">
+                            <div class="board cloud-6 swing-4"></div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="layer" data-depth="0.08">
+                    <ul class="rope depth-40">
+                        <li class="hanger position-4">
+                            <div class="board cloud-3 swing-3"></div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="layer" data-depth="0.10">
+                    <ul class="rope depth-70">
+                        <li class="hanger position-8">
+                            <div class="board cloud-2 swing-2"></div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="layer" data-depth="0.20">
+                    <ul class="rope depth-100">
+                        <li class="hanger position-5">
+                            <div class="board cloud-1 swing-1"></div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="ui vertical masthead left aligned">
+                <div class="title">
+                    <h1 class="ui header inverted" style="font-size: 4em; color: #ffffde;">
+                        Mundocente
+                        <div class="sub header" style="color: #d94362; font-size: 0.45em;">La web dedicada a docentes
+                            investigadores
+                        </div>
+                    </h1>
+                    <div class="ui large blue inverted button">Registrarse <i class="right arrow icon"></i></div>
                 </div>
             </div>
         </div>
-        &lt;!&ndash;    boton derecho&ndash;&gt;
-        <div class="column">
-            <a onclick="moverbannerderecha()">
-                <div data-animation="flip" data-direction="right" title="Flip Right"
-                     style="padding-top: 100%;padding-left: 88%;"><i class="right long arrow icon"
-                                                                     style="color: white;"></i></div>
-            </a>
+    </div>
+</div>
+<!-- Servicios -->
+
+<div id="services" class="services">
+    <div class="ui container center aligned inverted">
+        <h1 class="ui header">Servicios</h1>
+        <div class="ui small header inverted" style="color: #ffffde;">En Mundocente ofrecemos la información que necesita un docente universitario para tener las mejores
+            oportunidades de crecimiento laboral y personal de acuerdo con sus intereses profesionales.</div>
+        <div class="line"></div>
+        <div class="ui two column divided padded relaxed stackable grid">
+            <div class="row">
+                <div class="column">
+                    <h2 class="ui header">
+                        <img style="width: 100px" src="images/workspace.png" class="scrollme animateme" data-when="enter" data-from="0.75" data-to="0" data-opacity="0" data-translatex="-100">
+                        <div class="content">
+                            Convocatorias de docentes
+                            <div class="sub header">Entérese a tiempo de las oportunidades laborales ofrecidas en
+                                diferentes universidades del
+                                país.
+                            </div>
+                        </div>
+                    </h2>
+                </div>
+                <div class="column">
+                    <h2 class="ui header">
+                        <img style="width: 100px" src="images/workspace.png" class="scrollme animateme" data-when="enter" data-from="0.75" data-to="0" data-opacity="0" data-translatex="100">
+                        <div class="content">
+                            Revistas científicas
+                            <div class="sub header">Consulte con facilidad revistas científicas publicadas por los
+                                docentes registrados en Mundocente
+                                y encuentre información especializada en sus áreas de interés.
+                            </div>
+                        </div>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <h2 class="ui header">
+                        <img style="width: 100px" src="images/workspace.png" class="scrollme animateme" data-when="enter" data-from="0.75" data-to="0" data-opacity="0" data-translatex="-100">
+                        <div class="content">
+                            Eventos académicos
+                            <div class="sub header">Entérese de congresos, seminarios, conferencias y de más eventos
+                                académicos ofrecidos por las
+                                universidades registradas en Mundocente.
+                            </div>
+                        </div>
+                    </h2>
+                </div>
+                <div class="column">
+                    <h2 class="ui header">
+                        <img style="width: 100px" src="images/workspace.png" class="scrollme animateme" data-when="enter" data-from="0.75" data-to="0" data-opacity="0" data-translatex="100">
+                        <div class="content">
+                            Eventos académicos
+                            <div class="sub header">Entérese de congresos, seminarios, conferencias y de más eventos
+                                académicos ofrecidos por las
+                                universidades registradas en Mundocente.
+                            </div>
+                        </div>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <h2 class="ui header">
+                        <img style="width: 100px" src="images/workspace.png" class="scrollme animateme" data-when="enter" data-from="0.75" data-to="0" data-opacity="0" data-translatex="-100">
+                        <div class="content">
+                            Evaluacion de proyectos
+                            <div class="sub header" >Nullam venenatis libero a ligula sagittis elementum. Fusce auctor,
+                                leo sit amet accumsan
+                                lobortis, enim quam porta massa, at pulvinar orci nibh vitae lacus. Integer a nisi
+                                felis.
+                            </div>
+                        </div>
+                    </h2>
+                </div>
+                <div class="column">
+                    <h2 class="ui header">
+                        <img style="width: 100px" src="images/workspace.png" class="scrollme animateme" data-when="enter" data-from="0.75" data-to="0" data-opacity="0" data-translatex="100">
+                        <div class="content">
+                            Evaluacion de proyectos
+                            <div class="sub header" >Nullam venenatis libero a ligula sagittis elementum. Fusce auctor,
+                                leo sit amet accumsan
+                                lobortis, enim quam porta massa, at pulvinar orci nibh vitae lacus. Integer a nisi
+                                felis.
+                            </div>
+                        </div>
+                    </h2>
+                </div>
+            </div>
         </div>
-    </div>-->
+    </div>
 </div>
 
-<!--                             **************************descripción servicios   -->
+<div id="recent" class="recent">
+
+</div>
+
+<!-- Footer -->
+
+<div class="ui inverted vertical footer segment">
+    <div class="ui container">
+        <div class="ui stackable inverted divided equal height grid">
+            <div class="three wide column">
+                <h4 class="ui inverted header">About</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">Sitemap</a>
+                    <a href="#" class="item">Contact Us</a>
+                    <a href="#" class="item">Religious Ceremonies</a>
+                    <a href="#" class="item">Gazebo Plans</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header">Services</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">Banana Pre-Order</a>
+                    <a href="#" class="item">DNA FAQ</a>
+                    <a href="#" class="item">How To Access</a>
+                    <a href="#" class="item">Favorite X-Men</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header">Footer Header</h4>
+                <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--&lt;!&ndash;                             **************************descripción servicios   &ndash;&gt;
 <div class="ui container">
-    <!-- servicios -->
+    &lt;!&ndash; servicios &ndash;&gt;
     <div id="servicios">
         <h4 class="ui horizontal divider">
             descripción
         </h4>
-        <!--     opciones servicios-->
+        &lt;!&ndash;     opciones servicios&ndash;&gt;
         <div class="ui equal width stackable center aligned grid">
             <div class="column">
                 <h2 class="ui icon header">
@@ -207,13 +276,13 @@
         </div>
     </div>
 
-    <!--Recientes-->
+    &lt;!&ndash;Recientes&ndash;&gt;
 
     <div id="Reciente">
         <h4 class="ui horizontal divider">
             recientes
         </h4>
-        <!--revistas-->
+        &lt;!&ndash;revistas&ndash;&gt;
 
         <div class="ui grid">
             <div class="four wide column">
@@ -330,7 +399,8 @@
                         <div class="header">Evento de ciencia</div>
                         <div class="meta">Hace dos días</div>
                         <div class="description">
-                            <p>Aquí irá el resumen de por ejemplo una Evento o la descripción o cualquier texto corto qe se
+                            <p>Aquí irá el resumen de por ejemplo una Evento o la descripción o cualquier texto corto qe
+                                se
                                 necesite.</p>
                         </div>
                     </div>
@@ -355,7 +425,8 @@
                         <div class="header">Revista de ciencia</div>
                         <div class="meta">Hace dos días</div>
                         <div class="description">
-                            <p>Aquí irá el resumen de por ejemplo una Evento o la descripción o cualquier texto corto qe se
+                            <p>Aquí irá el resumen de por ejemplo una Evento o la descripción o cualquier texto corto qe
+                                se
                                 necesite.</p>
                         </div>
                     </div>
@@ -380,7 +451,8 @@
                         <div class="header">Evento de ciencia</div>
                         <div class="meta">Hace dos días</div>
                         <div class="description">
-                            <p>Aquí irá el resumen de por ejemplo una Evento o la descripción o cualquier texto corto qe se
+                            <p>Aquí irá el resumen de por ejemplo una Evento o la descripción o cualquier texto corto qe
+                                se
                                 necesite.</p>
                         </div>
                     </div>
@@ -405,7 +477,8 @@
                         <div class="header">Evento de ciencia</div>
                         <div class="meta">Hace dos días</div>
                         <div class="description">
-                            <p>Aquí irá el resumen de por ejemplo una Evento o la descripción o cualquier texto corto qe se
+                            <p>Aquí irá el resumen de por ejemplo una Evento o la descripción o cualquier texto corto qe
+                                se
                                 necesite.</p>
                         </div>
                     </div>
@@ -509,7 +582,7 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->
 
 <!--***************************************************** model de registro -->
 
@@ -654,8 +727,8 @@
 </body>
 
 <script>
-    var scene = document.getElementById('scene');
-    var parallax = new Parallax(scene);
+        /*var scene = document.getElementById('scene');
+     var parallax = new Parallax(scene);*/
 </script>
 
 <script type="text/javascript">

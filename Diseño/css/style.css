@@ -1,29 +1,15 @@
-body, html {
-    background-color: #F1F1F1;
-}
-
 .banner {
-    background: url(../images/Purple.jpg) no-repeat /*fixed*/ 0 50%/cover;
-    min-height: 700px;
+    background: url(../images/fondo.jpg) no-repeat /*fixed*/ 0 0%/cover;
+    /*background-color:#48284A;*/
+    min-height: 650px;
+    margin-top: 50px;
 }
 
-.masthead {
-    padding: 1em 0;
-    margin-left: 0.5em;
-    margin-right: 1em;
-    font-size: 1.7em;
-    font-weight: normal;
+.title {
+    position: relative;
+    top: 375px;
+    font-size: 1em;
 }
-
-.masthead h1.ui.header {
-    margin-top: 3em;
-    margin-bottom: 0;
-    font-size: 4em;
-
-}
-
-
-
 
 .scene,
 .layer {
@@ -389,4 +375,39 @@ body, html {
         -moz-transform: rotateZ(-10deg);
         transform: rotateZ(-10deg);
     }
+}
+
+/* services */
+
+.line {
+    background: #d94362;
+    content: '';
+    display: inline-block;
+    height: 0.2em;
+    max-width: 20em;
+    width: 75%;
+}
+
+.services {
+    padding-top: 3em;
+    padding-bottom: 4em;
+    background-color: #242533;
+}
+
+.services h1.ui.header {
+    font-size: 3.45em;
+    color: #d94362;
+}
+
+.services .ui.two.column.grid h2 {
+    color: #d94362;
+}
+
+.services .ui.two.column.grid h2 .sub.header{
+    color: #ffffde;
+}
+
+.services .ui.grid{
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
