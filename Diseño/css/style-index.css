@@ -18,8 +18,7 @@
 }
 
 .banner {
-    background: url(../images/fondo.jpg) no-repeat /*fixed*/ 0 0%/cover;
-    /*background-color:#48284A;*/
+    background: url(../images/fondo.jpg) no-repeat /*fixed*/ 0 0/cover;
     min-height: 650px;
     margin-top: 50px;
 }
@@ -40,9 +39,9 @@
 }
 
 .hanger {
-    -webkit-transform-origin: 0% 0%;
-    -moz-transform-origin: 0% 0%;
-    transform-origin: 0% 0%;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    transform-origin: 0 0;
     position: absolute;
 }
 
@@ -119,10 +118,10 @@
 }
 
 .board {
-    -webkit-transform-origin: 50% 0%;
-    -moz-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
-    margin: 0px -140px;
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    margin: 0 -140px;
     background-size: 100% 100%;
     width: 664px;
     height: 816px;
@@ -451,11 +450,61 @@
     width: 100%;
 }
 
-.recent-publications .ui.grid .content h4{
+.recent-publications .ui.grid .content h4, .contact .ui.grid .ui.form h2{
     color: #d94362;
 }
 
 .recent-publications .ui.grid .content .description p{
     color: #242533;
+}
+
+.contact {
+    background-color: #242533;
+    padding-top: 3em;
+    padding-bottom: 4em;
+}
+
+.contact h1.ui.header {
+    font-size: 3.40em;
+    color: #d94362;
+}
+
+.contact .ui.grid {
+    padding-top: 2em;
+}
+
+.contact .ui.grid .ui.form label{
+    color: #d94362;
+}
+
+.contact .ui.grid .ui.form input {
+    color: #EEEEEE;
+}
+
+.contact .ui.grid .ui.form textarea {
+    background-color: #242533;
+    color: #EEEEEE;
+}
+
+.contact .ui.grid .info-contact {
+    position: relative;
+    top: 35%;
+}
+
+.contact .ui.grid .info-contact span {
+    color: #d94362;
+    font-size: 1.25em;
+}
+
+.ui.footer {
+    background-color: #1D1E2C;
+}
+
+.ui.footer .ui.grid{
+    padding: 4em 0 4em;
+}
+
+.ui.footer .ui.grid  h4 {
+    color: #EEEEEE;
 }
 
