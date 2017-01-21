@@ -1,22 +1,3 @@
-::-webkit-scrollbar {
-    width: 8px;
-    background: #fff;
-
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgba(150, 150, 150, 0.9);
-    cursor: pointer;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: rgba(150, 150, 150, 0.6);
-    cursor: pointer;
-}
-
 .banner {
     background: url(../images/fondo.jpg) no-repeat /*fixed*/ 0 0/cover;
     min-height: 650px;
