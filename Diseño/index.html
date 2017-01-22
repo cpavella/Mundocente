@@ -22,83 +22,85 @@
 <div class="ui large fixed hidden navbar-fixed secondary inverted above menu"
      style="background-color: #1D1E2C;">
     <div class="ui container">
-        <div class="header item">
-            <a href="#"><img style="width: 175px" class="logo" src="images/nombre.png"></a>
+        <a class="toc item"><i class="sidebar icon"></i></a>
+        <div class="item">
+            <a href="#"><div class="logo"></div></a>
         </div>
-        <a class="item active" href="#banner">
-            Inicio
-        </a>
-        <a class="item" href="#services">
-            Servicios
-        </a>
-        <a class="item" href="#recent-publications">
-            Recientes
-        </a>
-        <a class="item" href="#contact">
-            Contáctanos
-        </a>
+        <a class="item-menu item" href="#banner">Inicio</a>
+        <a class="item-menu item" href="#services">Servicios</a>
+        <a class="item-menu item" href="#recent-publications">Recientes</a>
+        <a class="item-menu item" href="#contact">Contáctanos</a>
         <div class="right menu">
-            <a class="ui item" onclick="mostrarModellogin()">
-                Iniciar sesión
-            </a>
-            <a class="ui item" onclick="mostrarModelregistro()">
-                Registrarme
-            </a>
+            <div class="item" style="">
+                <a class="ui button inverted violet item-menu" onclick="mostrarModellogin()">Iniciar sesión</a>
+            </div>
+            <div class="item" style="">
+                <a class="ui button inverted blue item-menu" onclick="mostrarModelregistro()">Registrarme</a>
+            </div>
         </div>
     </div>
+</div>
+
+<!-- Sidebar Menu -->
+<div class="ui vertical inverted sidebar menu">
+    <a href="#banner" class="item">Inicio</a>
+    <a href="#services" class="item">Servicios</a>
+    <a href="#recent-publications" class="item">Recientes</a>
+    <a href="#contact" class="item">Contáctanos</a>
+    <div class="divided"></div>
+    <a class="item">Iniciar sesión</a>
+    <a class="item">Registrarme</a>
 </div>
 
 <!-- Banner -->
 <div id="banner" class="banner">
     <div class="ui container">
-        <div>
-            <ul id="scene">
-                <li class="layer" data-depth="0.03">
-                    <ul class="rope depth-10">
-                        <li class="hanger position-3">
-                            <div class="board cloud-10 swing-5"></div>
-                        </li>
-                    </ul>
-                </li>
-                <li class="layer" data-depth="0.08">
-                    <ul class="rope depth-20">
-                        <li class="hanger position-7">
-                            <div class="board cloud-6 swing-4"></div>
-                        </li>
-                    </ul>
-                </li>
-                <li class="layer" data-depth="0.08">
-                    <ul class="rope depth-40">
-                        <li class="hanger position-4">
-                            <div class="board cloud-3 swing-3"></div>
-                        </li>
-                    </ul>
-                </li>
-                <li class="layer" data-depth="0.10">
-                    <ul class="rope depth-70">
-                        <li class="hanger position-8">
-                            <div class="board cloud-2 swing-2"></div>
-                        </li>
-                    </ul>
-                </li>
-                <li class="layer" data-depth="0.20">
-                    <ul class="rope depth-100">
-                        <li class="hanger position-5">
-                            <div class="board cloud-1 swing-1"></div>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <div class="ui vertical masthead left aligned">
-                <div class="title">
-                    <h1 class="ui header inverted" style="font-size: 4em; color: #ffffde;">
-                        Mundocente
-                        <div class="sub header" style="color: #d94362; font-size: 0.45em;">La web dedicada a docentes
-                            investigadores
-                        </div>
-                    </h1>
-                    <div class="ui large blue inverted button">Registrarse <i class="right arrow icon"></i></div>
-                </div>
+        <ul id="scene">
+            <li class="layer" data-depth="0.03">
+                <ul class="rope depth-10">
+                    <li class="hanger position-3">
+                        <div class="board cloud-10 swing-5"></div>
+                    </li>
+                </ul>
+            </li>
+            <li class="layer" data-depth="0.08">
+                <ul class="rope depth-20">
+                    <li class="hanger position-7">
+                        <div class="board cloud-6 swing-4"></div>
+                    </li>
+                </ul>
+            </li>
+            <li class="layer" data-depth="0.08">
+                <ul class="rope depth-40">
+                    <li class="hanger position-4">
+                        <div class="board cloud-3 swing-3"></div>
+                    </li>
+                </ul>
+            </li>
+            <li class="layer" data-depth="0.10">
+                <ul class="rope depth-70">
+                    <li class="hanger position-8">
+                        <div class="board cloud-2 swing-2"></div>
+                    </li>
+                </ul>
+            </li>
+            <li class="layer" data-depth="0.20">
+                <ul class="rope depth-100">
+                    <li class="hanger position-5">
+                        <div class="board cloud-1 swing-1"></div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="ui vertical masthead left aligned">
+            <div class="title">
+                <h1 class="ui header inverted" style="font-size: 4em; color: #ffffde;">
+                    Mundocente
+                    <div class="sub header" style="color: #d94362; font-size: 0.45em;">La web dedicada a docentes
+                        investigadores
+                    </div>
+                </h1>
+                <a class="ui large blue inverted button">Registrarse <i class="right arrow icon"></i></a>
             </div>
         </div>
     </div>

@@ -20,4 +20,8 @@ $(document).ready(function () {
         .dropdown()
     ;
 
+    $('.ui.sidebar')
+        .sidebar('attach events', '.toc.item')
+    ;
+
 });
