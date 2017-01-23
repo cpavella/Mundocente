@@ -141,10 +141,12 @@ $('#convocatoriasfiltrop').hide();
                 
                 <i class="dropdown icon"></i>
                 <div class="menu">
-                    <div class="main-content-username-credential item">example@email.com</div>
-                    <div class="item"><i class="setting icon"></i>Cuenta</div>
-                    <div class="item"><i class="privacy icon"></i>Actividad</div>
+                    <div class="main-content-username-credential item disabled" >example@email.com</div>
+                    <div class="item"><i class="user icon"></i>Perfil</div>
+                    <div class="item"><i class="privacy icon"></i>Privacidad</div>
+                    <div class="item"><i class="help icon"></i>Ayuda</div>
                     <div class="divider"></div>
+                    <div class="item"><i class="setting icon"></i>Configuración</div>
                     <div class="item"><i class="sign out icon"></i>Cerrar sesión</div>
                 </div>
             </div>
@@ -201,7 +203,20 @@ $('#convocatoriasfiltrop').hide();
         
 <div class="ui form">
   <h4 class="ui dividing header">Búsqueda avanzada</h4>
+   
+    <div class="ui field">
+    <label>Palabra Clave</label>
+    <div class="fields">
+      <div class="sixteen wide field">
+        <input type="text" placeholder="Ingrese título de publicación...">
+
+      </div>
+      <button class="ui button green" style="float: right;margin-bottom: 15px;"><i class="search icon"></i> </button>
+    </div>
+  </div>
+
    <div class="ui segment">
+
     <div class="two fields">
      <div class="field">
          <div class="ui toggle checkbox" onclick="mostrarfiltrorevistas()">
@@ -252,14 +267,7 @@ $('#convocatoriasfiltrop').hide();
     </div>
   </div>
 
-  <div class="ui field">
-    <label>Palabra Clave</label>
-    <div class="fields">
-      <div class="sixteen wide field">
-        <input type="text" placeholder="Ingrese la palabra clave del título de publicación...">
-      </div>
-    </div>
-  </div>
+ 
   <div class="two fields">
    <div class="field">
       <label>Universidad</label>
