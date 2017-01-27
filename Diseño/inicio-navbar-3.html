@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Version - 3</title>
+    <!--<link rel="stylesheet" href="css/style-inicio-fixed.css">-->
+    <link rel="stylesheet" href="dist/semantic.min.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="dist/semantic.min.js"></script>
+</head>
+<body>
+<style>
+    body {
+        background-color: #EEEEEE;
+    }
+
+    .ui.sidebar {
+        overflow: visible !important;
+    }
+
+    .ui.fixed.top.menu {
+        padding: 5px 0;
+    }
+
+    .ui.fixed.top.menu img {
+        height: 40px;
+    }
+
+    .ui.right.attached.fixed.button {
+        top: 100px;
+    }
+
+    /* Mobile */
+    @media only screen and (max-width: 767px) {
+        .ui.fixed.top.menu img{
+            display: none;
+        }
+
+        .ui.menu.sidebar {
+            overflow: visible !important;
+        }
+    }
+
+    /* Tablet */
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .ui.fixed.top.menu img {
+            display: none;
+        }
+
+        .ui.menu.sidebar {
+            overflow: visible !important;
+        }
+    }
+
+    /* Small Monitor */
+
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .ui.top.menu.fixed .item.launch{
+            display: none;
+        }
+
+        .ui.top.menu.fixed .menu .item{
+            display: block;
+        }
+    }
+
+    /* Large Monitor */
+
+    @media only screen and (min-width: 1200px) {
+        .ui.top.menu.fixed .item.launch{
+            display: none;
+        }
+
+        .ui.top.menu.fixed .menu .item{
+            display: block;
+        }
+    }
+
+    div.pusher {
+        background-color: #EEEEEE;
+        padding-top: 60px;
+    }
+
+</style>
+<!--Menu Sidebar -->
+<div class="ui left sidebar inverted vertical menu">
+    <div class="item">
+        <img src="images/nombre.png" style="height: 38px">
+    </div>
+    <a class="item">
+        <i class="grid layout icon"></i> Busqueda
+    </a>
+    <div class="item">
+        <i class="home icon"></i> Publicar
+        <div class="menu">
+            <a class="active item">Revista</a>
+            <a class="item">Convocatorias</a>
+            <a class="item">Eventos</a>
+            <a class="item">Invitación</a>
+        </div>
+    </div>
+</div>
+<!--Menu top fixed visible-->
+<div class="ui fixed inverted top menu">
+    <div class="ui container">
+        <a class="launch item">
+            <i class="content icon"></i>
+            Menu
+        </a>
+        <div class="item">
+            <b>Función: </b> Busqueda
+        </div>
+        <div class="right menu">
+            <div class="ui dropdown item">
+                <i class="dropdown icon"></i>
+                Perfil
+                <div class="menu">
+                    <div class="item">Cuenta</div>
+                    <div class="item">Favoritos</div>
+                </div>
+            </div>
+            <a class="item">Salir</a>
+        </div>
+    </div>
+</div>
+<!--Button-->
+<div class="ui black big launch right attached fixed button">
+    <a class="button-sidebar"><i class="content icon"></i><span class="text">Menu</span></a>
+</div>
+<!--Contenido-->
+<div class="pusher" style="background-color: #EEEEEE;">
+    <div class="ui container">
+        <div class="start-search" id="start-search">
+            <h1 class="ui header center aligned">Busqueda</h1>
+            <div class="ui two column centered stackable grid">
+                <div class="column">
+                    <div class="ui form">
+                        <div class="field">
+                            <div class="ui fluid action input">
+                                <input type="text" placeholder="Escriba palabras para buscar revistas, eventos, etc.">
+                                <div class="ui button">Buscar</div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui toggle checkbox" onclick="showAdvancedSearch()">
+                                <input type="checkbox">
+                                <label>Busqueda avanzada</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="revistasfiltro" class="ui raised segment" style="display: none;">
+                <div class="ui internally celled left aligned stackable equal width grid">
+                    <div class="row">
+                        <div class="column">
+                            <button type="button" name="button" class="ui fluid button"></button>
+                        </div>
+                        <div class="column">
+                            <button type="button" name="button" class="ui fluid button"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    $('.ui.left.sidebar').sidebar({
+        transition: 'push'
+    });
+    // left is opened by button
+    $('.ui.left.sidebar').sidebar('attach events', '.menu.fixed .launch.item');
+    $('.ui.left.sidebar').sidebar('attach events', '.ui.right.attached.fixed.button .button-sidebar');
+    $('.ui .dropdown').dropdown();
+
+    /* $('.ui.sidebar')
+     .sidebar('attach events', '.menu.fixed .launch.item')
+     ;
+     $('.ui.sidebar')
+     .sidebar('attach events', '.button.fixed .item')
+     ;*/
+    function showAdvancedSearch() {
+        $('#revistasfiltro').transition('fade');
+    }
+
+    function showStartSearch() {
+        $('#start-search').transition('fade');
+    }
+
+    $('.dropdown')
+        .dropdown({
+            transition: 'scale'
+        })
+    ;
+    $('.demo.menu .item').tab({history: false});
+</script>
+</body>
+</html>

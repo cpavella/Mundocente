@@ -437,7 +437,7 @@
 
 .services {
     padding-top: 3em;
-    padding-bottom: 4em;
+    padding-bottom: 5em;
     background-color: #242533;
 }
 
@@ -452,6 +452,7 @@
 
 .services .ui.two.column.grid h2 .sub.header{
     color: #EEEEEE;
+    font-size: 0.62em;
 }
 
 .services .ui.grid{
@@ -459,60 +460,30 @@
     padding-bottom: 2em;
 }
 
-.recent-publications {
-    background-color: #EEEEEE;
-    padding-top: 3em;
-    padding-bottom: 4em;
-}
-
-.recent-publications h1.ui.header {
-    font-size: 3.40em;
-    color: #d94362;
-}
-
-.recent-publications .ui.grid .row {
-    padding-top: 3em;
-}
-
-.recent-publications .ui.grid .ui.card.menu {
-    height: 100%;
-    width: 100%;
-}
-
-.recent-publications .ui.grid .content h4, .contact .ui.grid .ui.form h2{
-    color: #d94362;
-}
-
-.recent-publications .ui.grid .content .description p{
-    color: #242533;
-}
-
 .contact {
-    background-color: #242533;
+    background-color: #EEEEEE;
     padding-top: 3em;
     padding-bottom: 4em;
 }
 
 .contact h1.ui.header {
     font-size: 3.40em;
-    color: #d94362;
+    color: #242533;
 }
 
 .contact .ui.grid {
     padding-top: 2em;
 }
 
+.contact .ui.grid .ui.form .field{
+}
+
 .contact .ui.grid .ui.form label{
-    color: #d94362;
+    color: #242533;
 }
 
-.contact .ui.grid .ui.form input {
-    color: #EEEEEE;
-}
-
-.contact .ui.grid .ui.form textarea {
-    background-color: #242533;
-    color: #EEEEEE;
+.contact .ui.grid .ui.form h2 {
+    color: #242533;
 }
 
 .contact .ui.grid .info-contact {
@@ -521,8 +492,8 @@
 }
 
 .contact .ui.grid .info-contact span {
-    color: #d94362;
-    font-size: 1.25em;
+    color: #242533;
+    font-size: 1.45em;
 }
 
 .ui.footer {

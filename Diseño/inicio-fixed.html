@@ -108,15 +108,22 @@
                     </div>
                 </div>
             </div>
-            <!--PUBLICACION DE EVENTOS-->
-            <!--<div class="publish-event" id="publish-event">
-                <h1 class="ui header" style="padding-top: 20px;">Formuladio de publicacion de revista</h1>
-            </div>-->
+        </div>
+    </div>
+</div>
 
-            <!--FORMULARIO PRINCIPAL-->
-            <!--PRIMERA OPCIÓN-->
-            <!--
-            <div class="ui tiny form raised segment" style="padding-bottom: 0">
+<script type="text/javascript">
+    function showAdvancedSearch(){
+        $('#revistasfiltro').transition('fade');
+    }
+
+    function showStartSearch() {
+        $('#start-search').transition('fade');
+    }
+    $('.ui.dropdown').dropdown({keepOnScreen: true});
+    $('.demo.menu .item').tab({history: false});
+</script>
+<!--            <div class="ui tiny form raised segment" style="padding-bottom: 0">
                 <div class="fields">
                     <div class="eight wide field">
                         <label>Palabra Clave</label>
@@ -252,20 +259,5 @@
             <br>
             <br>
             <br>-->
-        </div>
-    </div>
-</div>
-
-<script type="text/javascript">
-    function showAdvancedSearch(){
-        $('#revistasfiltro').transition('fade');
-    }
-
-    function showStartSearch() {
-        $('#start-search').transition('fade');
-    }
-    $('.ui.dropdown').dropdown({keepOnScreen: true});
-    $('.demo.menu .item').tab({history: false});
-</script>
 </body>
 </html>
