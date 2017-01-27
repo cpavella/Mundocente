@@ -2,15 +2,760 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b2510a9-d97f-4aa6-b466-b2a3e043afdf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/inicio-navbar-1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/inicio-navbar-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/inicio-navbar-3.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/semantic.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/semantic.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/themes/basic/assets/fonts/icons.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/themes/basic/assets/fonts/icons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/themes/basic/assets/fonts/icons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/themes/default/assets/fonts/icons.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/themes/default/assets/fonts/icons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/themes/default/assets/fonts/icons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/themes/default/assets/fonts/icons.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/themes/default/assets/images/flags.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/themes/github/assets/fonts/octicons-local.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/themes/github/assets/fonts/octicons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/themes/github/assets/fonts/octicons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/themes/material/assets/fonts/icons.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/themes/material/assets/fonts/icons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/themes/material/assets/fonts/icons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/embed.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/basic/assets/fonts/icons.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/basic/assets/fonts/icons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/basic/assets/fonts/icons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/bootstrap3/elements/button.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/chubby/collections/menu.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/colored/modules/checkbox.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/assets/fonts/icons.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/assets/fonts/icons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/assets/fonts/icons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/assets/fonts/icons.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/assets/images/flags.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/collections/table.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/assets/fonts/octicons-local.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/assets/fonts/octicons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/assets/fonts/octicons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/gmail/collections/message.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/material/assets/fonts/icons.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/material/assets/fonts/icons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/material/assets/fonts/icons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/material/globals/site.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/round/elements/button.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ebconfigmappings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/gulpfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/accordion.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/accordion.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/accordion.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/accordion.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/ad.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/ad.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/api.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/api.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/breadcrumb.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/breadcrumb.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/button.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/button.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/card.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/card.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/checkbox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/checkbox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/checkbox.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/checkbox.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/comment.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/comment.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/container.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/container.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/dimmer.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/dimmer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/dimmer.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/dimmer.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/divider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/divider.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/dropdown.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/dropdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/dropdown.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/dropdown.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/embed.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/embed.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/embed.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/embed.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/feed.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/feed.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/flag.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/flag.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/form.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/form.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/form.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/grid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/grid.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/header.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/header.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/icon.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/icon.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/image.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/image.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/input.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/input.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/item.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/item.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/label.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/label.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/list.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/list.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/loader.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/loader.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/menu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/menu.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/message.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/message.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/modal.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/modal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/modal.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/modal.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/nag.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/nag.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/nag.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/nag.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/popup.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/popup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/popup.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/popup.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/progress.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/progress.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/progress.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/progress.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/rail.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/rail.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/rating.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/rating.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/rating.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/rating.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/reset.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/reset.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/reveal.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/reveal.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/search.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/search.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/search.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/search.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/segment.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/segment.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/shape.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/shape.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/shape.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/shape.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/sidebar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/sidebar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/sidebar.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/sidebar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/site.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/site.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/site.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/site.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/state.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/state.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/statistic.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/statistic.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/step.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/step.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/sticky.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/sticky.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/sticky.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/sticky.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/tab.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/tab.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/tab.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/tab.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/table.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/table.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/transition.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/transition.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/transition.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/transition.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/visibility.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/components/visibility.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/semantic.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/semantic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/semantic.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/semantic.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/themes/basic/assets/fonts/icons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/themes/default/assets/fonts/icons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/themes/github/assets/fonts/octicons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/out/themes/material/assets/fonts/icons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/behaviors/api.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/behaviors/colorize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/behaviors/form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/behaviors/state.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/behaviors/visibility.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/behaviors/visit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/collections/breadcrumb.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/collections/form.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/collections/grid.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/collections/menu.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/collections/message.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/collections/table.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/elements/button.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/elements/container.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/elements/divider.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/elements/flag.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/elements/header.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/elements/icon.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/elements/image.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/elements/input.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/elements/label.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/elements/list.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/elements/loader.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/elements/rail.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/elements/reveal.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/elements/segment.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/elements/step.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/globals/reset.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/globals/site.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/globals/site.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/accordion.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/accordion.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/checkbox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/checkbox.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/dimmer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/dimmer.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/dropdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/dropdown.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/embed.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/embed.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/modal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/modal.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/nag.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/nag.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/popup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/popup.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/progress.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/progress.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/rating.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/rating.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/search.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/search.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/shape.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/shape.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/sidebar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/sidebar.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/sticky.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/sticky.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/tab.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/tab.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/transition.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/modules/transition.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/views/ad.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/views/card.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/views/comment.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/views/feed.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/views/item.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/definitions/views/statistic.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/semantic.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/collections/breadcrumb.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/collections/breadcrumb.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/collections/form.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/collections/form.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/collections/grid.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/collections/grid.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/collections/menu.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/collections/menu.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/collections/message.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/collections/message.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/collections/table.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/collections/table.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/elements/button.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/elements/button.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/elements/container.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/elements/container.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/elements/divider.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/elements/divider.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/elements/flag.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/elements/flag.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/elements/header.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/elements/header.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/elements/icon.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/elements/icon.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/elements/image.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/elements/image.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/elements/input.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/elements/input.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/elements/label.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/elements/label.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/elements/list.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/elements/list.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/elements/loader.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/elements/loader.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/elements/rail.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/elements/rail.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/elements/reveal.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/elements/reveal.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/elements/segment.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/elements/segment.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/elements/step.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/elements/step.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/globals/reset.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/globals/reset.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/globals/site.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/globals/site.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/accordion.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/accordion.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/chatroom.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/chatroom.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/checkbox.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/checkbox.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/dimmer.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/dimmer.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/dropdown.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/dropdown.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/embed.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/modal.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/modal.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/nag.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/nag.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/popup.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/popup.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/progress.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/progress.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/rating.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/rating.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/search.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/search.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/shape.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/shape.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/sidebar.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/sidebar.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/sticky.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/sticky.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/tab.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/tab.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/transition.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/modules/transition.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/views/ad.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/views/ad.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/views/card.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/views/card.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/views/comment.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/views/comment.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/views/feed.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/views/feed.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/views/item.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/views/item.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/views/statistic.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/site/views/statistic.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/theme.config" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/theme.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/amazon/elements/button.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/amazon/elements/button.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/amazon/globals/site.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/basic/assets/fonts/icons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/basic/collections/table.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/basic/collections/table.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/basic/elements/button.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/basic/elements/button.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/basic/elements/icon.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/basic/elements/icon.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/basic/elements/step.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/basic/elements/step.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/basic/globals/reset.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/basic/globals/reset.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/basic/modules/progress.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/basic/modules/progress.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/basic/views/card.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/basic/views/card.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/bookish/elements/header.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/bookish/elements/header.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/bootstrap3/elements/button.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/chubby/collections/form.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/chubby/collections/form.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/chubby/collections/menu.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/chubby/elements/button.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/chubby/elements/button.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/chubby/elements/header.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/chubby/elements/header.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/chubby/modules/accordion.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/chubby/modules/accordion.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/chubby/views/comment.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/chubby/views/comment.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/classic/collections/table.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/classic/collections/table.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/classic/elements/button.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/classic/elements/button.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/classic/elements/header.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/classic/elements/header.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/classic/modules/progress.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/classic/modules/progress.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/classic/views/card.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/classic/views/card.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/colored/modules/checkbox.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/assets/fonts/icons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/collections/breadcrumb.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/collections/breadcrumb.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/collections/form.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/collections/form.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/collections/grid.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/collections/grid.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/collections/menu.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/collections/menu.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/collections/message.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/collections/message.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/collections/table.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/elements/button.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/elements/button.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/elements/container.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/elements/container.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/elements/divider.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/elements/divider.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/elements/flag.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/elements/flag.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/elements/header.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/elements/header.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/elements/icon.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/elements/icon.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/elements/image.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/elements/image.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/elements/input.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/elements/input.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/elements/label.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/elements/label.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/elements/list.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/elements/list.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/elements/loader.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/elements/loader.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/elements/rail.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/elements/rail.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/elements/reveal.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/elements/reveal.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/elements/segment.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/elements/segment.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/elements/step.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/elements/step.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/globals/reset.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/globals/reset.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/globals/site.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/globals/site.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/accordion.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/accordion.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/chatroom.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/chatroom.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/checkbox.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/checkbox.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/dimmer.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/dimmer.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/dropdown.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/dropdown.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/embed.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/embed.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/modal.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/modal.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/nag.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/nag.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/popup.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/popup.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/progress.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/progress.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/rating.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/rating.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/search.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/search.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/shape.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/shape.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/sidebar.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/sidebar.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/sticky.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/sticky.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/tab.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/tab.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/transition.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/modules/transition.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/views/ad.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/views/ad.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/views/card.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/views/card.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/views/comment.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/views/comment.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/views/feed.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/views/feed.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/views/item.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/views/item.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/views/statistic.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/default/views/statistic.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/duo/elements/loader.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/duo/elements/loader.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/fixed-width/collections/grid.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/fixed-width/collections/grid.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/fixed-width/modules/modal.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/fixed-width/modules/modal.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/flat/collections/form.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/flat/collections/form.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/flat/globals/site.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/flat/globals/site.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/assets/fonts/octicons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/collections/breadcrumb.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/collections/form.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/collections/form.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/collections/grid.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/collections/menu.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/collections/menu.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/collections/message.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/collections/message.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/collections/table.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/elements/button.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/elements/button.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/elements/header.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/elements/icon.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/elements/icon.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/elements/image.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/elements/input.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/elements/input.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/elements/label.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/elements/label.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/elements/segment.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/elements/segment.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/elements/step.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/elements/step.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/globals/site.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/modules/dropdown.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/modules/dropdown.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/github/modules/popup.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/gmail/collections/message.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/instagram/views/card.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/instagram/views/card.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/material/assets/fonts/icons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/material/collections/menu.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/material/collections/menu.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/material/elements/button.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/material/elements/button.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/material/elements/header.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/material/elements/header.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/material/elements/icon.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/material/elements/icon.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/material/globals/site.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/material/modules/dropdown.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/material/modules/dropdown.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/material/modules/modal.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/material/modules/modal.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/pulsar/elements/loader.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/pulsar/elements/loader.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/raised/elements/button.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/raised/elements/button.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/resetcss/globals/reset.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/resetcss/globals/reset.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/round/elements/button.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/rtl/globals/site.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/rtl/globals/site.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/striped/modules/progress.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/striped/modules/progress.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/timeline/views/feed.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/timeline/views/feed.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/twitter/elements/button.overrides" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/src/themes/twitter/elements/button.variables" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/admin/components/create.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/admin/components/init.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/admin/components/update.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/admin/distributions/create.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/admin/distributions/init.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/admin/distributions/update.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/admin/publish.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/admin/register.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/admin/release.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/build.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/build/assets.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/build/css.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/build/javascript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/check-install.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/clean.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/collections/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/collections/admin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/collections/build.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/collections/internal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/collections/rtl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/config/admin/github.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/config/admin/oauth.example.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/config/admin/release.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/config/admin/templates/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/config/admin/templates/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/config/admin/templates/component-package.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/config/admin/templates/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/config/admin/templates/css-package.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/config/admin/templates/less-package.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/config/admin/templates/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/config/defaults.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/config/docs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/config/npm/gulpfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/config/project/config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/config/project/install.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/config/project/release.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/config/tasks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/config/user.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/docs/build.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/docs/metadata.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/docs/serve.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/install.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/rtl/build.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/rtl/watch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/version.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/semantic/tasks/watch.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/accordion.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/accordion.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/accordion.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/accordion.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/ad.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/ad.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/api.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/api.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/breadcrumb.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/breadcrumb.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/button.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/button.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/card.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/card.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/checkbox.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/checkbox.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/checkbox.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/checkbox.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/comment.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/comment.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/container.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/container.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/dimmer.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/dimmer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/dimmer.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/dimmer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/divider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/divider.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/dropdown.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/dropdown.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/dropdown.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/embed.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/embed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/embed.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/embed.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/feed.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/feed.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/flag.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/flag.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/form.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/form.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/form.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/grid.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/grid.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/header.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/header.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/icon.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/icon.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/image.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/image.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/input.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/input.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/item.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/item.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/label.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/label.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/list.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/list.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/loader.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/loader.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/menu.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/menu.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/message.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/message.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/modal.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/modal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/modal.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/modal.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/nag.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/nag.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/nag.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/nag.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/popup.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/popup.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/popup.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/popup.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/progress.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/progress.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/progress.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/progress.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/rail.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/rail.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/rating.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/rating.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/rating.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/rating.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/reset.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/reset.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/reveal.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/reveal.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/search.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/search.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/search.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/search.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/segment.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/segment.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/shape.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/shape.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/shape.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/shape.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/sidebar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/sidebar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/sidebar.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/sidebar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/site.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/site.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/site.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/site.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/state.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/state.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/statistic.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/statistic.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/step.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/step.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/sticky.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/sticky.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/sticky.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/sticky.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/tab.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/tab.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/tab.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/tab.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/table.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/table.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/transition.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/transition.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/transition.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/transition.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/visibility.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/components/visibility.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/semantic.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/semantic.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/themes/basic/assets/fonts/icons.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/themes/basic/assets/fonts/icons.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/themes/basic/assets/fonts/icons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/themes/basic/assets/fonts/icons.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/themes/default/assets/fonts/icons.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/themes/default/assets/fonts/icons.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/themes/default/assets/fonts/icons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/themes/default/assets/fonts/icons.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/themes/default/assets/fonts/icons.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/themes/default/assets/images/flags.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/themes/github/assets/fonts/octicons-local.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/themes/github/assets/fonts/octicons.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/themes/github/assets/fonts/octicons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/themes/github/assets/fonts/octicons.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/themes/material/assets/fonts/icons.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/themes/material/assets/fonts/icons.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/themes/material/assets/fonts/icons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diseño/dist/themes/material/assets/fonts/icons.woff" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diseño/.idea/modules.xml" afterPath="$PROJECT_DIR$/Diseño/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diseño/.idea/workspace.xml" afterPath="$PROJECT_DIR$/Diseño/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diseño/css/style-index.css" afterPath="$PROJECT_DIR$/Diseño/css/style-index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diseño/index.html" afterPath="$PROJECT_DIR$/Diseño/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diseño/inicio-fixed.html" afterPath="$PROJECT_DIR$/Diseño/inicio-fixed.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diseño/inicio-navbar-1.html" afterPath="$PROJECT_DIR$/Diseño/inicio-navbar-1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diseño/inicio-navbar-2.html" afterPath="$PROJECT_DIR$/Diseño/inicio-navbar-2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diseño/inicio-navbar-3.html" afterPath="$PROJECT_DIR$/Diseño/inicio-navbar-3.html" />
     </list>
     <ignored path="C:\Users\diego\Documents\Diego\Mundocente\Diseno\Mundocente\.idea\shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,38 +770,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="inicio-navbar-1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Diseño/inicio-navbar-1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inicio-navbar-2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Diseño/inicio-navbar-2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="125" column="20" lean-forward="true" selection-start-line="125" selection-start-column="20" selection-end-line="125" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inicio-navbar-3.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Diseño/inicio-navbar-3.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="131" column="76" lean-forward="false" selection-start-line="131" selection-start-column="76" selection-end-line="131" selection-end-column="76" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -109,15 +823,22 @@
         <option value="$PROJECT_DIR$/Diseño/css/scrollbar.css" />
         <option value="$PROJECT_DIR$/Diseño/css/style-inicio-fixed.css" />
         <option value="$PROJECT_DIR$/Diseño/js/init.js" />
-        <option value="$PROJECT_DIR$/Diseño/inicio-fixed - con filtros.html" />
-        <option value="$PROJECT_DIR$/Diseño/css/style-index.css" />
         <option value="$PROJECT_DIR$/Diseño/prueba-navbar.css" />
         <option value="$PROJECT_DIR$/Diseño/dist/semantic.css" />
-        <option value="$PROJECT_DIR$/Diseño/index.html" />
         <option value="$PROJECT_DIR$/Diseño/inicio-fixed.html" />
         <option value="$PROJECT_DIR$/Diseño/prueba-navbar2.html" />
         <option value="$PROJECT_DIR$/Diseño/prueba-navbar.html" />
         <option value="$PROJECT_DIR$/Diseño/prueba-navbar-3.html" />
+        <option value="$PROJECT_DIR$/Diseño/inicio-fixed - con filtros.html" />
+        <option value="$PROJECT_DIR$/login.html" />
+        <option value="$PROJECT_DIR$/Diseño/login.html" />
+        <option value="$PROJECT_DIR$/Diseño/inicio-navbar-1.html" />
+        <option value="$PROJECT_DIR$/Diseño/inicio-navbar-2.html" />
+        <option value="$PROJECT_DIR$/Diseño/inicio-navbar-3.html" />
+        <option value="$PROJECT_DIR$/Diseño/index.html" />
+        <option value="$PROJECT_DIR$/Diseño/css/style-index.css" />
+        <option value="$PROJECT_DIR$/Diseño/semantic/src/themes/default/collections/form.variables" />
+        <option value="$PROJECT_DIR$/Diseño/semantic/src/theme.config" />
       </list>
     </option>
   </component>
@@ -127,11 +848,14 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/Diseño/node_modules" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="width" value="1378" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectView">
@@ -150,6 +874,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -178,7 +903,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -192,124 +916,12 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\diego\Documents\Diego\Mundocente\Diseno\Mundocente\Diseño" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\diego\Documents\Diego\Mundocente\Diseno\Mundocente\Diseño\images" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Documentación/Cronograma 2017.pdf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Documentación/Historias Usuario-Mundocente.docx</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Mockups pdf/HU 10 - Publicar evento.pdf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Mockups pdf/HU 12 - Invitación a proyectos.pdf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Mockups pdf/HU 6 - Publicar convocatoria.pdf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Mockups pdf/HU 8 - Publicar revista.pdf</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunManager">
     <configuration default="true" type="ErlangApplicationRunConfiguration" factoryName="Erlang Application" show_console_on_std_err="false" show_console_on_std_out="false">
@@ -444,7 +1056,8 @@
       <workItem from="1485221193540" duration="2106000" />
       <workItem from="1485384681655" duration="2100000" />
       <workItem from="1485387322255" duration="8626000" />
-      <workItem from="1485449882836" duration="21157000" />
+      <workItem from="1485449882836" duration="22355000" />
+      <workItem from="1485535326703" duration="8782000" />
     </task>
     <task id="LOCAL-00001" summary="Actualización de diseño. Nuevas imagenes del logo oficial de Mundocente.">
       <created>1484671010422</created>
@@ -495,11 +1108,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485043851921</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Edito textos informativos de landingPage y subo 3 sugerencias de manejo de navegadores para las paginas de inicio con funcionalidad responsive  - &quot;inicio-navbar-1&quot;, &quot;inicio-navbar-2&quot; y &quot;inicio-navbar-3&quot;.">
+      <created>1485475736205</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1485475736240</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118042000" />
+    <option name="totallyTimeSpent" value="128022000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -511,10 +1131,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25567323" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2602428" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -544,7 +1164,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2526475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2602428" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -586,63 +1206,14 @@
     <MESSAGE value="Agrego diseño de la seccion &quot;Contacto&quot; y el footer." />
     <MESSAGE value="Agrego etapa inicial de nuevo prototipo de inicio - &quot;inicio-fixed.html&quot;.  Modificación de LandingPage." />
     <MESSAGE value="Modificación en diseño de - &quot;inicio-fixed.html&quot;." />
-    <option name="LAST_COMMIT_MESSAGE" value="Modificación en diseño de - &quot;inicio-fixed.html&quot;." />
+    <MESSAGE value="Edito textos informativos de landingPage y subo 3 sugerencias de manejo de navegadores para las paginas de inicio con funcionalidad responsive  - &quot;inicio-navbar-1&quot;, &quot;inicio-navbar-2&quot; y &quot;inicio-navbar-3&quot;." />
+    <option name="LAST_COMMIT_MESSAGE" value="Edito textos informativos de landingPage y subo 3 sugerencias de manejo de navegadores para las paginas de inicio con funcionalidad responsive  - &quot;inicio-navbar-1&quot;, &quot;inicio-navbar-2&quot; y &quot;inicio-navbar-3&quot;." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Diseño/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Diseño/inicio.html" />
-    <entry file="file://$PROJECT_DIR$/Diseño/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="56" column="37" lean-forward="true" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Diseño/inicio.html" />
-    <entry file="file://$PROJECT_DIR$/Diseño/js/init.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="3" lean-forward="false" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Diseño/css/style-index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="59" lean-forward="false" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Diseño/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Diseño/inicio.html" />
-    <entry file="file://$PROJECT_DIR$/Diseño/js/init.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="3" lean-forward="false" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Diseño/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -757,13 +1328,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Diseño/inicio2 - Con imagen grande.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../../SemanticUI/prueba.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -779,13 +1343,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Diseño/inicio-fixed - con filtros y publicaciones e imagenes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Diseño/inicio5.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -820,25 +1377,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Diseño/inicio-fixed - con filtros.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1161">
-          <caret line="131" column="28" lean-forward="false" selection-start-line="131" selection-start-column="16" selection-end-line="131" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Diseño/prueba-navbar.css" />
-    <entry file="file://$PROJECT_DIR$/Diseño/dist/semantic.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="4692" column="6" lean-forward="false" selection-start-line="4692" selection-start-column="6" selection-end-line="4692" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Diseño/dist/semantic.css" />
     <entry file="file://$PROJECT_DIR$/Diseño/js/init.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -847,26 +1387,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Diseño/css/style-index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="46" column="1" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="46" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Diseño/css/style-inicio-fixed.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-72">
           <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Diseño/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -883,34 +1407,143 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
           <caret line="33" column="27" lean-forward="true" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Diseño/inicio5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Diseño/inicio-fixed - con filtros.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Diseño/inicio2 - Con imagen grande.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Prolegomeno dw/Semantic-UI-master/examples/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Diseño/semantic/src/themes/github/globals/site.variables">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Diseño/inicio-navbar-1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="11" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Diseño/css/style-index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="495" column="18" lean-forward="false" selection-start-line="495" selection-start-column="18" selection-end-line="495" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Diseño/semantic/src/themes/flat/collections/form.overrides">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Diseño/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="187" column="31" lean-forward="false" selection-start-line="187" selection-start-column="31" selection-end-line="187" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Diseño/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="52" lean-forward="false" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Diseño/semantic/src/themes/default/collections/form.variables">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Diseño/semantic/src/themes/flat/collections/form.variables">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="32" lean-forward="true" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Diseño/semantic/src/themes/github/collections/form.variables">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-199">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Diseño/inicio-navbar-2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="125" column="20" lean-forward="true" selection-start-line="125" selection-start-column="20" selection-end-line="125" selection-end-column="20" />
+        <state relative-caret-position="187">
+          <caret line="11" column="79" lean-forward="false" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="79" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Diseño/inicio-navbar-3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="131" column="76" lean-forward="false" selection-start-line="131" selection-start-column="76" selection-end-line="131" selection-end-column="76" />
+        <state relative-caret-position="187">
+          <caret line="11" column="79" lean-forward="false" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Diseño/semantic/src/themes/material/globals/site.variables">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-816">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Diseño/semantic/src/theme.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" column="22" lean-forward="false" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
           <folding />
         </state>
       </provider>
