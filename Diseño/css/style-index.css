@@ -1,4 +1,4 @@
-.navbar-fixed.menu .toc.item{
+.navbar-fixed.menu .toc.item {
     display: none;
 }
 
@@ -28,7 +28,7 @@
 
     .banner .ui.container .rope.depth-10 .board,
     .banner .ui.container .rope.depth-40 .board,
-    .banner .ui.container .rope.depth-100 .board{
+    .banner .ui.container .rope.depth-100 .board {
         display: none;
     }
 
@@ -427,11 +427,10 @@
 /* services */
 
 .line {
-    background: #d94362;
-    content: '';
+    background: #CC4452;
     display: inline-block;
-    height: 0.2em;
-    max-width: 20em;
+    height: 0.15em;
+    max-width: 15em;
     width: 75%;
 }
 
@@ -443,25 +442,29 @@
 
 .services h1.ui.header {
     font-size: 3.40em;
-    color: #d94362;
+    color: #CC4452;
+}
+
+.services div.ui.header.inverted {
+    color: #F2EDE4;
 }
 
 .services .ui.two.column.grid h2 {
-    color: #d94362;
+    color: #CC4452;
 }
 
-.services .ui.two.column.grid h2 .sub.header{
-    color: #EEEEEE;
-    font-size: 0.62em;
+.services .ui.two.column.grid h2 .sub.header {
+    color: #F2EDE4;
+    font-size: 0.63em;
 }
 
-.services .ui.grid{
+.services .ui.grid {
     padding-top: 2em;
     padding-bottom: 2em;
 }
 
 .contact {
-    background-color: #EEEEEE;
+    background-color: #F2EDE4;
     padding-top: 3em;
     padding-bottom: 4em;
 }
@@ -475,15 +478,13 @@
     padding-top: 2em;
 }
 
-.contact .ui.grid .ui.form .field{
-}
-
-.contact .ui.grid .ui.form label{
-    color: #242533;
-}
-
 .contact .ui.grid .ui.form h2 {
     color: #242533;
+}
+
+.contact .ui.grid .ui.form label {
+    color: #242533;
+    font-size: 1em;
 }
 
 .contact .ui.grid .info-contact {
@@ -496,15 +497,15 @@
     font-size: 1.35em;
 }
 
-.ui.footer {
-    background-color: #1D1E2C;
+.ui.segment.footer {
+    background-color: #242533;
 }
 
-.ui.footer .ui.grid{
+.ui.segment.footer .ui.grid {
     padding: 4em 0 4em;
 }
 
-.ui.footer .ui.grid  h4 {
-    color: #EEEEEE;
+.ui.segment.footer .ui.grid h4 {
+    color: #F2EDE4;
 }
 

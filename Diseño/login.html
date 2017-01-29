@@ -19,7 +19,7 @@
 
     <style type="text/css">
         body {
-            background-color: #242533;
+            background-color: #E8E8E8;
         }
         body > .grid {
             height: 100%;
@@ -77,36 +77,77 @@
     </script>
 </head>
 <body>
-
+<!--<div class="three fields">
+    <div class="required field">
+        <label>Gran área</label>
+        <select name="large_area" class="ui multiple search dropdown">
+            <option value="">Gran área</option>
+            <option value="name-1">Gran área-1</option>
+            <option value="name-2">Gran área-2</option>
+        </select>
+    </div>
+    <div class="required field">
+        <label>Área</label>
+        <select name="area" class="ui multiple search dropdown">
+            <option value="">Área</option>
+            <option value="lvl-1">Área-1</option>
+            <option value="lvl-2">Área-2</option>
+        </select>
+    </div>
+    <div class="required field">
+        <label>Disciplina</label>
+        <select name="discipline" class="ui multiple search dropdown">
+            <option value="">Disciplina</option>
+            <option value="discipline-1">Disciplina-1</option>
+            <option value="discipline-2">Disciplina-2</option>
+        </select>
+    </div>
+</div>-->
 <div class="ui middle aligned center aligned grid">
     <div class="column">
-        <div class="ui violet segment">
+        <div class="ui raised padded segment">
             <div class="content-image">
                 <img src="images/logo.png" class="image">
             </div>
-            <form class="ui large form">
-                <div class="field">
+            <form class="ui form">
+                <div class="ui field">
                     <div class="ui left icon input">
                         <i class="user icon"></i>
-                        <input type="text" name="email" placeholder="E-mail address">
+                        <input type="text" name="email" placeholder="Correo Electrónico">
                     </div>
                 </div>
                 <div class="field">
                     <div class="ui left icon input">
                         <i class="lock icon"></i>
-                        <input type="password" name="password" placeholder="Password">
+                        <input type="password" name="password" placeholder="Contraseña">
                     </div>
                 </div>
-                <div class="ui fluid primary large submit button" style="background-color: #4caf50">Login</div>
+                <div class="ui fluid primary large submit button" style="background-color: #CC4452">Login</div>
                 <div class="ui error message"></div>
             </form>
+            <h5 class="ui horizontal divider header">
+                o
+            </h5>
+            <div class="ui stackable center aligned grid">
+                <div class="row" style="padding-bottom: 5px;">
+                    <button class="ui facebook button">
+                        <i class="facebook icon"></i>
+                        Inicie sesión con Facebook
+                    </button>
+                </div>
+                <div class="row" style="padding-top: 5px;">
+                    <button class="ui google plus button">
+                        <i class="google plus icon"></i>
+                        Inicie sesión con Google +
+                    </button>
+                </div>
+            </div>
         </div>
-        <div class="ui violet message">
+        <div class="ui brown message">
             ¿No está registrado? <a href="#">Registrarse</a>
         </div>
     </div>
 </div>
-
 </body>
 
 </html>
