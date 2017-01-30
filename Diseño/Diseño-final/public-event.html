@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>Publicar Convocatoria</title>
+    <title>Publicar Evento</title>
     <!--<link rel="stylesheet" href="css/style-inicio-fixed.css">-->
     <link rel="stylesheet" href="../semantic/out/semantic.min.css">
     <link rel="stylesheet" href="../css/scrollbar.css">
@@ -16,7 +16,12 @@
 </head>
 <body>
 <style>
+
     body {
+        background-color: #EEEEEE;
+    }
+
+    div.pusher {
         background-color: #EEEEEE;
     }
 
@@ -68,7 +73,6 @@
     /* Mobile */
     @media only screen and (max-width: 767px) {
         div.pusher {
-            background-color: #EEEEEE;
             margin-top: 50px;
         }
 
@@ -90,7 +94,6 @@
 
     @media only screen and (min-width: 768px) and (max-width: 991px) {
         div.pusher {
-            background-color: #EEEEEE;
             margin-top: 50px;
         }
 
@@ -103,10 +106,6 @@
     /* Small Monitor */
 
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
-        div.pusher {
-            background-color: #EEEEEE;
-        }
-
         .ui.top.menu.fixed {
             display: none;
         }
@@ -119,10 +118,6 @@
     /* Large Monitor */
 
     @media only screen and (min-width: 1200px) and (max-width: 1407px) {
-        div.pusher {
-            background-color: #EEEEEE;
-        }
-
         .ui.top.menu.fixed {
             display: none;
         }
@@ -136,10 +131,6 @@
     /*Large Monitor 2*/
 
     @media only screen and (min-width: 1408px) {
-        div.pusher {
-            background-color: #EEEEEE;
-        }
-
         .ui.top.menu.fixed {
             display: none;
         }
@@ -225,7 +216,7 @@
 <!--Contenido-->
 <div class="pusher" style="background-color: #EEEEEE;">
     <div class="ui container center aligned">
-        <h1 class="ui center aligned header">Publicar Convocatoria</h1>
+        <h1 class="ui center aligned header">Publicar Evento</h1>
         <div>
             <div class="line"></div>
             <div data-width="79" data-height="27"
@@ -529,22 +520,44 @@
                         </select>
                     </div>
                 </div>
-                <div class="two fields">
-                    <div class="required field">
-                        <label>Desde</label>
-                        <div class="ui calendar" id="from">
-                            <div class="ui input left icon">
-                                <i class="calendar icon"></i>
-                                <input name="from" type="text" placeholder="Desde">
+                <div class="required field">
+                    <label>Desde</label>
+                    <div class="two fields">
+                        <div class="field">
+                            <div class="ui calendar" id="from">
+                                <div class="ui input left icon">
+                                    <i class="calendar icon"></i>
+                                    <input name="from" type="text" placeholder="Fecha">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui calendar" id="time_from">
+                                <div class="ui input left icon">
+                                    <i class="time icon"></i>
+                                    <input name="time_from" type="text" placeholder="Hora">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="required field">
-                        <label>Hasta</label>
-                        <div class="ui calendar" id="until">
-                            <div class="ui input left icon">
-                                <i class="calendar icon"></i>
-                                <input name="until" type="text" placeholder="Hasta">
+                </div>
+                <div class="required field">
+                    <label>Hasta</label>
+                    <div class="two fields">
+                        <div class="field">
+                            <div class="ui calendar" id="until">
+                                <div class="ui input left icon">
+                                    <i class="calendar icon"></i>
+                                    <input name="until" type="text" placeholder="Fecha">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui calendar" id="time_until">
+                                <div class="ui input left icon">
+                                    <i class="time icon"></i>
+                                    <input name="time_until" type="text" placeholder="Hora">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -582,6 +595,11 @@
                     <input name="title" type="text">
                 </div>
                 <div class="field">
+                    <label>Imagen o logo del evento</label>
+                    <img class="ui bottom aligned medium rounded image" src="../images/public-image.png">
+                    <div class="ui blue button">Cargar</div>
+                </div>
+                <div class="field">
                     <label>Descripción</label>
                     <textarea name="description" rows="3"></textarea>
                 </div>
@@ -598,7 +616,7 @@
                 <div class="ui right aligned stackable grid">
                     <div class="sixteen wide column">
                         <button type="submit" form="form" onclick="validateFormAnnouncement()"
-                                class="ui submit green inverted button">
+                                class="ui submit green button">
                             Publicar
                         </button>
                     </div>
@@ -614,7 +632,7 @@
     function validateFormAnnouncement() {
         var $form = $('.ui.form'),
             allFields = $form.form('get values')
-        ;
+            ;
         if(allFields.link == false && allFields.contact_data == false){
             $('.ui.form')
                 .form({
@@ -643,7 +661,16 @@
                             rules: [
                                 {
                                     type: 'empty',
-                                    prompt: 'Porfavor seleccione un valor en Desde'
+                                    prompt: 'Porfavor seleccione una fecha en Desde'
+                                }
+                            ]
+                        },
+                        time_from: {
+                            identifier: 'time_from',
+                            rules: [
+                                {
+                                    type: 'empty',
+                                    prompt: 'Porfavor seleccione una hora en Desde'
                                 }
                             ]
                         },
@@ -652,7 +679,16 @@
                             rules: [
                                 {
                                     type: 'empty',
-                                    prompt: 'Porfavor seleccione un valor en Hasta'
+                                    prompt: 'Porfavor seleccione una fecha en Hasta'
+                                }
+                            ]
+                        },
+                        time_until: {
+                            identifier: 'time_until',
+                            rules: [
+                                {
+                                    type: 'empty',
+                                    prompt: 'Porfavor seleccione una hora en Desde'
                                 }
                             ]
                         },
@@ -745,7 +781,16 @@
                             rules: [
                                 {
                                     type: 'empty',
-                                    prompt: 'Porfavor seleccione un valor en Desde'
+                                    prompt: 'Porfavor seleccione una fecha en Desde'
+                                }
+                            ]
+                        },
+                        time_from: {
+                            identifier: 'time_from',
+                            rules: [
+                                {
+                                    type: 'empty',
+                                    prompt: 'Porfavor seleccione una hora en Desde'
                                 }
                             ]
                         },
@@ -754,7 +799,16 @@
                             rules: [
                                 {
                                     type: 'empty',
-                                    prompt: 'Porfavor seleccione un valor en Hasta'
+                                    prompt: 'Porfavor seleccione una fecha en Hasta'
+                                }
+                            ]
+                        },
+                        time_until: {
+                            identifier: 'time_until',
+                            rules: [
+                                {
+                                    type: 'empty',
+                                    prompt: 'Porfavor seleccione una hora en Desde'
                                 }
                             ]
                         },
@@ -812,6 +866,12 @@
     $('#until').calendar({
         type: 'date',
         minDate: new Date(today.getFullYear(), today.getMonth(), today.getDate())
+    });
+    $('#time_from').calendar({
+        type: 'time'
+    });
+    $('#time_until').calendar({
+        type: 'time'
     });
     $('.ui.radio.checkbox')
         .checkbox()

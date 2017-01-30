@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>Publicar Convocatoria</title>
+    <title>Cuenta</title>
     <!--<link rel="stylesheet" href="css/style-inicio-fixed.css">-->
     <link rel="stylesheet" href="../semantic/out/semantic.min.css">
     <link rel="stylesheet" href="../css/scrollbar.css">
@@ -17,6 +17,10 @@
 <body>
 <style>
     body {
+        background-color: #EEEEEE;
+    }
+
+    div.pusher {
         background-color: #EEEEEE;
     }
 
@@ -68,7 +72,6 @@
     /* Mobile */
     @media only screen and (max-width: 767px) {
         div.pusher {
-            background-color: #EEEEEE;
             margin-top: 50px;
         }
 
@@ -90,7 +93,6 @@
 
     @media only screen and (min-width: 768px) and (max-width: 991px) {
         div.pusher {
-            background-color: #EEEEEE;
             margin-top: 50px;
         }
 
@@ -103,10 +105,6 @@
     /* Small Monitor */
 
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
-        div.pusher {
-            background-color: #EEEEEE;
-        }
-
         .ui.top.menu.fixed {
             display: none;
         }
@@ -119,10 +117,6 @@
     /* Large Monitor */
 
     @media only screen and (min-width: 1200px) and (max-width: 1407px) {
-        div.pusher {
-            background-color: #EEEEEE;
-        }
-
         .ui.top.menu.fixed {
             display: none;
         }
@@ -136,10 +130,6 @@
     /*Large Monitor 2*/
 
     @media only screen and (min-width: 1408px) {
-        div.pusher {
-            background-color: #EEEEEE;
-        }
-
         .ui.top.menu.fixed {
             display: none;
         }
@@ -614,7 +604,7 @@
     function validateFormAnnouncement() {
         var $form = $('.ui.form'),
             allFields = $form.form('get values')
-        ;
+            ;
         if(allFields.link == false && allFields.contact_data == false){
             $('.ui.form')
                 .form({

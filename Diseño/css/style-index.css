@@ -1,3 +1,5 @@
+/* Landing Page */
+
 .navbar-fixed.menu .toc.item {
     display: none;
 }
@@ -446,7 +448,7 @@
 }
 
 .services div.ui.header.inverted {
-    color: #F2EDE4;
+    color: #EEEEEE;
 }
 
 .services .ui.two.column.grid h2 {
@@ -454,7 +456,7 @@
 }
 
 .services .ui.two.column.grid h2 .sub.header {
-    color: #F2EDE4;
+    color: #EEEEEE;
     font-size: 0.63em;
 }
 
@@ -464,7 +466,7 @@
 }
 
 .contact {
-    background-color: #F2EDE4;
+    background-color: #EEEEEE;
     padding-top: 3em;
     padding-bottom: 4em;
 }
@@ -506,6 +508,6 @@
 }
 
 .ui.segment.footer .ui.grid h4 {
-    color: #F2EDE4;
+    color: #EEEEEE;
 }
 

@@ -1,30 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b2510a9-d97f-4aa6-b466-b2a3e043afdf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/Diseño-final/Calendar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/Diseño-final/public-announcement.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Diseño/index.html" afterPath="$PROJECT_DIR$/Diseño/Diseño-final/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Diseño/inicio-fixed - con filtros y publicaciones e imagenes.html" afterPath="$PROJECT_DIR$/Diseño/Diseño-inicial/inicio-fixed - con filtros y publicaciones e imagenes.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Diseño/inicio-fixed - con filtros y publicaciones.html" afterPath="$PROJECT_DIR$/Diseño/Diseño-inicial/inicio-fixed - con filtros y publicaciones.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Diseño/inicio-fixed - con filtros.html" afterPath="$PROJECT_DIR$/Diseño/Diseño-inicial/inicio-fixed - con filtros.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Diseño/inicio-fixed.html" afterPath="$PROJECT_DIR$/Diseño/Diseño-inicial/inicio-fixed.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Diseño/inicio-navbar-1.html" afterPath="$PROJECT_DIR$/Diseño/Diseño-final/inicio-navbar-1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Diseño/inicio-navbar-2.html" afterPath="$PROJECT_DIR$/Diseño/Diseño-final/inicio-navbar-2.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Diseño/inicio-navbar-3.html" afterPath="$PROJECT_DIR$/Diseño/Diseño-final/inicio-navbar-3.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Diseño/inicio2 - Con imagen grande.html" afterPath="$PROJECT_DIR$/Diseño/Diseño-inicial/inicio2 - Con imagen grande.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Diseño/inicio2 - Con imagen.html" afterPath="$PROJECT_DIR$/Diseño/Diseño-inicial/inicio2 - Con imagen.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Diseño/inicio2.html" afterPath="$PROJECT_DIR$/Diseño/Diseño-inicial/inicio2.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Diseño/inicio3 - Con imagen grande.html" afterPath="$PROJECT_DIR$/Diseño/Diseño-inicial/inicio3 - Con imagen grande.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Diseño/inicio3 - Con imagen.html" afterPath="$PROJECT_DIR$/Diseño/Diseño-inicial/inicio3 - Con imagen.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Diseño/inicio3.html" afterPath="$PROJECT_DIR$/Diseño/Diseño-inicial/inicio3.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Diseño/inicio4 - Con imagen.html" afterPath="$PROJECT_DIR$/Diseño/Diseño-inicial/inicio4 - Con imagen.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Diseño/inicio4.html" afterPath="$PROJECT_DIR$/Diseño/Diseño-inicial/inicio4.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Diseño/inicio5 - Con imagen.html" afterPath="$PROJECT_DIR$/Diseño/Diseño-inicial/inicio5 - Con imagen.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Diseño/inicio5.html" afterPath="$PROJECT_DIR$/Diseño/Diseño-inicial/inicio5.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Diseño/login.html" afterPath="$PROJECT_DIR$/Diseño/Diseño-final/login.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Diseño/public-paper.html" afterPath="$PROJECT_DIR$/Diseño/Diseño-final/public-paper.html" />
+    <list default="true" id="2b2510a9-d97f-4aa6-b466-b2a3e043afdf" name="Default" comment="Creación de 2 carpetas para separar diseños iniciales de los finales. Agrego diseño final para el apartado de Publicar Convocatoria, cambios en Publicar Revista-Articulo y documento de ejemplo para el manejo de Calendarios en el Framework Semantic-ui.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/images/fondo-user-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/images/fondo-user.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/images/public-image.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/Diseño-final/Account.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/Diseño-final/public-event.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diseño/Diseño-final/public-invitation.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diseño/Diseño-final/public-announcement.html" afterPath="$PROJECT_DIR$/Diseño/Diseño-final/public-announcement.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diseño/Diseño-final/public-paper.html" afterPath="$PROJECT_DIR$/Diseño/Diseño-final/public-paper.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diseño/css/style-index.css" afterPath="$PROJECT_DIR$/Diseño/css/style-index.css" />
     </list>
     <ignored path="C:\Users\diego\Documents\Diego\Mundocente\Diseno\Mundocente\.idea\shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,8 +59,15 @@
       <find>footer</find>
       <find>880e4f</find>
       <find>demo</find>
-      <find>h5</find>
       <find>label</find>
+      <find>desde</find>
+      <find>índice</find>
+      <find>time only</find>
+      <find>hora</find>
+      <find>h4</find>
+      <find>h5</find>
+      <find>país</find>
+      <find>tipo de in</find>
     </findStrings>
     <replaceStrings>
       <replace>3</replace>
@@ -128,10 +122,14 @@
         <option value="$PROJECT_DIR$/Diseño/public-paper.html" />
         <option value="$PROJECT_DIR$/Diseño/Diseño-final.html" />
         <option value="$PROJECT_DIR$/Diseño/Diseño-final/Calendar.html" />
-        <option value="$PROJECT_DIR$/Diseño/css/style-index.css" />
+        <option value="$PROJECT_DIR$/Diseño/Diseño-final/Acount.html" />
         <option value="$PROJECT_DIR$/Diseño/Diseño-final/index.html" />
-        <option value="$PROJECT_DIR$/Diseño/Diseño-final/public-announcement.html" />
+        <option value="$PROJECT_DIR$/Diseño/css/style-index.css" />
+        <option value="$PROJECT_DIR$/Diseño/Diseño-final/Account.html" />
         <option value="$PROJECT_DIR$/Diseño/Diseño-final/public-paper.html" />
+        <option value="$PROJECT_DIR$/Diseño/Diseño-final/public-invitation.html" />
+        <option value="$PROJECT_DIR$/Diseño/Diseño-final/public-announcement.html" />
+        <option value="$PROJECT_DIR$/Diseño/Diseño-final/public-event.html" />
       </list>
     </option>
   </component>
@@ -146,10 +144,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="1358" />
+    <option name="y" value="-3" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -166,8 +164,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -208,24 +206,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Mundocente" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Mundocente" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Diseño" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Diseño-final" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -240,7 +220,7 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
@@ -395,7 +375,9 @@
       <workItem from="1485691622677" duration="4276000" />
       <workItem from="1485705822329" duration="7684000" />
       <workItem from="1485721097047" duration="5576000" />
-      <workItem from="1485739561654" duration="10411000" />
+      <workItem from="1485739561654" duration="10921000" />
+      <workItem from="1485783244732" duration="4235000" />
+      <workItem from="1485791832503" duration="6378000" />
     </task>
     <task id="LOCAL-00001" summary="Actualización de diseño. Nuevas imagenes del logo oficial de Mundocente.">
       <created>1484671010422</created>
@@ -467,11 +449,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485712444003</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Creación de 2 carpetas para separar diseños iniciales de los finales. Agrego diseño final para el apartado de Publicar Convocatoria, cambios en Publicar Revista-Articulo y documento de ejemplo para el manejo de Calendarios en el Framework Semantic-ui.">
+      <created>1485754788244</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1485754788244</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198994000" />
+    <option name="totallyTimeSpent" value="210117000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -483,10 +472,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="1358" y="-3" width="1616" height="876" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.295764" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25899744" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -561,50 +550,14 @@
     <MESSAGE value="Edito textos informativos de landingPage y subo 3 sugerencias de manejo de navegadores para las paginas de inicio con funcionalidad responsive  - &quot;inicio-navbar-1&quot;, &quot;inicio-navbar-2&quot; y &quot;inicio-navbar-3&quot;." />
     <MESSAGE value="Añado configuración de temas para el framework Semantic-ui y diseño de login." />
     <MESSAGE value="Culmino  diseño de login y agrego diseño de formulario para la publicación de Revistas  con funcionalidad responsive y formularios validados." />
-    <option name="LAST_COMMIT_MESSAGE" value="Culmino  diseño de login y agrego diseño de formulario para la publicación de Revistas  con funcionalidad responsive y formularios validados." />
+    <MESSAGE value="Creación de 2 carpetas para separar diseños iniciales de los finales. Agrego diseño final para el apartado de Publicar Convocatoria, cambios en Publicar Revista-Articulo y documento de ejemplo para el manejo de Calendarios en el Framework Semantic-ui." />
+    <option name="LAST_COMMIT_MESSAGE" value="Creación de 2 carpetas para separar diseños iniciales de los finales. Agrego diseño final para el apartado de Publicar Convocatoria, cambios en Publicar Revista-Articulo y documento de ejemplo para el manejo de Calendarios en el Framework Semantic-ui." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Diseño/images/nombre.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Diseño/images/Cloud.png" />
-    <entry file="file://$PROJECT_DIR$/Diseño/inicio.html" />
-    <entry file="file://$PROJECT_DIR$/Diseño/images/fondo.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/jquery-scrollspy-master/scrollspy.js" />
-    <entry file="file://$PROJECT_DIR$/Diseño/css/scrollbar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../SemanticUI/prueba.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="58" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Diseño/prueba-navbar.css" />
-    <entry file="file://$PROJECT_DIR$/Diseño/dist/semantic.css" />
-    <entry file="file://$PROJECT_DIR$/Diseño/js/init.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Diseño/dist/semantic.min.css" />
     <entry file="file://$PROJECT_DIR$/../../../../Prolegomeno dw/Semantic-UI-master/examples/login.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -819,66 +772,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Diseño/Diseño-final/dist/calendar.js" />
-    <entry file="file://$PROJECT_DIR$/Diseño/Diseño-final/Calendar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="82" column="70" lean-forward="false" selection-start-line="82" selection-start-column="70" selection-end-line="82" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Diseño/css/style-index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="429" column="23" lean-forward="false" selection-start-line="429" selection-start-column="17" selection-end-line="429" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Diseño/Diseño-final/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="32" column="87" lean-forward="false" selection-start-line="32" selection-start-column="81" selection-end-line="32" selection-end-column="87" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Diseño/Diseño-final/public-announcement.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="150" column="5" lean-forward="true" selection-start-line="67" selection-start-column="4" selection-end-line="150" selection-end-column="5" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#select#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Diseño/Diseño-final/public-paper.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1668">
-          <caret line="147" column="5" lean-forward="false" selection-start-line="147" selection-start-column="5" selection-end-line="147" selection-end-column="5" />
-          <folding>
-            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#5;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Diseño/Diseño-final/inicio-navbar-1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="186" column="30" lean-forward="true" selection-start-line="186" selection-start-column="30" selection-end-line="186" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -886,7 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -894,7 +790,127 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Diseño/Diseño-final/Calendar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2839">
+          <caret line="167" column="4" lean-forward="false" selection-start-line="167" selection-start-column="4" selection-end-line="169" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Diseño/Diseño-final/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="21" column="39" lean-forward="false" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Diseño/images/public-image.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Diseño/images/workspace.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Diseño/images/revista1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Diseño/images/ejemplo.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Diseño/images/fondo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Diseño/images/banner1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Diseño/images/astronomy.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Diseño/Diseño-final/public-announcement.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="176" column="4" lean-forward="true" selection-start-line="176" selection-start-column="4" selection-end-line="188" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#select#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Diseño/Diseño-final/public-event.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="179" column="10" lean-forward="false" selection-start-line="179" selection-start-column="10" selection-end-line="179" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#select#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Diseño/Diseño-final/Account.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="166" column="4" lean-forward="false" selection-start-line="166" selection-start-column="4" selection-end-line="178" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#select#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Diseño/Diseño-final/public-invitation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="188" column="10" lean-forward="false" selection-start-line="188" selection-start-column="10" selection-end-line="188" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Diseño/css/style-index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="51" column="4" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Diseño/Diseño-final/public-paper.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="184" column="10" lean-forward="false" selection-start-line="184" selection-start-column="10" selection-end-line="184" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
