@@ -1,81 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <!-- Standard Meta -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
-  <!-- Site Properties -->
-  <title>Mundocente</title>
-    <link rel="stylesheet" href="semantic/out/semantic.min.css">
-    <link rel="stylesheet" href="css/scrollbar.css">
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="semantic/out/semantic.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Mundocente</title>
+    <link rel="stylesheet" href="../css/style-inicio-fixed.css">
+    <link rel="stylesheet" href="../semantic/out/semantic.min.css">
+    <link rel="stylesheet" href="../css/scrollbar.css">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../semantic/out/semantic.min.js"></script>
 
 
 
-    <script>
-  $(document)
-    .ready(function() {
-      $('.ui.menu .ui.dropdown').dropdown({
-        on: 'hover'
-      });
-      $('.ui.menu a.item')
-        .on('click', function() {
-          $(this)
-            .addClass('active')
-            .siblings()
-            .removeClass('active')
-          ;
-        })
-      ;
 
-
-      $('.ui.accordion').accordion();
-
-
-$('.ui.fluid.search.dropdown')
-  .dropdown({
-    allowAdditions: true
-  })
-;
-
-
-$('.ui.checkbox')
-  .checkbox()
-;
-
-
-$('.special.cards .image').dimmer({
-  on: 'hover'
-});
-
-
-    })
-  ;
-
-
+    <script type="text/javascript">
+        
 
 //Aparecey desaparece los filtros
 
-  function mostrarfiltrorevistas(){
-  //document.getElementById("revistasfiltro").style.display = "block";
+function mostrarfiltrorevistas(){
   $('#revistasfiltro').toggle("slow");
-  
 }
 
-function mostrarfiltroconvocatorias(){
- //document.getElementById("convocatoriasfiltro").style.display = "block";
+function mostrarfiltroconvocatorias(){ 
  $('#convocatoriasfiltro').toggle("slow");
 }
 
 function mostrarfiltroeventos(){
-  //document.getElementById("eventosfiltro").style.display = "block";
 $('#eventosfiltro').toggle("slow");
 }
 
 
+function mostrarmodelpublicador(){
+  $('.ui.publication')
+    .modal({
+      blurring: true
+    })
+    .modal('show')
+  ;
+}
 
 
 //Aparece y desaparece lo de publicación
@@ -112,23 +76,14 @@ $('#convocatoriasfiltrop').hide();
 
 
 
-function mostrarmodelpublicador(){
-  $('.ui.publication')
-    .modal({
-      blurring: true
-    })
-    .modal('show')
-  ;
-}
+    </script>
 
-  </script>
 
-  <style type="text/css">
-   body {
-    background-color: #F2F2F2;
-  }
 
-    #divdefiltro{
+
+<style type="text/css">
+  
+#divdefiltro{
       
       overflow-y: scroll;
       max-height: 88%;
@@ -139,98 +94,90 @@ function mostrarmodelpublicador(){
     #modalpublicaciones{
       overflow-y: scroll;
     }
-
-    
-
-    ::-webkit-scrollbar {
-    width: 8px;
-    background: #fff;
-    
-}
- 
-::-webkit-scrollbar-thumb {
-    background: rgba(150,150,150,0.9);
-    cursor: pointer;
-    border-radius:5px;
-  -moz-border-radius:5px;
-  -webkit-border-radius:5px;
-}
- 
-::-webkit-scrollbar-thumb:hover {
-    background: rgba(150,150,150,0.6);
-    cursor: pointer;
-}
-
-    
-  </style>
-
   
+</style>
+
+
 
 </head>
-<body >
-
-
-
-
-
-
-
-
-<!-- ********************************************************************************* menu 1-->
-
-  <div class="ui borderless fixed menu" >
-    <div class="ui container">
-      <a href="#" class="header item">
-        <img class="logo" src="images/icono.jpg">
-        Mundocente
-      </a>
-
-        
-
-
-      <a href="inicio2.html" class="item"><i class="home icon"></i> Inicio</a>
-      <a onclick="mostrarmodelpublicador()" class="item"><i class="write icon"></i>   Publicar </a>
-      <a href="#" class="item"><i class="alarm outline icon"></i> Notificaciones</a>
-
-      
-
-      <div class="item" style="">
-          <div class="ui transparent icon input">
-            <input type="text" placeholder="Buscar publicación...">
-            <i class="search link icon"></i>
-          </div>
-        </div>
-
-      
-
-      <div class="ui simple dropdown right item">
-        Perfil <i class="dropdown icon"></i>
+<body>
+<div class="ui visible inverted left vertical sidebar menu" style="max-width: 200px">
+    <img src="../images/icono.png" class="main-menu-logo"/>
+    <a class="item">
+        <i class="home icon"></i> Inicio
+    </a>
+    <div class="item">
+        <i class="newspaper icon"></i> Recientes
         <div class="menu">
-          <a class="item" href="#">Mi perfil</a>
-          <a class="item" href="#">Privacidad</a>
-          <a class="item" href="#">Mis publicaciones</a>
-          <a class="item" href="#">Publicaciones Guardadas</a>
-          <div class="divider"></div>
-          <div class="header">Opciones</div>
-          <div class="item">Configuración</div>
-          <a class="item" href="#">Cerrar sesión</a>
+            <a class="item">Revista</a>
+            <a class="item">Convocatorias</a>
+            <a class="item">Eventos</a>
+            <a class="item">Invitación a proyecto</a>
+            <a class="item">Invitación a ser evaluador</a>
+            <a class="item">Logros investigativos</a>
         </div>
-      </div>
     </div>
-  </div>
+    <a class="item" onclick="mostrarmodelpublicador()">
+        <i class="write icon"></i> Publicar
+    </a>
+</div>
+<div class="main-content-wrapper">
+    <div class="main-content-menu ui fixed secondary menu">
+        <img src="../images/nombre.png" class="main-content-logo"/>
+        <div class="right menu">
+            <div class="ui dropdown item">
+                <img src="../images/user.jpg" class="main-content-avatar ui circular image"/>
+                <span style="margin-right: 10px; font-weight: bolder">   Usuario</span>
+                
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                    <div class="main-content-username-credential item disabled" >example@email.com</div>
+                    <div class="item"><i class="user icon"></i>Perfil</div>
+                    <div class="item"><i class="privacy icon"></i>Privacidad</div>
+                    <div class="item"><i class="help icon"></i>Ayuda</div>
+                    <div class="divider"></div>
+                    <div class="item"><i class="setting icon"></i>Configuración</div>
+                    <div class="item"><i class="sign out icon"></i>Cerrar sesión</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-<br>
-<br>
-<br>
-<br>
 
 
-<!-- ********************************************************************************* fin de menú 1-->
 
-<div class="ui container">
-  
-  <div class="two column equal height ui grid" >
+
+
+
+
+
+    <!--CONTENIDO-->
+
+
+
+
+
+    <div class="main-content ">
+        <div class="ui container">
+            <!--START SEARCH -->
+            
+            
+                
+
+
+
+
+
+
+<!-- ********************************* Inicio de filtros -->
+
+
+
+
+
+
+<div class="two column equal height ui grid" >
   <div class="row" >
 
 
@@ -246,7 +193,20 @@ function mostrarmodelpublicador(){
         
 <div class="ui form">
   <h4 class="ui dividing header">Búsqueda avanzada</h4>
-   <div class="ui segment" style="background-color: #E8D8E2;">
+   
+    <div class="ui field">
+    <label>Palabra Clave</label>
+    <div class="fields">
+      <div class="sixteen wide field">
+        <input type="text" placeholder="Ingrese título de publicación...">
+
+      </div>
+      <button class="ui button green" style="float: right;margin-bottom: 15px;"><i class="search icon"></i> </button>
+    </div>
+  </div>
+
+   <div class="ui segment">
+
     <div class="two fields">
      <div class="field">
          <div class="ui toggle checkbox" onclick="mostrarfiltrorevistas()">
@@ -297,14 +257,7 @@ function mostrarmodelpublicador(){
     </div>
   </div>
 
-  <div class="ui field">
-    <label>Palabra Clave</label>
-    <div class="fields">
-      <div class="sixteen wide field">
-        <input type="text" placeholder="Ingrese la palabra clave del título de publicación...">
-      </div>
-    </div>
-  </div>
+ 
   <div class="two fields">
    <div class="field">
       <label>Universidad</label>
@@ -643,6 +596,9 @@ function mostrarmodelpublicador(){
 
 
 
+    
+
+
      <!-- ********************************************************************************* publicaciones-->
 
 
@@ -691,7 +647,7 @@ function mostrarmodelpublicador(){
 
                <div class="ui special cards">
 
-                  <div class="card" style="width: 100%;">
+                  <div class="card">
                     <div class="blurring dimmable image">
                       <div class="ui dimmer">
                         <div class="content">
@@ -700,7 +656,7 @@ function mostrarmodelpublicador(){
                             </div>
                           </div>
                         </div>
-                        <img src="images/revista1.jpg">
+                        <img src="../images/revista1.jpg">
                       </div>
                       </div>
                </div>
@@ -750,7 +706,7 @@ function mostrarmodelpublicador(){
 
            <div class="ui special cards">
 
-                  <div class="card" style="width: 100%;">
+                  <div class="card">
                     <div class="blurring dimmable image">
                       <div class="ui dimmer">
                         <div class="content">
@@ -759,7 +715,7 @@ function mostrarmodelpublicador(){
                             </div>
                           </div>
                         </div>
-                        <img src="images/convocatoria1.jpg">
+                        <img src="../images/convocatoria1.jpg">
                       </div>
                       </div>
              </div>
@@ -806,7 +762,7 @@ function mostrarmodelpublicador(){
 
            <div class="ui special cards">
 
-                  <div class="card" style="width: 100%;">
+                  <div class="card">
                     <div class="blurring dimmable image">
                       <div class="ui dimmer">
                         <div class="content">
@@ -868,7 +824,7 @@ function mostrarmodelpublicador(){
 
                <div class="ui special cards">
 
-                  <div class="card" style="width: 100%;">
+                  <div class="card">
                     <div class="blurring dimmable image">
                       <div class="ui dimmer">
                         <div class="content">
@@ -877,7 +833,7 @@ function mostrarmodelpublicador(){
                             </div>
                           </div>
                         </div>
-                        <img src="images/revista1.jpg">
+                        <img src="../images/revista1.jpg">
                       </div>
                       </div>
                </div>
@@ -927,7 +883,7 @@ function mostrarmodelpublicador(){
 
            <div class="ui special cards">
 
-                  <div class="card" style="width: 100%;">
+                  <div class="card">
                     <div class="blurring dimmable image">
                       <div class="ui dimmer">
                         <div class="content">
@@ -936,7 +892,7 @@ function mostrarmodelpublicador(){
                             </div>
                           </div>
                         </div>
-                        <img src="images/convocatoria1.jpg">
+                        <img src="../images/convocatoria1.jpg">
                       </div>
                       </div>
              </div>
@@ -983,7 +939,7 @@ function mostrarmodelpublicador(){
 
            <div class="ui special cards">
 
-                  <div class="card" style="width: 100%;">
+                  <div class="card">
                     <div class="blurring dimmable image">
                       <div class="ui dimmer">
                         <div class="content">
@@ -992,7 +948,7 @@ function mostrarmodelpublicador(){
                             </div>
                           </div>
                         </div>
-                        <img src="images/revista2.jpg">
+                        <img src="../images/revista2.jpg">
                       </div>
                       </div>
              </div>
@@ -1022,44 +978,169 @@ function mostrarmodelpublicador(){
 
   </div>
 </div>
+
+
+
+
+
+<!--  ****************************** Fin de filtros -->
+
+
+
+
+
+
+
+
+            <!--PUBLICACION DE EVENTOS-->
+            <!--<div class="publish-event" id="publish-event">
+                <h1 class="ui header" style="padding-top: 20px;">Formuladio de publicacion de revista</h1>
+            </div>-->
+
+            <!--FORMULARIO PRINCIPAL-->
+            <!--PRIMERA OPCIÓN-->
+            <!--
+            <div class="ui tiny form raised segment" style="padding-bottom: 0">
+                <div class="fields">
+                    <div class="eight wide field">
+                        <label>Palabra Clave</label>
+                        <input type="text" placeholder="Ingrese la palabra clave del título de publicación...">
+                    </div>
+                </div>
+                <div class="three fields">
+                    <div class="field">
+                        <label>Universidad</label>
+                        <select class="ui fluid search dropdown" multiple="">
+                            <option value="">State</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">USTA-Tunja</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label>Área</label>
+                        <select class="ui fluid dropdown">
+                            <option value="">Química</option>
+                            <option value="1">Física</option>
+                            <option value="2">Biología</option>
+                            <option value="3">Software</option>
+                            <option value="4">Informática</option>
+                            <option value="5">Filosofía</option>
+
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label>Tema Específico</label>
+                        <div class="ui fluid search selection dropdown">
+                            <input type="hidden" name="country">
+                            <i class="dropdown icon"></i>
+                            <div class="default text">Seleccionar tema</div>
+                            <div class="menu">
+                                <div class="item" data-value="1">Auditoría contable</div>
+                                <div class="item" data-value="2">Bases de datos</div>
+                                <div class="item" data-value="3">Bioingeniería</div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui pointing secondary demo stackable menu">
+                <a class="active item" data-tab="1">Convocatorias</a>
+                <a class="item" data-tab="2">Revistas</a>
+                <a class="item" data-tab="3">Eventos</a>
+                <a class="item" data-tab="4">Evaluador</a>
+                <a class="item" data-tab="5">Proyecto</a>
+                <a class="item" data-tab="6">Logros</a>
+            </div>
+            &lt;!&ndash;CONTENIDO TAB 1&ndash;&gt;
+            <div class="ui active tab raised segment" data-tab="1">
+                <div class="ui tiny form" style="padding-bottom: 0">
+                    <div class="fields">
+                        <div class="eight wide field">
+                            <label>Palabra Clave</label>
+                            <input type="text" placeholder="Ingrese la palabra clave del título de publicación...">
+                        </div>
+                    </div>
+                    <div class="three fields">
+                        <div class="field">
+                            <label>Universidad</label>
+                            <select class="ui fluid search dropdown" multiple="">
+                                <option value="">State</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">USTA-Tunja</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label>Área</label>
+                            <select class="ui fluid dropdown">
+                                <option value="">Química</option>
+                                <option value="1">Física</option>
+                                <option value="2">Biología</option>
+                                <option value="3">Software</option>
+                                <option value="4">Informática</option>
+                                <option value="5">Filosofía</option>
+
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label>Tema Específico</label>
+                            <div class="ui fluid search selection dropdown">
+                                <input type="hidden" name="country">
+                                <i class="dropdown icon"></i>
+                                <div class="default text">Seleccionar tema</div>
+                                <div class="menu">
+                                    <div class="item" data-value="1">Auditoría contable</div>
+                                    <div class="item" data-value="2">Bases de datos</div>
+                                    <div class="item" data-value="3">Bioingeniería</div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui tab raised segment" data-tab="2">2</div>
+            <div class="ui tab raised segment" data-tab="3">3</div>
+            <div class="ui tab raised segment" data-tab="4">4</div>
+            <div class="ui tab raised segment" data-tab="5">5</div>
+            <div class="ui tab raised segment" data-tab="6">6</div>
+
+            <h2 class="ui header">Resultado</h2>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>-->
+        </div>
+    </div>
 </div>
 
 
-
-<!-- ********************************************************************************* fin de formulario con filtros-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
 
 
 
@@ -1428,70 +1509,24 @@ function mostrarmodelpublicador(){
 
 
 
+<script type="text/javascript">
+    function showAdvancedSearch(){
 
+        $('#revistasfiltro').transition('fade');
+        var altura = document.getElementById('paddingbusqueda').offsetHeight;
+        $('#paddingbusqueda').animate({
+            'marginTop' : "-=18%" //moves up
+        });
+        $('#cuadrobusquedainicial').transition('fade');
+        
 
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="ui inverted vertical footer segment">
-    <div class="ui center aligned container">
-      <div class="ui stackable inverted divided grid">
-        <div class="three wide column">
-          <h4 class="ui inverted header">Group 1</h4>
-          <div class="ui inverted link list">
-            <a href="#" class="item">Link One</a>
-            <a href="#" class="item">Link Two</a>
-            <a href="#" class="item">Link Three</a>
-            <a href="#" class="item">Link Four</a>
-          </div>
-        </div>
-        <div class="three wide column">
-          <h4 class="ui inverted header">Group 2</h4>
-          <div class="ui inverted link list">
-            <a href="#" class="item">Link One</a>
-            <a href="#" class="item">Link Two</a>
-            <a href="#" class="item">Link Three</a>
-            <a href="#" class="item">Link Four</a>
-          </div>
-        </div>
-        <div class="three wide column">
-          <h4 class="ui inverted header">Group 3</h4>
-          <div class="ui inverted link list">
-            <a href="#" class="item">Link One</a>
-            <a href="#" class="item">Link Two</a>
-            <a href="#" class="item">Link Three</a>
-            <a href="#" class="item">Link Four</a>
-          </div>
-        </div>
-        <div class="seven wide column">
-          <h4 class="ui inverted header">Footer Header</h4>
-          <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
-        </div>
-      </div>
-      <div class="ui inverted section divider"></div>
-      <img src="images/icono.jpg" class="ui centered mini image">
-      <div class="ui horizontal inverted small divided link list">
-        <a class="item" href="#">Site Map</a>
-        <a class="item" href="#">Contact Us</a>
-        <a class="item" href="#">Terms and Conditions</a>
-        <a class="item" href="#">Privacy Policy</a>
-      </div>
-    </div>
-  </div>
+    function showStartSearch() {
+        $('#start-search').transition('fade');
+    }
+    $('.ui.dropdown').dropdown({keepOnScreen: true});
+    $('.demo.menu .item').tab({history: false});
+</script>
 </body>
-
 </html>

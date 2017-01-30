@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Mundocente</title>
-    <link rel="stylesheet" href="css/style-inicio-fixed.css">
-    <link rel="stylesheet" href="semantic/out/semantic.min.css">
-    <link rel="stylesheet" href="css/scrollbar.css">
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="semantic/out/semantic.min.js"></script>
+    <link rel="stylesheet" href="../css/style-inicio-fixed.css">
+    <link rel="stylesheet" href="../semantic/out/semantic.min.css">
+    <link rel="stylesheet" href="../css/scrollbar.css">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../semantic/out/semantic.min.js"></script>
 
 
 
@@ -21,7 +21,7 @@
 
   function mostrarfiltrorevistas(){
   //document.getElementById("revistasfiltro").style.display = "block";
-  $('#mostrarrevistasfiltro').toggle("slow");
+  $('#revistasfiltro').toggle("slow");
   
 }
 
@@ -83,12 +83,14 @@ $('#convocatoriasfiltrop').hide();
     </script>
 
 
+
+
 <style type="text/css">
   
 #divdefiltro{
       
       overflow-y: scroll;
-      
+      max-height: 88%;
       height: auto;
       background:#ffffff;
     }
@@ -96,14 +98,15 @@ $('#convocatoriasfiltrop').hide();
     #modalpublicaciones{
       overflow-y: scroll;
     }
-
+  
 </style>
+
 
 
 </head>
 <body>
 <div class="ui visible inverted left vertical sidebar menu" style="max-width: 200px">
-    <img src="images/icono.png" class="main-menu-logo"/>
+    <img src="../images/icono.png" class="main-menu-logo"/>
     <a class="item">
         <i class="home icon"></i> Inicio
     </a>
@@ -124,10 +127,10 @@ $('#convocatoriasfiltrop').hide();
 </div>
 <div class="main-content-wrapper">
     <div class="main-content-menu ui fixed secondary menu">
-        <img src="images/nombre.png" class="main-content-logo"/>
+        <img src="../images/nombre.png" class="main-content-logo"/>
         <div class="right menu">
             <div class="ui dropdown item">
-                <img src="images/user.jpg" class="main-content-avatar ui circular image"/> 
+                <img src="../images/user.jpg" class="main-content-avatar ui circular image"/>
                 <span style="margin-right: 10px; font-weight: bolder">   Usuario</span>
                 
                 <i class="dropdown icon"></i>
@@ -160,40 +163,9 @@ $('#convocatoriasfiltrop').hide();
     <div class="main-content ">
         <div class="ui container">
             <!--START SEARCH -->
-            <div class="start-search" id="start-search" >
-            <div>
-                <h1 class="ui header center aligned" id="paddingbusqueda" style="padding-top: 18%;">Búsqueda</h1>
-                <br>
-                <div class="ui two column centered stackable grid" >
-                    <div class="column">
-                        <div class="ui form">
-                            <div class="field">
-                                <div class="ui fluid action input">
-                                    <input type="text" placeholder="Escriba palabras para buscar revistas, eventos, etc.">
-                                    <div class="ui button"> <i class="search icon"> </i> Buscar</div>
-                                </div>
-                            </div>
-                            <div class="field" id="cuadrobusquedainicial">
-                                <div class="ui toggle checkbox" onclick="showAdvancedSearch()">
-                                    <input type="checkbox">
-                                    <label>Busqueda avanzada</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
+            
                 
-
-                <div id="revistasfiltro" class="ui raised segment" style="display: none;">
-                    <div class="ui internally celled left aligned stackable equal width grid">
-                        
-
-
-
-
-
-
 
 
 
@@ -204,25 +176,36 @@ $('#convocatoriasfiltrop').hide();
 
 
 
- <div class="column" >
-      <div class="ui sticky segments" id="divdefiltro">
+
+
+
+<div class="two column equal height ui grid" >
+  <div class="row" >
+
+
+
+
+<!-- ********************************************************************************* columna de filtros -->
+
+    <div class="column" >
+      <div class="ui sticky segments fixed" id="divdefiltro">
         <div class="ui segment">
           
           
         
 <div class="ui form">
-  <h4 class="ui dividing header">Búsqueda con filtros</h4>
-   <div class="ui segment" style="background-color: #E8D8E2;">
+  <h4 class="ui dividing header">Búsqueda avanzada</h4>
+   <div class="ui segment">
     <div class="two fields">
      <div class="field">
-         <div class="ui toggle checkbox" >
-            <input type="checkbox" onclick="mostrarfiltrorevistas()">
+         <div class="ui toggle checkbox" onclick="mostrarfiltrorevistas()">
+            <input type="checkbox" >
             <label>Revista</label>
         </div>
       </div>
       <div class="field">
-         <div class="ui toggle checkbox" >
-            <input type="checkbox" onclick="mostrarfiltroconvocatorias()">
+         <div class="ui toggle checkbox" onclick="mostrarfiltroconvocatorias()">
+            <input type="checkbox" >
             <label>Convocatoria</label>
         </div>
       </div>
@@ -232,8 +215,8 @@ $('#convocatoriasfiltrop').hide();
     <div class="two fields">
      
        <div class="field">
-         <div class="ui toggle checkbox" >
-            <input type="checkbox" onclick="mostrarfiltroeventos()">
+         <div class="ui toggle checkbox" onclick="mostrarfiltroeventos()">
+            <input type="checkbox" >
             <label>Evento</label>
         </div>
       </div>
@@ -333,7 +316,7 @@ $('#convocatoriasfiltrop').hide();
   </div>
   
  
-  <div id="mostrarrevistasfiltro" style="display: none;">
+  <div id="revistasfiltro" style="display: none;">
 <h4 class="ui dividing header">Revistas</h4>
  <div class="ui form">
     <label>Tipo de indexación</label>
@@ -576,7 +559,6 @@ $('#convocatoriasfiltrop').hide();
   
   
           <button class="ui button green" style="float: right;margin-bottom: 15px;"><i class="search icon"></i> Buscar</button>
-          <br>
         
 </div>
 <br>
@@ -599,6 +581,299 @@ $('#convocatoriasfiltrop').hide();
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+     <!-- ********************************************************************************* publicaciones-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="main column">
+        <div class="wide column">
+      <div class="ui card menu" style="width: 100%;">
+        <div class="content">
+          
+              
+              <div class="ui right floated simple dropdown item">
+                 <i class="dropdown icon"></i>
+                <div class="menu">
+                  <a class="item" href="#">Guardar publicación</a>
+                  <a class="item" href="#">Denunciar Publicación</a>
+                  <a class="item" href="#">Mis publicaciones</a>
+                </div>
+              </div>
+
+
+          <a><div class="header"><h3 style="color: black;">Evento de ingeniería ambiental</h3></div></a>
+          <div class="meta">Ciencias naturales <span class=" floated star" title="Agregar área a favoritas"><i class="star icon"></i> </span></div>
+          <div class="description">
+            <p>Aquí va la descripción de la publicación con detalles.</p>
+          </div>
+        </div>
+        <div class="extra content">
+          
+          <span class="left floated pointing up"><i class="pointing up icon"></i> 132 Visitas </span>
+          <button class="ui inverted right floated labeled icon button" style="background-color: rgb(164, 70, 133);"> Enlace <i class="linkify icon"></i> </button>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+<br>
+
+
+
+  <div class="wide column">
+      <div class="ui card menu"  style="width: 100%;">
+        <div class="content">
+          
+              
+              <div class="ui right floated simple dropdown item">
+                 <i class="dropdown icon"></i>
+                <div class="menu">
+                  <a class="item" href="#">Guardar publicación</a>
+                  <a class="item" href="#">Denunciar Publicación</a>
+                  <a class="item" href="#">Mis publicaciones</a>
+                </div>
+              </div>
+
+
+          <a><div class="header"><h3 style="color: black;">Convocatoria de docente de Física</h3></div></a>
+          <div class="meta">Física <span class=" floated star" title="Agregar área a favoritas"><i class="star icon"></i> </span></div>
+          <div class="description">
+            <p>Aquí va la descripción de la publicación con detalles.</p>
+          </div>
+        </div>
+        <div class="extra content">
+          
+          <span class="left floated pointing up"><i class="pointing up icon"></i> 132 Visitas </span>
+          <button class="ui inverted right floated labeled icon button" style="background-color: rgb(164, 70, 133);"> Enlace <i class="linkify icon"></i> </button>
+        </div>
+      </div>
+
+    </div>
+
+
+    <br>
+
+
+
+  <div class="wide column">
+      <div class="ui card menu"  style="width: 100%;">
+        <div class="content">
+          
+              
+              <div class="ui right floated simple dropdown item">
+                 <i class="dropdown icon"></i>
+                <div class="menu">
+                  <a class="item" href="#">Guardar publicación</a>
+                  <a class="item" href="#">Denunciar Publicación</a>
+                  <a class="item" href="#">Mis publicaciones</a>
+                </div>
+              </div>
+
+
+          <a><div class="header"><h3 style="color: black;">Revista de Inteligencia Artificial</h3></div></a>
+          <div class="meta">Ingeniería de Sistemas <span class=" floated star" title="Agregar área a favoritas"><i class="star icon"></i> </span></div>
+          <div class="description">
+            <p>Aquí va la descripción de la publicación con detalles.</p>
+          </div>
+        </div>
+        <div class="extra content">
+          
+          <span class="left floated pointing up"><i class="pointing up icon"></i> 132 Visitas </span>
+          <button class="ui inverted right floated labeled icon button" style="background-color: rgb(164, 70, 133);"> Enlace <i class="linkify icon"></i> </button>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+    <br>
+
+
+
+  <div class="wide column">
+      <div class="ui card menu"  style="width: 100%;">
+        <div class="content">
+          
+              
+              <div class="ui right floated simple dropdown item">
+                 <i class="dropdown icon"></i>
+                <div class="menu">
+                  <a class="item" href="#">Guardar publicación</a>
+                  <a class="item" href="#">Denunciar Publicación</a>
+                  <a class="item" href="#">Mis publicaciones</a>
+                </div>
+              </div>
+
+
+          <a><div class="header"><h3 style="color: black;">Revista de Inteligencia Artificial</h3></div></a>
+          <div class="meta">Ingeniería de Sistemas <span class=" floated star" title="Agregar área a favoritas"><i class="star icon"></i> </span></div>
+          <div class="description">
+            <p>Aquí va la descripción de la publicación con detalles.</p>
+          </div>
+        </div>
+        <div class="extra content">
+          
+          <span class="left floated pointing up"><i class="pointing up icon"></i> 132 Visitas </span>
+          <button class="ui inverted right floated labeled icon button" style="background-color: rgb(164, 70, 133);"> Enlace <i class="linkify icon"></i> </button>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <br>
+
+
+
+  <div class="wide column">
+      <div class="ui card menu"  style="width: 100%;">
+        <div class="content">
+          
+              
+              <div class="ui right floated simple dropdown item">
+                 <i class="dropdown icon"></i>
+                <div class="menu">
+                  <a class="item" href="#">Guardar publicación</a>
+                  <a class="item" href="#">Denunciar Publicación</a>
+                  <a class="item" href="#">Mis publicaciones</a>
+                </div>
+              </div>
+
+
+          <a><div class="header"><h3 style="color: black;">Revista de Inteligencia Artificial</h3></div></a>
+          <div class="meta">Ingeniería de Sistemas <span class=" floated star" title="Agregar área a favoritas"><i class="star icon"></i> </span></div>
+          <div class="description">
+            <p>Aquí va la descripción de la publicación con detalles.</p>
+          </div>
+        </div>
+        <div class="extra content">
+          
+          <span class="left floated pointing up"><i class="pointing up icon"></i> 132 Visitas </span>
+          <button class="ui inverted right floated labeled icon button" style="background-color: rgb(164, 70, 133);"> Enlace <i class="linkify icon"></i> </button>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <br>
+
+
+
+  <div class="wide column">
+      <div class="ui card menu"  style="width: 100%;">
+        <div class="content">
+          
+              
+              <div class="ui right floated simple dropdown item">
+                 <i class="dropdown icon"></i>
+                <div class="menu">
+                  <a class="item" href="#">Guardar publicación</a>
+                  <a class="item" href="#">Denunciar Publicación</a>
+                  <a class="item" href="#">Mis publicaciones</a>
+                </div>
+              </div>
+
+
+          <a><div class="header"><h3 style="color: black;">Revista de Inteligencia Artificial</h3></div></a>
+          <div class="meta">Ingeniería de Sistemas <span class=" floated star" title="Agregar área a favoritas"><i class="star icon"></i> </span></div>
+          <div class="description">
+            <p>Aquí va la descripción de la publicación con detalles.</p>
+          </div>
+        </div>
+        <div class="extra content">
+          
+          <span class="left floated pointing up"><i class="pointing up icon"></i> 132 Visitas </span>
+          <button class="ui inverted right floated labeled icon button" style="background-color: rgb(164, 70, 133);"> Enlace <i class="linkify icon"></i> </button>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <br>
+
+
+
+  <div class="wide column">
+      <div class="ui card menu"  style="width: 100%;">
+        <div class="content">
+          
+              
+              <div class="ui right floated simple dropdown item">
+                 <i class="dropdown icon"></i>
+                <div class="menu">
+                  <a class="item" href="#">Guardar publicación</a>
+                  <a class="item" href="#">Denunciar Publicación</a>
+                  <a class="item" href="#">Mis publicaciones</a>
+                </div>
+              </div>
+
+
+          <a><div class="header"><h3 style="color: black;">Revista de Inteligencia Artificial</h3></div></a>
+          <div class="meta">Ingeniería de Sistemas <span class=" floated star" title="Agregar área a favoritas"><i class="star icon"></i> </span></div>
+          <div class="description">
+            <p>Aquí va la descripción de la publicación con detalles.</p>
+          </div>
+        </div>
+        <div class="extra content">
+          
+          <span class="left floated pointing up"><i class="pointing up icon"></i> 132 Visitas </span>
+          <button class="ui inverted right floated labeled icon button" style="background-color: rgb(164, 70, 133);"> Enlace <i class="linkify icon"></i> </button>
+        </div>
+      </div>
+
+    </div>
+
+    <br>
+
+<div class="ui active centered inline loader"></div>
+
+</div>
+
+<!-- ********************************************************************************* Fin publicaciones-->
+
+
+
+  </div>
+</div>
+
+
+
+
+
 <!--  ****************************** Fin de filtros -->
 
 
@@ -608,16 +883,6 @@ $('#convocatoriasfiltrop').hide();
 
 
 
-
-
-
-
-
-
-
-                    </div>
-                </div>
-            </div>
             <!--PUBLICACION DE EVENTOS-->
             <!--<div class="publish-event" id="publish-event">
                 <h1 class="ui header" style="padding-top: 20px;">Formuladio de publicacion de revista</h1>

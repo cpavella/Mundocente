@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Publicar Revista</title>
     <!--<link rel="stylesheet" href="css/style-inicio-fixed.css">-->
-    <link rel="stylesheet" href="semantic/out/semantic.min.css">
-    <link rel="stylesheet" href="css/scrollbar.css">
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="semantic/out/semantic.min.js"></script>
+    <link rel="stylesheet" href="../semantic/out/semantic.min.css">
+    <link rel="stylesheet" href="../css/scrollbar.css">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../semantic/out/semantic.min.js"></script>
 </head>
 <body>
 <style>
     body {
         background-color: #EEEEEE;
+    }
+
+    .ui.menu.sidebar {
+        background-color: #242533;
     }
 
     .ui.menu.sidebar .item > img,
@@ -24,10 +28,12 @@
 
     .ui.fixed.sticky.menu {
         height: 100% !important;
+        background-color: #242533;
     }
 
     .ui.fixed.top.menu {
         padding: 5px 0;
+        background-color: #242533;
     }
 
     .ui.fixed.top.menu img {
@@ -35,16 +41,25 @@
     }
 
     .pusher .ui.container {
-        margin: 30px 0;
+        margin: 40px 0;
     }
 
-    .pusher .ui.container > h2 {
-        margin-bottom: 20px;
+    .pusher .ui.container > h1 {
+        margin-bottom: 10px;
+        color: #242533;
     }
 
-    .pusher .ui.segment .attached.label,
-    .pusher .ui.segment form.form .attached.label {
-        font-size: 1.05em;
+    .pusher .ui.container .ui.form h4,
+    .pusher .ui.container .ui.form label {
+        color: #242533;
+    }
+
+    .line {
+        background: #CC4452;
+        display: inline-block;
+        height: 0.15587em;
+        max-width: 10em;
+        width: 75%;
     }
 
     /* Mobile */
@@ -57,6 +72,14 @@
         .ui.fixed.sticky.menu,
         .ui.fixed.top.menu img {
             display: none;
+        }
+
+        .line {
+            background: #CC4452;
+            display: inline-block;
+            height: 0.15587em;
+            max-width: 7em;
+            width: 75%;
         }
     }
 
@@ -127,7 +150,7 @@
 <!--Menu Sidebar -->
 <div class="ui left sidebar inverted vertical menu">
     <div class="item">
-        <img src="images/nombre.png">
+        <img src="../images/nombre.png">
     </div>
     <a class="item">
         <i class="grid layout icon"></i> Busqueda
@@ -145,7 +168,7 @@
 <!--Menu visible-->
 <div class="ui vertical inverted large fixed pointing sticky menu">
     <div class="item">
-        <img src="images/nombre.png">
+        <img src="../images/nombre.png">
     </div>
     <div class="ui dropdown item">
         Nombre Usuario
@@ -193,21 +216,40 @@
 </div>
 <!--Contenido-->
 <div class="pusher" style="background-color: #EEEEEE;">
-    <div class="ui container">
-        <h2 class="ui center aligned header">Publicar Revista Científica</h2>
-        <div class="ui raised padded segment">
-            <!--UBICACIÓN-->
-            <div class="ui message">
-                <div class="ui top left attached label">Ubicación</div>
-                <ul class="list" style="padding-top: 5px;">
-                    <li><b>Instituto: </b>Curabitur ut lorem sit amet nisi egestas viverra.</li>
-                    <li><b>País: </b>Nisi viverra.</li>
-                    <li><b>Ciudad: </b>Lorem sit .</li>
-                </ul>
+    <div class="ui center aligned container">
+        <h1 class="ui header">Publicar Revista Científica</h1>
+        <div>
+            <div class="line"></div>
+            <div data-width="79" data-height="27"
+                 style="display: inline-block; vertical-align: middle; line-height: 0; width: 79px; height: 27px;">
+                <svg height="27" width="79">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.2 26.4">
+                        <path fill="none" stroke="#CC4452" stroke-width="2" d="
+                            M57.3,13.1c-3.2,10.4,10.4,16.1,16.8,8.7c7.1-8.2,0.6-17.8-7-20.1c-19.6-5.2-31.9,18-49,23.1C9.3,27.5-1.7,20.4,1.6,9.8
+                            c3.8-12.4,23.3-9,19.3,4"></path>
+                    </svg>
+                </svg>
             </div>
+            <div class="line"></div>
+        </div>
+        <div class="ui piled left aligned padded segment">
             <form class="ui form segment" id="form">
-                <div class="ui top left attached label">Información</div>
-                <h5 class="ui dividing header">Información general</h5>
+                <h4 class="ui dividing header">Información general</h4>
+                <div class="field">
+                    <div class="ui blue large horizontal label">Institución:
+                        <div class="detail">Nombre del Instituto</div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui teal large horizontal label">País:
+                        <div class="detail">Nisi viverra.</div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui green large horizontal label">Ciudad:
+                        <div class="detail">Lorem sit .</div>
+                    </div>
+                </div>
                 <div class="required field">
                     <label>Titulo (Mínimo 150 caracteres )</label>
                     <input name="titleMaxLength" type="text">
@@ -286,7 +328,7 @@
                     </div>
                 </div>
                 <!--Areas de conocimiento-->
-                <h5 class="ui dividing header">Áreas de conocimiento</h5>
+                <h4 class="ui dividing header">Áreas de conocimiento</h4>
                 <div class="three fields">
                     <div class="required field">
                         <label>Gran área</label>
@@ -392,10 +434,10 @@
                     </div>
                 </div>-->
                 <!--Info final-->
-                <h5 class="ui dividing header">Información de contacto</h5>
+                <h4 class="ui dividing header">Información de contacto</h4>
                 <div class="field">
                     <label>Imagen o logo de la revista</label>
-                    <img class="ui bottom aligned medium rounded image" src="images/public-image.png">
+                    <img class="ui bottom aligned medium rounded image" src="../images/public-image.png">
                     <div class="ui olive inverted button">Cargar</div>
                 </div>
                 <div class="two fields">
@@ -438,7 +480,8 @@
                                     {
                                         type: 'maxLength[150]',
                                         prompt: 'El título no puede ser mayor a 150 caracteres'
-                                    }, {
+                                    },
+                                    {
                                         type: 'empty',
                                         prompt: 'Porfavor introduzca un valor en Titulo'
                                     }

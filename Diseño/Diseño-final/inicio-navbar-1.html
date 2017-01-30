@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>Version - 3</title>
+    <title>Version - 1</title>
     <!--<link rel="stylesheet" href="css/style-inicio-fixed.css">-->
-    <link rel="stylesheet" href="semantic/out/semantic.min.css">
-    <link rel="stylesheet" href="css/scrollbar.css">
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="semantic/out/semantic.min.js"></script>
+    <link rel="stylesheet" href="../semantic/out/semantic.min.css">
+    <link rel="stylesheet" href="../css/scrollbar.css">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../semantic/out/semantic.min.js"></script>
 </head>
 <body>
 <style>
@@ -21,6 +21,11 @@
         overflow: visible !important;
     }
 
+    .ui.fixed.sticky.menu {
+        height: 100% !important;
+        top: 49px;
+    }
+
     .ui.fixed.top.menu {
         padding: 5px 0;
     }
@@ -29,12 +34,9 @@
         height: 40px;
     }
 
-    .ui.right.attached.fixed.button {
-        top: 100px;
-    }
-
     /* Mobile */
     @media only screen and (max-width: 767px) {
+        .ui.fixed.sticky.menu,
         .ui.fixed.top.menu img{
             display: none;
         }
@@ -47,6 +49,7 @@
     /* Tablet */
 
     @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .ui.fixed.sticky.menu,
         .ui.fixed.top.menu img {
             display: none;
         }
@@ -59,24 +62,32 @@
     /* Small Monitor */
 
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
-        .ui.top.menu.fixed .item.launch{
+        .ui.top.menu.fixed .item{
             display: none;
         }
 
         .ui.top.menu.fixed .menu .item{
             display: block;
+        }
+
+        .pusher .ui.container {
+            padding-left: 18rem;
         }
     }
 
     /* Large Monitor */
 
     @media only screen and (min-width: 1200px) {
-        .ui.top.menu.fixed .item.launch{
+        .ui.top.menu.fixed .item{
             display: none;
         }
 
         .ui.top.menu.fixed .menu .item{
             display: block;
+        }
+
+        .pusher .ui.container {
+            padding-left: 18rem;
         }
     }
 
@@ -89,7 +100,7 @@
 <!--Menu Sidebar -->
 <div class="ui left sidebar inverted vertical menu">
     <div class="item">
-        <img src="images/nombre.png" style="height: 38px">
+        <img src="../images/nombre.png" style="height: 38px">
     </div>
     <a class="item">
         <i class="grid layout icon"></i> Busqueda
@@ -104,32 +115,43 @@
         </div>
     </div>
 </div>
-<!--Menu top fixed visible-->
-<div class="ui fixed inverted top menu">
-    <div class="ui container">
-        <a class="launch item">
-            <i class="content icon"></i>
-            Menu
-        </a>
-        <div class="item">
-            <b>Función: </b> Busqueda
-        </div>
-        <div class="right menu">
-            <div class="ui dropdown item">
-                <i class="dropdown icon"></i>
-                Perfil
-                <div class="menu">
-                    <div class="item">Cuenta</div>
-                    <div class="item">Favoritos</div>
-                </div>
-            </div>
-            <a class="item">Salir</a>
+<!--Menu visible-->
+<div class="ui vertical inverted large fixed pointing sticky menu">
+    <a class="item">
+        <i class="grid layout icon"></i> Busqueda
+    </a>
+    <div class="item">
+        <i class="home icon"></i>
+        <div class="header">Publicar</div>
+        <div class="menu">
+            <a class="item">Revista</a>
+            <a class="item">Convocatorias</a>
+            <a class="item">Eventos</a>
+            <a class="item">Invitación</a>
         </div>
     </div>
 </div>
-<!--Button-->
-<div class="ui black big launch right attached fixed button">
-    <a class="button-sidebar"><i class="content icon"></i><span class="text">Menu</span></a>
+<!--Menu top fixed visible-->
+<div class="ui fixed inverted top menu">
+    <img src="../images/nombre.png">
+    <a class="launch item">
+        <i class="content icon"></i>
+        Menu
+    </a>
+    <div class="item">
+        <b>Servicio:</b> Busqueda
+    </div>
+    <div class="right menu">
+        <div class="ui dropdown item">
+            <i class="dropdown icon"></i>
+            Perfil
+            <div class="menu">
+                <div class="item">Cuenta</div>
+                <div class="item">Favoritos</div>
+            </div>
+        </div>
+        <a class="item">Salir</a>
+    </div>
 </div>
 <!--Contenido-->
 <div class="pusher" style="background-color: #EEEEEE;">
@@ -176,16 +198,16 @@
         transition: 'push'
     });
     // left is opened by button
-    $('.ui.left.sidebar').sidebar('attach events', '.menu.fixed .launch.item');
-    $('.ui.left.sidebar').sidebar('attach events', '.ui.right.attached.fixed.button .button-sidebar');
+    $('.ui.left.sidebar')
+        .sidebar('attach events', '.menu.fixed .launch.item');
     $('.ui .dropdown').dropdown();
 
-    /* $('.ui.sidebar')
-     .sidebar('attach events', '.menu.fixed .launch.item')
-     ;
-     $('.ui.sidebar')
-     .sidebar('attach events', '.button.fixed .item')
-     ;*/
+   /* $('.ui.sidebar')
+        .sidebar('attach events', '.menu.fixed .launch.item')
+    ;
+    $('.ui.sidebar')
+        .sidebar('attach events', '.button.fixed .item')
+    ;*/
     function showAdvancedSearch() {
         $('#revistasfiltro').transition('fade');
     }
