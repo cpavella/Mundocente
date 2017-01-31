@@ -1,0 +1,136 @@
+         <style>
+    body {
+        background-color: #EEEEEE;
+    }
+
+    .ui.menu.sidebar {
+        background-color: #242533;
+    }
+
+    .ui.menu.sidebar .item > img,
+    .ui.fixed.sticky.menu {
+        height: 38px;
+    }
+
+    .ui.fixed.sticky.menu {
+        height: 100% !important;
+        background-color: #242533;
+    }
+
+    .ui.fixed.top.menu {
+        padding: 5px 0;
+        background-color: #242533;
+    }
+
+    .ui.fixed.top.menu img {
+        height: 40px;
+    }
+
+    .pusher .ui.container {
+        margin: 40px 0;
+    }
+
+    .pusher .ui.container > h1 {
+        margin-bottom: 10px;
+        color: #242533;
+    }
+
+    .pusher .ui.container .ui.form h4,
+    .pusher .ui.container .ui.form label {
+        color: #242533;
+    }
+
+    .line {
+        background: #CC4452;
+        display: inline-block;
+        height: 0.15587em;
+        max-width: 10em;
+        width: 75%;
+    }
+
+    /* Mobile */
+    @media only screen and (max-width: 767px) {
+        div.pusher {
+            background-color: #EEEEEE;
+            margin-top: 50px;
+        }
+
+        .ui.fixed.sticky.menu,
+        .ui.fixed.top.menu img {
+            display: none;
+        }
+
+        .line {
+            background: #CC4452;
+            display: inline-block;
+            height: 0.15587em;
+            max-width: 7em;
+            width: 75%;
+        }
+    }
+
+    /* Tablet */
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        div.pusher {
+            background-color: #EEEEEE;
+            margin-top: 50px;
+        }
+
+        .ui.fixed.sticky.menu,
+        .ui.fixed.top.menu img {
+            display: none;
+        }
+    }
+
+    /* Small Monitor */
+
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        div.pusher {
+            background-color: #EEEEEE;
+        }
+
+        .ui.top.menu.fixed {
+            display: none;
+        }
+
+        .pusher .ui.container {
+            padding-left: 18rem;
+        }
+    }
+
+    /* Large Monitor */
+
+    @media only screen and (min-width: 1200px) and (max-width: 1407px) {
+        div.pusher {
+            background-color: #EEEEEE;
+        }
+
+        .ui.top.menu.fixed {
+            display: none;
+        }
+
+        .pusher .ui.container {
+            width: 1127px;
+            padding-left: 18rem;
+        }
+    }
+
+    /*Large Monitor 2*/
+
+    @media only screen and (min-width: 1408px) {
+        div.pusher {
+            background-color: #EEEEEE;
+        }
+
+        .ui.top.menu.fixed {
+            display: none;
+        }
+
+        .pusher .ui.container {
+            width: 1358px;
+            padding-left: 18rem;
+        }
+    }
+
+</style>
