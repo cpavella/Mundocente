@@ -115,7 +115,7 @@
 <div class="ui middle aligned center aligned grid">
     <div class="column">
         <div class="ui raised padded segment">
-           <a href="/publications"><div class="content-image">
+           <a href="/"><div class="content-image">
                 <img src="../images/logo.png" class="image">
             </div></a>
 
@@ -152,7 +152,7 @@
 
                 @endif
 
-            {!!Form::open()!!}
+            {!!Form::close()!!}
 
            
 
