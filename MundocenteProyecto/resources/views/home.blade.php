@@ -457,7 +457,7 @@
                         <input type="password" name="password" placeholder="Contraseña">
                     </div>
                 </div>
-                <div class="ui fluid primary large submit button" style="background-color: #CC4452"><a href="/publications">Ingresar</a></div>
+                <div class="ui fluid primary large submit button" style="background-color: #CC4452"><a href="#">Ingresar</a></div>
                 <div class="ui error message"></div>
             </form>
             <h5 class="ui horizontal divider header">

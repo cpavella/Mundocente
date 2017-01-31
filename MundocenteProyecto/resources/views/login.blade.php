@@ -109,22 +109,30 @@
             <a href="/publications"><div class="content-image">
                 <img src="../images/logo.png" class="image">
             </div></a>
-            <form class="ui form">
+
+
+            {!!Form::open(['route'=>'session.store', 'method'=> 'POST', 'class'=>'ui form'])!!}
                 <div class="ui field">
                     <div class="ui left icon input">
                         <i class="mail icon"></i>
-                        <input type="text" name="email" placeholder="Correo Electrónico">
+                        {!!Form::text('email', null, ['type' => 'text', 'placeholder' => 'Correo Electrónico'])!!}
                     </div>
                 </div>
                 <div class="field">
                     <div class="ui left icon input">
                         <i class="lock icon"></i>
-                        <input type="password" name="password" placeholder="Contraseña">
+                        {!!Form::password('password', ['type' => 'password', 'placeholder' => 'Contraseña'])!!}
                     </div>
                 </div>
-                <div class="ui fluid primary large submit button" style="background-color: #CC4452">Ingresar</div>
+                
+                {!!Form::submit('Ingresar', ['class'=>'ui fluid primary large submit button', 'style'=>'background-color: #CC4452;'])!!}
                 <div class="ui error message"></div>
-            </form>
+
+                @include('errors.error_login')
+
+            {!!Form::open()!!}
+
+
             <h5 class="ui horizontal divider header">
                 o
             </h5>

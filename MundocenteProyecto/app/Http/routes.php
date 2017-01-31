@@ -24,3 +24,9 @@ Route::get('signup', 'HomeController@registrar');
 
 
 Route::resource('user', 'UserController');
+
+
+
+
+Route::resource('session', 'SessionController');
+Route::resource('logout', 'SessionController@cerrarsesion');

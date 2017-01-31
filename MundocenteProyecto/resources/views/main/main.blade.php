@@ -48,7 +48,7 @@
     </div>
     <div class="item" style="background: url(../images/fondo-user.png) no-repeat 0% 0%/cover;">
         <img class="ui tiny centered circular image" src="../images/user.jpg">
-        <div class="ui aligned center inverted tiny header" >Nombre Usuario</div>
+        <div class="ui aligned center inverted tiny header" >{!!Auth::user()->name!!}</div>
     </div>
     <div class="ui dropdown item">
         Cuenta
@@ -56,7 +56,7 @@
         <div class="menu">
             <a class="item"><i class="user icon"></i>Cuenta</a>
             <a class="item"><i class="star icon"></i>Favoritos</a>
-            <a class="item" href="/"><i class="close icon"></i>Salir</a>
+            <a class="item" href="logout"><i class="close icon"></i>Salir</a>
         </div>
     </div>
     <a class=" item" href="publications">
@@ -96,7 +96,7 @@
                 <div class="item">Favoritos</div>
             </div>
         </div>
-        <a class="item" href="/">Salir</a>
+        <a class="item" href="logout">Salir</a>
     </div>
 </div>
 
