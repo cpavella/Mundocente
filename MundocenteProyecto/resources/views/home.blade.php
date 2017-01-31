@@ -9,7 +9,8 @@
     {!!Html::style('../semantic/out/semantic.min.css')!!}
     {!!Html::style('../css/style-index.css')!!}
     {!!Html::style('../css/scrollbar.css')!!}
-    {!!Html::style('../semantic/out/semantic.min.css')!!}
+    
+
 
     
     {!!Html::script('../js/jquery.min.js')!!}
@@ -72,7 +73,7 @@
 
 
 
-        
+       
 
 
 </head>
