@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use Mundocente\Http\Requests;
 use DB;
+use Auth;
+use Redirect;
 use Mundocente\Http\Controllers\Controller;
 
 use Mundocente\User;
@@ -54,7 +56,9 @@ class UserController extends Controller
             'email'=>$request['email'],
             'password'=>bcrypt($request['password']),
             ]);
-             return view('publication');
+             if(Auth::attempt(['email'=>$request['email'], 'password'=> $request['password']])){
+            return Redirect::to('publications');
+        }
         }
 
        
