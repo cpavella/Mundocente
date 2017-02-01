@@ -54,7 +54,7 @@
         Cuenta
         <i  class="ui middle aligned dropdown icon"></i>
         <div class="menu">
-            <a class="item"><i class="user icon"></i>Cuenta</a>
+            <a class="item" href="cuenta"><i class="user icon"></i>Cuenta</a>
             <a class="item"><i class="star icon"></i>Favoritos</a>
             <a class="item" href="logout"><i class="close icon"></i>Salir</a>
         </div>

@@ -44,6 +44,15 @@ class HomeController extends Controller
     }
 
 
+    /**
+     * Nos lleva a la página de cuenta
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function cuenta()
+    {
+        return view('formularios.formulariocuenta');
+    }
 
 
  /**
