@@ -2,6 +2,8 @@
 
 @section('content')
 
+
+
 <div class="pusher" style="background-color: #EEEEEE;">
     <div class="ui center aligned container">
         <h1 class="ui header">Publicar Revista Científica</h1>

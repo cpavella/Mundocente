@@ -145,6 +145,7 @@ return [
         Mundocente\Providers\EventServiceProvider::class,
         Mundocente\Providers\RouteServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+        AdamWathan\EloquentOAuthL5\EloquentOAuthServiceProvider::class,
 
     ],
 
@@ -195,6 +196,8 @@ return [
         'View'      => Illuminate\Support\Facades\View::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
+
+        'OAuth' => AdamWathan\EloquentOAuth\Facades\OAuth::class,
 
     ],
 

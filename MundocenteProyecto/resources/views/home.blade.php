@@ -5,14 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Mundocente</title>
-    {!!Html::style('../semantic/out/semantic.min.css')!!}
-    {!!Html::style('../css/style-index.css')!!}
-    {!!Html::style('../css/scrollbar.css')!!}
-    {!!Html::script('../js/jquery.min.js')!!}
-    {!!Html::script('../js/ScrollMagic.min.js')!!}
-    {!!Html::script('../js/init.js')!!}
-    {!!Html::script('../semantic/out/semantic.min.js')!!}
-    {!!Html::script('../js/jquery.scrollme.js')!!}
+
+    {!!Html::style('semantic/out/semantic.min.css')!!}
+    {!!Html::style('css/style-index.css')!!}
+    {!!Html::style('css/scrollbar.css')!!}
+    
+
+
+    
+    {!!Html::script('js/jquery.min.js')!!}
+    {!!Html::script('js/ScrollMagic.min.js')!!}
+    {!!Html::script('js/init.js')!!}
+    {!!Html::script('semantic/out/semantic.min.js')!!}
+    {!!Html::script('js/jquery.scrollme.js')!!}
+
+
+
+
 
 <script>
         $(document)
@@ -61,6 +70,12 @@
             })
         ;
     </script>
+
+
+
+       
+
+
 </head>
 
 <body id="inicio">
@@ -176,7 +191,7 @@
             <div class="row">
                 <div class="column">
                     <h2 class="ui header">
-                        <img style="width: 100px" src="../images/workspace.png" class="scrollme animateme"
+                        <img style="width: 100px" src="images/workspace.png" class="scrollme animateme"
                              data-when="enter" data-from="0.75" data-to="0" data-opacity="0" data-translatex="-100">
                         <div class="content">
                             Convocatorias docentes
@@ -188,7 +203,7 @@
                 </div>
                 <div class="column">
                     <h2 class="ui header">
-                        <img style="width: 100px" src="../images/workspace.png" class="scrollme animateme"
+                        <img style="width: 100px" src="images/workspace.png" class="scrollme animateme"
                              data-when="enter" data-from="0.75" data-to="0" data-opacity="0" data-translatex="100">
                         <div class="content">
                             Revistas científicas
@@ -202,7 +217,7 @@
             <div class="row">
                 <div class="column">
                     <h2 class="ui header">
-                        <img style="width: 100px" src="../images/workspace.png" class="scrollme animateme"
+                        <img style="width: 100px" src="images/workspace.png" class="scrollme animateme"
                              data-when="enter" data-from="0.75" data-to="0" data-opacity="0" data-translatex="-100">
                         <div class="content">
                             Eventos académicos
@@ -215,7 +230,7 @@
                 </div>
                 <div class="column">
                     <h2 class="ui header">
-                        <img style="width: 100px" src="../images/workspace.png" class="scrollme animateme"
+                        <img style="width: 100px" src="images/workspace.png" class="scrollme animateme"
                              data-when="enter" data-from="0.75" data-to="0" data-opacity="0" data-translatex="100">
                         <div class="content">
                             Invitaciones a participar en proyectos
@@ -344,7 +359,7 @@
             </div>
         </div>
         <div class="ui inverted section divider"></div>
-        <img src="../images/iconop.png" class="ui centered image">
+        <img src="images/iconop.png" class="ui centered image">
         <div class="ui horizontal inverted small divided link list">
             <a class="item" href="#">Site Map</a>
             <a class="item" href="#">Contact Us</a>
@@ -406,7 +421,7 @@
     <div class="column">
         <div class="ui raised padded segment">
            <div class="content-image">
-                <img src="../images/icono.jpg" class="image" width="130px" height="130px">
+                <img src="images/icono.jpg" class="image" width="130px" height="130px">
             </div>
               {!!Form::open(['route'=>'session.store', 'method'=> 'POST', 'class'=>'ui form'])!!}
                 <div class="ui field">
@@ -483,7 +498,7 @@
     <div class="column">
         <div class="ui raised padded segment">
            <div class="content-image">
-                <img src="../images/icono.jpg" class="image" width="130px" height="130px">
+                <img src="images/icono.jpg" class="image" width="130px" height="130px">
             </div>
             {!!Form::open(['route'=>'user.store', 'method'=> 'POST', 'class'=>'ui form'])!!}
 

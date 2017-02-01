@@ -8,14 +8,14 @@
 
     <!-- Site Properties -->
     <title>Registro - Mundocente</title>
-    <link rel="stylesheet" href="../semantic/out/semantic.min.css">
-    <link rel="stylesheet" href="../css/style-index.css" type="text/css">
-    <link rel="stylesheet" href="../css/scrollbar.css">
-    <script type="text/javascript" src="../js/jquery.min.js"></script>
-    <script type="text/javascript" src="../js/ScrollMagic.min.js"></script>
-    <script type="text/javascript" src="../js/init.js"></script>
-    <script type="text/javascript" src="../semantic/out/semantic.min.js"></script>
-    <script type="text/javascript" src="../js/jquery.scrollme.js"></script>
+    <link rel="stylesheet" href="semantic/out/semantic.min.css">
+    <link rel="stylesheet" href="css/style-index.css" type="text/css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
+    <script type="text/javascript" src="semantic/out/semantic.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollme.js"></script>
 
     <style type="text/css">
         body {
@@ -116,7 +116,7 @@
     <div class="column">
         <div class="ui raised padded segment">
            <a href="/"><div class="content-image">
-                <img src="../images/logo.png" class="image">
+                <img src="images/logo.png" class="image">
             </div></a>
 
             {!!Form::open(['route'=>'user.store', 'method'=> 'POST', 'class'=>'ui form'])!!}

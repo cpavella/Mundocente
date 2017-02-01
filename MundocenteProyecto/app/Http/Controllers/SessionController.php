@@ -8,6 +8,9 @@ use Auth;
 use Redirect;
 use DB;
 use Session;
+use OAuth;
+
+use Mundocente\User;
 
 use Mundocente\Http\Requests;
 use Mundocente\Http\Requests\SessionRequest;
@@ -48,6 +51,40 @@ class SessionController extends Controller
         }
         Session::flash('message-error-session', 'Los datos son incorrectos');
             return Redirect::to('login');
+    }
+
+
+
+     /**
+     * Ingesa con facebook
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function authfacebook()
+    {     
+        return OAuth::authorize('facebook');
+    }
+
+
+
+
+
+       /**
+     * Inicia sesión con facebook
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function sesionfacebook()
+    {
+       OAuth::login('facebook',  function($user, $details) {
+        $user->name = $details->nickname;
+        $user->email = $details->email;
+        $user->photo_url = $details->avatar;
+        $user->save();
+        });
+         return Redirect::to('publications');
+        
+        dd(Auth::user());
     }
 
 

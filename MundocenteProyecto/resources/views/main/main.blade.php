@@ -6,27 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Publicar Convocatoria</title>
     <!--<link rel="stylesheet" href="css/style-inicio-fixed.css">-->
-    {!!Html::style('../semantic/out/semantic.min.css')!!}
-    {!!Html::style('../css/scrollbar.css')!!}
+    {!!Html::style('semantic/out/semantic.min.css')!!}
+    {!!Html::style('css/scrollbar.css')!!}
     {!!Html::style('https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.6/calendar.min.css')!!}
-    {!!Html::style('../css/style-inicio.css')!!}
-
-
-
-{!!Html::script('../js/jquery.min.js')!!}
-{!!Html::script('../semantic/out/semantic.min.js')!!}
+    {!!Html::style('css/style-inicio.css')!!}
+    
+    
+ 
+{!!Html::script('js/jquery.min.js')!!}
+{!!Html::script('semantic/out/semantic.min.js')!!}
 {!!Html::script('https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.6/calendar.min.js')!!}
 
+    
 
-
-
+    
 </head>
 <body>
 
 <!--Menu Sidebar -->
 <div class="ui left sidebar inverted vertical menu">
     <div class="item">
-        <img src="../images/nombre.png" style="height: 38px">
+        <img src="images/nombre.png" style="height: 38px">
     </div>
     <a class="item">
         <i class="grid layout icon"></i> Búsqueda
@@ -43,18 +43,18 @@
 </div>
 <!--Menu visible-->
 <div class="ui vertical inverted large fixed pointing sticky menu">
-    <div class="item item_logo">
-        <img src="../images/logo.png">
+    <div class="item">
+        <img src="images/nombre.png">
     </div>
-    <div class="item" style="background: url(../images/fondo-user.png) no-repeat 0% 0%/cover;">
-        <img class="ui tiny centered circular image" src="../images/user.jpg">
+    <div class="item" style="background: url(images/fondo-user.png) no-repeat 0% 0%/cover;">
+        <img class="ui tiny centered circular image" src="{!!Auth::user()->photo_url!!}">
         <div class="ui aligned center inverted tiny header" >{!!Auth::user()->name!!}</div>
     </div>
     <div class="ui dropdown item">
         Cuenta
         <i  class="ui middle aligned dropdown icon"></i>
         <div class="menu">
-            <a class="item" href="cuenta"><i class="user icon"></i>Cuenta</a>
+            <a class="item" href="edit-perfil"><i class="user icon"></i>Perfil</a>
             <a class="item"><i class="star icon"></i>Favoritos</a>
             <a class="item" href="logout"><i class="close icon"></i>Salir</a>
         </div>
@@ -72,6 +72,9 @@
             <a class="item" href="publicar-invitacion">Invitación</a>
         </div>
     </div>
+     <a class=" item" href="publications">
+        <i class="alarm icon"></i> Notificaciones   (2)
+    </a>
 </div>
 
 
@@ -92,7 +95,7 @@
             <i class="dropdown icon"></i>
             Perfil
             <div class="menu">
-                <div class="item">Cuenta</div>
+                <a href="edit-perfil"><div class="item">Cuenta</div></a>
                 <div class="item">Favoritos</div>
             </div>
         </div>

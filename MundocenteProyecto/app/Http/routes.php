@@ -13,8 +13,8 @@
 
 Route::get('/', 'HomeController@index');
 Route::get('login', 'HomeController@login');
-Route::get('cuenta', 'HomeController@cuenta');
 Route::get('publications', 'HomeController@publications');
+Route::get('edit-perfil', 'HomeController@editarmiperfil');
 Route::get('publicar-convocatoria', 'HomeController@publicarconvocatoria');
 Route::get('publicar-revista', 'HomeController@publicarrevista');
 Route::get('publicar-invitacion', 'HomeController@publicarinvitacion');
@@ -31,3 +31,5 @@ Route::resource('user', 'UserController');
 
 Route::resource('session', 'SessionController');
 Route::resource('logout', 'SessionController@cerrarsesion');
+Route::get('authfacebook', 'SessionController@authfacebook');
+Route::get('loginfacebook', 'SessionController@sesionfacebook');

@@ -19,6 +19,16 @@ class HomeController extends Controller
         return view('home');
     }
 
+/**
+     * Nos lleva al formulario para editar mi perfils
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function editarmiperfil()
+    {
+        return view('formularios.formulariousuario');
+    }
+
 
 
  /**
@@ -44,15 +54,6 @@ class HomeController extends Controller
     }
 
 
-    /**
-     * Nos lleva a la página de cuenta
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function cuenta()
-    {
-        return view('formularios.formulariocuenta');
-    }
 
 
  /**
@@ -62,7 +63,7 @@ class HomeController extends Controller
      */
     public function publications()
     {
-        return view('publication');
+        return view('main.publication');
     }
 
 

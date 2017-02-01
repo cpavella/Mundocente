@@ -7,15 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
     <!-- Site Properties -->
-    <title>Login Example - Semantic</title>
-    <link rel="stylesheet" href="../semantic/out/semantic.min.css">
-    <link rel="stylesheet" href="../css/style-index.css" type="text/css">
-    <link rel="stylesheet" href="../css/scrollbar.css">
-    <script type="text/javascript" src="../js/jquery.min.js"></script>
-    <script type="text/javascript" src="../js/ScrollMagic.min.js"></script>
-    <script type="text/javascript" src="../js/init.js"></script>
-    <script type="text/javascript" src="../semantic/out/semantic.min.js"></script>
-    <script type="text/javascript" src="../js/jquery.scrollme.js"></script>
+    <title>Login - Mundocente</title>
+    {!!Html::style('semantic/out/semantic.min.css')!!}
+    {!!Html::style('css/style-index.css')!!}
+    {!!Html::style('css/scrollbar.css')!!}
+    
+
+    {!!Html::script('js/jquery.min.js')!!}
+    {!!Html::script('js/ScrollMagic.min.js')!!}
+    {!!Html::script('js/init.js')!!}
+    {!!Html::script('semantic/out/semantic.min.js')!!}
+    {!!Html::script('js/jquery.scrollme.js')!!}
 
     <style type="text/css">
         body {
@@ -107,7 +109,7 @@
     <div class="column">
         <div class="ui raised padded segment">
             <a href="/"><div class="content-image">
-                <img src="../images/logo.png" class="image">
+                <img src="images/logo.png" class="image">
             </div></a>
 
 
@@ -138,10 +140,10 @@
             </h5>
             <div class="ui stackable center aligned grid">
                 <div class="row" style="padding-bottom: 5px;">
-                    <button class="ui facebook button">
+                    <a class="ui facebook button" href="authfacebook">
                         <i class="facebook icon"></i>
                         Inicie sesión con Facebook
-                    </button>
+                    </a>
                 </div>
                 <div class="row" style="padding-top: 5px;">
                     <button class="ui google plus button">
