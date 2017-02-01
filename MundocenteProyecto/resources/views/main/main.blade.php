@@ -10,16 +10,16 @@
     {!!Html::style('../css/scrollbar.css')!!}
     {!!Html::style('https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.6/calendar.min.css')!!}
     {!!Html::style('../css/style-inicio.css')!!}
-    
-    
- 
+
+
+
 {!!Html::script('../js/jquery.min.js')!!}
 {!!Html::script('../semantic/out/semantic.min.js')!!}
 {!!Html::script('https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.6/calendar.min.js')!!}
 
-    
 
-    
+
+
 </head>
 <body>
 
@@ -43,8 +43,8 @@
 </div>
 <!--Menu visible-->
 <div class="ui vertical inverted large fixed pointing sticky menu">
-    <div class="item">
-        <img src="../images/nombre.png">
+    <div class="item item_logo">
+        <img src="../images/logo.png">
     </div>
     <div class="item" style="background: url(../images/fondo-user.png) no-repeat 0% 0%/cover;">
         <img class="ui tiny centered circular image" src="../images/user.jpg">

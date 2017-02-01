@@ -219,7 +219,7 @@
 <!--Contenido-->
 <div class="pusher" style="background-color: #EEEEEE;">
     <div class="ui container center aligned">
-        <h1 class="ui center aligned header">Publicar Convocatoria</h1>
+        <h1 class="ui center aligned header">Mi Perfil</h1>
         <div>
             <div class="line"></div>
             <div data-width="79" data-height="27"
@@ -238,37 +238,57 @@
         <div class="ui piled very padded left aligned segment">
             <form class="ui form" id="form">
                 <h4 class="ui dividing header">Información general</h4>
-                <div class="field">
-                    <label>Foto de perfil</label>
-                    <img class="ui bottom aligned medium rounded image" src="../images/public-image.png">
-                    <div class="ui blue button">Cargar</div>
-                </div>
-                <div class="two fields">
-                    <div class="required field">
-                        <label>Enlace de currículo en la web</label>
-                        <input name="link" type="text">
+                <div class="equal width fields">
+                    <div class="field">
+                        <label>Foto de perfil</label>
+                        <img class="ui bottom aligned rounded image" src="../images/public-image.png" style="width: 180px;">
+                        <span>
+                            <label for="file" class="ui blue button" style="color: #EEEEEE">
+                                Cargar
+                                <input type="file" id="file" style="display:none">
+                            </label>
+                        </span>
                     </div>
+                </div>
+                <div class="equal width fields">
                     <div class="required field">
-                        <label>Cargar currículo</label>
+                        <label>Nombres</label>
+                        <input name="name" type="text" placeholder="Nombres">
+                    </div>
+
+                    <div class="required field">
+                        <label>Apellidos</label>
+                        <input name="last_name" type="text" placeholder="Apellidos">
                     </div>
                 </div>
                 <div class="required field">
-                    <label>Nombre</label>
-                    <div class="equal width fields">
-                        <div class="field">
-                            <input name="name" type="text" placeholder="Nombre">
+                    <label>Currículo</label>
+                    <div class="ui info compact small message" style="margin-top: 0; margin-bottom: 5px;">
+                        <ul class="list">
+                            <li>Debe ingresar al menos uno de los dos campos correspondientes a currículo.</li>
+                        </ul>
+                    </div>
+                    <div class="two fields">
+                        <div class="required field">
+                            <input name="link_curriculum" placeholder="Enlace a currículo en la web" type="url">
                         </div>
-                        <div class="field">
-                            <input name="last_name" type="text" placeholder="Apellido">
+                        <div class="required field">
+                            <div class="ui action input">
+                                <input type="text" name="load_curriculum" id="_attachmentName" placeholder="Archivo currículo">
+                                <label for="attachmentName" class="ui icon button btn-file">
+                                    Cargar
+                                    <input type="file" id="attachmentName" name="attachmentName" style="display: none">
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <h4 class="ui dividing header">Estudios</h4>
-                <div class="field">
+                <div class="required field">
                     <label>Logros universitarios</label>
                     <textarea name="title_college" rows="2"></textarea>
                 </div>
-                <div class="grouped fields">
+                <div class="required grouped fields">
                     <label>Máximo nivel de formación (titulado)</label>
                     <div class="field">
                         <div class="ui radio checkbox">
@@ -302,7 +322,7 @@
                     </div>
                 </div>
                 <h4 class="ui dividing header">Vinculación laboral</h4>
-                <div class="grouped fields">
+                <div class="required grouped fields">
                     <label>Sector educativo</label>
                     <div class="field">
                         <div class="ui radio checkbox">
@@ -583,19 +603,24 @@
                         </select>
                     </div>
                 </div>
-                <div class="equal width fields">
-                    <div class="required field">
-                        <label>Intitución para la que labora</label>
-                        <select name="city" class="ui search dropdown">
-                            <option value="">Seleccionar una institución</option>
-                            <option value="city_1">Afghanistan</option>
-                            <option value="city_2">Åland Islands</option>
-                            <option value="city_3">Albania</option>
-                        </select>
+                <div class="required field">
+                    <label>Intitución en que labora</label>
+                    <div class="ui info compact small message" style="margin-top: 0; margin-bottom: 5px;">
+                        <p>Si su institución no se encuentra en la lista, podrá suministrarla en el campo "Otra". </p>
                     </div>
-                    <div class="field">
-                        <label>Otra institución: </label>
-                        <input type="text" name="other">
+                    <div class="equal width fields">
+                        <div class="required field">
+                            <select name="institution" class="ui search dropdown">
+                                <option value="">Seleccionar institución</option>
+                                <option value="institution_1">Afghanistan</option>
+                                <option value="institution_2">Åland Islands</option>
+                                <option value="institution_3">Albania</option>
+                            </select>
+                        </div>
+                        <div class="required field">
+                            <!--<label>Otra institución: </label>-->
+                            <input type="text" name="other" placeholder="Otra">
+                        </div>
                     </div>
                 </div>
                 <h4 class="ui dividing header">Áreas de conocimiento</h4>
@@ -627,31 +652,86 @@
                 </div>
                 <h4 class="ui dividing header">Cuenta</h4>
                 <div class="equal width fields">
-                    <div class="field">
+                    <div class="required field">
                         <label>Correo electrónico</label>
-                        <input type="email" name="e-mail">
+                        <input type="email" name="email">
                     </div>
-                    <div class="field">
+                    <div class="required field">
+                        <label>Contraseña</label>
+                        <input type="password" name="password">
+                    </div>
+                    <div class="required field">
+                        <label>Repetir contraseña</label>
+                        <input type="password" name="repeat_password">
+                    </div>
+                </div>
+                <div class="required field">
+                    <label>¿Desea recibir notificaciones de las diferentes publicaciones?</label>
+                    <div class="inline field">
+                        <label>
+                            No
+                        </label>
+                        <div class="ui toggle checkbox" onclick="showNotificationType()">
+                            <input type="checkbox" name="notification" tabindex="0" class="hidden">
+                        </div>
+                        <label>
+                            Si
+                        </label>
+                    </div>
+                </div>
+                <div class="ui notification_type raised segment" id="notification_type" style="display: none;">
+                    <div class="required grouped fields">
+                        <label>Notificaciones de: </label>
                         <div class="field">
-                            <label>Contraseña</label>
-                            <input type="password" name="e-mail">
+                            <div class="ui checkbox">
+                                <input type="checkbox" name="notification_type" value="1">
+                                <label>Convocatorias docentes</label>
+                            </div>
                         </div>
                         <div class="field">
-                            <label>Repetir contraseña</label>
-                            <input type="password" name="e-mail">
+                            <div class="ui checkbox">
+                                <input type="checkbox" name="notification_type" value="2">
+                                <label>Revistas científicas</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui checkbox">
+                                <input type="checkbox" name="notification_type" value="3">
+                                <label>Eventos académicos</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui checkbox">
+                                <input type="checkbox" name="notification_type"  value="4">
+                                <label>Invitaciones a proyectos</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui checkbox">
+                                <input type="checkbox" name="notification_type" value="5">
+                                <label>Invitaciones a ser evaluador de proyectos</label>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <h4 class="ui dividing header">Notificaciones</h4>
+                <div class="required field">
+                    <label>Términos y condiciones <a class="ui teal label">Leer términos y condiciones</a></label>
+                    <div class="inline field">
+                        <div class="ui checkbox">
+                            <input type="radio" tabindex="0" class="hidden" name="terms_conditions">
+                            <label>Acepto los términos y condiciones</label>
+                        </div>
+                    </div>
+                </div>
                 <div class="ui right aligned stackable grid">
                     <div class="sixteen wide column">
-                        <button type="submit" form="form" onclick="validateFormAnnouncement()"
-                                class="ui submit green inverted button">
-                            Publicar
+                        <button type="submit" form="form" onclick="validateFormAccount()"
+                                class="ui submit teal button">
+                            Guardar
                         </button>
                     </div>
                 </div>
-                <div class="ui error message"></div>
+                <!--<div class="ui error message"></div>-->
             </form>
         </div>
     </div>
@@ -659,211 +739,1306 @@
 
 <script type="text/javascript">
 
-    function validateFormAnnouncement() {
+    function validateFormAccount() {
         var $form = $('.ui.form'),
-            allFields = $form.form('get values')
+            allFields = $form.form('get values'),
+            notifications = $form.form('get value', 'notification_type')
             ;
-        if(allFields.link == false && allFields.contact_data == false){
-            $('.ui.form')
-                .form({
-                    on: 'blur',
-                    fields: {
-                        country: {
-                            identifier: 'country',
-                            rules: [
-                                {
-                                    type: 'empty',
-                                    prompt: 'Porfavor seleccione un valor en País'
-                                }
-                            ]
-                        },
-                        city: {
-                            identifier: 'city',
-                            rules: [
-                                {
-                                    type: 'empty',
-                                    prompt: 'Porfavor seleccione un valor en Ciudad'
-                                }
-                            ]
-                        },
-                        from: {
-                            identifier: 'from',
-                            rules: [
-                                {
-                                    type: 'empty',
-                                    prompt: 'Porfavor seleccione un valor en Desde'
-                                }
-                            ]
-                        },
-                        until: {
-                            identifier: 'until',
-                            rules: [
-                                {
-                                    type: 'empty',
-                                    prompt: 'Porfavor seleccione un valor en Hasta'
-                                }
-                            ]
-                        },
-                        large_area: {
-                            identifier: 'large_area',
-                            rules: [
-                                {
-                                    type   : 'minCount[1]',
-                                    prompt : 'Porfavor seleccione al menos un valor en Gran Área'
-                                }
-                            ]
-                        },
-                        area: {
-                            identifier: 'area',
-                            rules: [
-                                {
-                                    type   : 'minCount[1]',
-                                    prompt : 'Porfavor seleccione al menos un valor en Área'
-                                }
-                            ]
-                        },
-                        discipline: {
-                            identifier: 'discipline',
-                            rules: [
-                                {
-                                    type   : 'minCount[1]',
-                                    prompt : 'Porfavor seleccione al menos un valor en Disciplina'
-                                }
-                            ]
-                        },
-                        title: {
-                            identifier: 'title',
-                            rules: [
-                                {
-                                    type: 'empty',
-                                    prompt: 'Porfavor introduzca un valor en Título'
+
+        if(allFields.notification == false){
+            if(allFields.institution == false && allFields.other == false){
+                if(allFields.link_curriculum == false && allFields.load_curriculum == false){
+                    $('.ui.form')
+                        .form({
+                            on: 'blur',
+                            fields: {
+                                name: {
+                                    identifier: 'name',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un valor en Nombres'
+                                        }
+                                    ]
                                 },
-                                {
-                                    type: 'maxLength[150]',
-                                    prompt: 'El título no puede ser mayor a 150 caracteres'
+                                last_name: {
+                                    identifier: 'last_name',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un valor en Apellidos'
+                                        }
+                                    ]
+                                },
+                                link_curriculum: {
+                                    identifier: 'link_curriculum',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un Enlace en Currículo'
+                                        }
+                                    ]
+                                },
+                                load_curriculum: {
+                                    identifier: 'load_curriculum',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un Archivo en Currículo'
+                                        }
+                                    ]
+                                },
+                                title_college: {
+                                    identifier: 'title_college',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un valor en Estudios'
+                                        }
+                                    ]
+                                },
+                                level_training: {
+                                    identifier: 'level_training',
+                                    rules: [
+                                        {
+                                            type: 'checked',
+                                            prompt: 'Porfavor seleccione un valor en Nivel de formación'
+                                        }
+                                    ]
+                                },
+                                sector: {
+                                    identifier: 'sector',
+                                    rules: [
+                                        {
+                                            type: 'checked',
+                                            prompt: 'Porfavor seleccione un valor en Sector educativo'
+                                        }
+                                    ]
+                                },
+                                country: {
+                                    identifier: 'country',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un valor en País'
+                                        }
+                                    ]
+                                },
+                                city: {
+                                    identifier: 'city',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un valor en Ciudad'
+                                        }
+                                    ]
+                                },
+                                institution: {
+                                    identifier: 'institution',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Institución'
+                                        }
+                                    ]
+                                },
+                                other: {
+                                    identifier: 'other',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un valor en Otro'
+                                        }
+                                    ]
+                                },
+                                large_area: {
+                                    identifier: 'large_area',
+                                    rules: [
+                                        {
+                                            type   : 'minCount[1]',
+                                            prompt : 'Porfavor seleccione al menos un valor en Gran Área'
+                                        }
+                                    ]
+                                },
+                                area: {
+                                    identifier: 'area',
+                                    rules: [
+                                        {
+                                            type   : 'minCount[1]',
+                                            prompt : 'Porfavor seleccione al menos un valor en Área'
+                                        }
+                                    ]
+                                },
+                                discipline: {
+                                    identifier: 'discipline',
+                                    rules: [
+                                        {
+                                            type   : 'minCount[1]',
+                                            prompt : 'Porfavor seleccione al menos un valor en Disciplina'
+                                        }
+                                    ]
+                                },
+                                email: {
+                                    identifier: 'email',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un valor en Correo electrónico'
+                                        }
+                                    ]
+                                },
+                                password: {
+                                    identifier: 'password',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un valor en Contraseña'
+                                        }
+                                    ]
+                                },
+                                repeat_password: {
+                                    identifier: 'repeat_password',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un valor en Repetir contraseña'
+                                        }
+                                    ]
+                                },
+                                terms_conditions: {
+                                    identifier: 'terms_conditions',
+                                    rules: [
+                                        {
+                                            type: 'checked',
+                                            prompt: 'Debe aceptar los términos y condiciones para poder hacer uso de Mundocente'
+                                        }
+                                    ]
                                 }
-                            ]
-                        },
-                        link: {
-                            identifier: 'link',
-                            rules: [
-                                {
-                                    type: 'empty',
-                                    prompt: 'Porfavor introduzca un valor en Enlace'
+                            }
+                        })
+                    ;
+                }else {
+                    $('.ui.form')
+                        .form({
+                            on: 'blur',
+                            fields: {
+                                name: {
+                                    identifier: 'name',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en País'
+                                        }
+                                    ]
+                                },
+                                last_name: {
+                                    identifier: 'last_name',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en País'
+                                        }
+                                    ]
+                                },
+                                title_college: {
+                                    identifier: 'title_college',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Desde'
+                                        }
+                                    ]
+                                },
+                                level_training: {
+                                    identifier: 'level_training',
+                                    rules: [
+                                        {
+                                            type: 'checked',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                sector: {
+                                    identifier: 'sector',
+                                    rules: [
+                                        {
+                                            type: 'checked',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                country: {
+                                    identifier: 'country',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                city: {
+                                    identifier: 'city',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                institution: {
+                                    identifier: 'institution',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                other: {
+                                    identifier: 'other',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                large_area: {
+                                    identifier: 'large_area',
+                                    rules: [
+                                        {
+                                            type   : 'minCount[1]',
+                                            prompt : 'Porfavor seleccione al menos un valor en Gran Área'
+                                        }
+                                    ]
+                                },
+                                area: {
+                                    identifier: 'area',
+                                    rules: [
+                                        {
+                                            type   : 'minCount[1]',
+                                            prompt : 'Porfavor seleccione al menos un valor en Área'
+                                        }
+                                    ]
+                                },
+                                discipline: {
+                                    identifier: 'discipline',
+                                    rules: [
+                                        {
+                                            type   : 'minCount[1]',
+                                            prompt : 'Porfavor seleccione al menos un valor en Disciplina'
+                                        }
+                                    ]
+                                },
+                                email: {
+                                    identifier: 'email',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un valor en Enlace'
+                                        }
+                                    ]
+                                },
+                                password: {
+                                    identifier: 'password',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un valor en Enlace'
+                                        }
+                                    ]
+                                },
+                                repeat_password: {
+                                    identifier: 'repeat_password',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un valor en Enlace'
+                                        }
+                                    ]
+                                },
+                                terms_conditions: {
+                                    identifier: 'terms_conditions',
+                                    rules: [
+                                        {
+                                            type: 'checked',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
                                 }
-                            ]
-                        },
-                        contact_data: {
-                            identifier: 'contact_data',
-                            rules: [
-                                {
-                                    type: 'empty',
-                                    prompt: 'Porfavor introduzca un valor en Datos de contacto'
+                            }
+                        })
+                    ;
+                }
+            }else {
+                if(allFields.link_curriculum == false && allFields.load_curriculum == false){
+                    $('.ui.form')
+                        .form({
+                            on: 'blur',
+                            fields: {
+                                name: {
+                                    identifier: 'name',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en País'
+                                        }
+                                    ]
+                                },
+                                last_name: {
+                                    identifier: 'last_name',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en País'
+                                        }
+                                    ]
+                                },
+                                link_curriculum: {
+                                    identifier: 'link_curriculum',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en País'
+                                        }
+                                    ]
+                                },
+                                load_curriculum: {
+                                    identifier: 'load_curriculum',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Ciudad'
+                                        }
+                                    ]
+                                },
+                                title_college: {
+                                    identifier: 'title_college',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Desde'
+                                        }
+                                    ]
+                                },
+                                level_training: {
+                                    identifier: 'level_training',
+                                    rules: [
+                                        {
+                                            type: 'checked',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                sector: {
+                                    identifier: 'sector',
+                                    rules: [
+                                        {
+                                            type: 'checked',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                country: {
+                                    identifier: 'country',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                city: {
+                                    identifier: 'city',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                large_area: {
+                                    identifier: 'large_area',
+                                    rules: [
+                                        {
+                                            type   : 'minCount[1]',
+                                            prompt : 'Porfavor seleccione al menos un valor en Gran Área'
+                                        }
+                                    ]
+                                },
+                                area: {
+                                    identifier: 'area',
+                                    rules: [
+                                        {
+                                            type   : 'minCount[1]',
+                                            prompt : 'Porfavor seleccione al menos un valor en Área'
+                                        }
+                                    ]
+                                },
+                                discipline: {
+                                    identifier: 'discipline',
+                                    rules: [
+                                        {
+                                            type   : 'minCount[1]',
+                                            prompt : 'Porfavor seleccione al menos un valor en Disciplina'
+                                        }
+                                    ]
+                                },
+                                email: {
+                                    identifier: 'email',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un valor en Enlace'
+                                        }
+                                    ]
+                                },
+                                password: {
+                                    identifier: 'password',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un valor en Enlace'
+                                        }
+                                    ]
+                                },
+                                repeat_password: {
+                                    identifier: 'repeat_password',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un valor en Enlace'
+                                        }
+                                    ]
+                                },
+                                terms_conditions: {
+                                    identifier: 'terms_conditions',
+                                    rules: [
+                                        {
+                                            type: 'checked',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
                                 }
-                            ]
-                        }
-                    }
-                })
-            ;
+                            }
+                        })
+                    ;
+                }else {
+                    $('.ui.form')
+                        .form({
+                            on: 'blur',
+                            fields: {
+                                name: {
+                                    identifier: 'name',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en País'
+                                        }
+                                    ]
+                                },
+                                last_name: {
+                                    identifier: 'last_name',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en País'
+                                        }
+                                    ]
+                                },
+                                title_college: {
+                                    identifier: 'title_college',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Desde'
+                                        }
+                                    ]
+                                },
+                                level_training: {
+                                    identifier: 'level_training',
+                                    rules: [
+                                        {
+                                            type: 'checked',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                sector: {
+                                    identifier: 'sector',
+                                    rules: [
+                                        {
+                                            type: 'checked',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                country: {
+                                    identifier: 'country',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                city: {
+                                    identifier: 'city',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                large_area: {
+                                    identifier: 'large_area',
+                                    rules: [
+                                        {
+                                            type   : 'minCount[1]',
+                                            prompt : 'Porfavor seleccione al menos un valor en Gran Área'
+                                        }
+                                    ]
+                                },
+                                area: {
+                                    identifier: 'area',
+                                    rules: [
+                                        {
+                                            type   : 'minCount[1]',
+                                            prompt : 'Porfavor seleccione al menos un valor en Área'
+                                        }
+                                    ]
+                                },
+                                discipline: {
+                                    identifier: 'discipline',
+                                    rules: [
+                                        {
+                                            type   : 'minCount[1]',
+                                            prompt : 'Porfavor seleccione al menos un valor en Disciplina'
+                                        }
+                                    ]
+                                },
+                                email: {
+                                    identifier: 'email',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un valor en Enlace'
+                                        }
+                                    ]
+                                },
+                                password: {
+                                    identifier: 'password',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un valor en Enlace'
+                                        }
+                                    ]
+                                },
+                                repeat_password: {
+                                    identifier: 'repeat_password',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un valor en Enlace'
+                                        }
+                                    ]
+                                },
+                                terms_conditions: {
+                                    identifier: 'terms_conditions',
+                                    rules: [
+                                        {
+                                            type: 'checked',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                }
+                            }
+                        })
+                    ;
+                }
+            }
         }else {
-            $('.ui.form')
-                .form({
-                    on: 'blur',
-                    fields: {
-                        country: {
-                            identifier: 'country',
-                            rules: [
-                                {
-                                    type: 'empty',
-                                    prompt: 'Porfavor seleccione un valor en País'
-                                }
-                            ]
-                        },
-                        city: {
-                            identifier: 'city',
-                            rules: [
-                                {
-                                    type: 'empty',
-                                    prompt: 'Porfavor seleccione un valor en Ciudad'
-                                }
-                            ]
-                        },
-                        from: {
-                            identifier: 'from',
-                            rules: [
-                                {
-                                    type: 'empty',
-                                    prompt: 'Porfavor seleccione un valor en Desde'
-                                }
-                            ]
-                        },
-                        until: {
-                            identifier: 'until',
-                            rules: [
-                                {
-                                    type: 'empty',
-                                    prompt: 'Porfavor seleccione un valor en Hasta'
-                                }
-                            ]
-                        },
-                        large_area: {
-                            identifier: 'large_area',
-                            rules: [
-                                {
-                                    type   : 'minCount[1]',
-                                    prompt : 'Porfavor seleccione al menos un valor en Gran Área'
-                                }
-                            ]
-                        },
-                        area: {
-                            identifier: 'area',
-                            rules: [
-                                {
-                                    type   : 'minCount[1]',
-                                    prompt : 'Porfavor seleccione al menos un valor en Área'
-                                }
-                            ]
-                        },
-                        discipline: {
-                            identifier: 'discipline',
-                            rules: [
-                                {
-                                    type   : 'minCount[1]',
-                                    prompt : 'Porfavor seleccione al menos un valor en Disciplina'
-                                }
-                            ]
-                        },
-                        title: {
-                            identifier: 'title',
-                            rules: [
-                                {
-                                    type: 'empty',
-                                    prompt: 'Porfavor introduzca un valor en Título'
+            if(allFields.institution == false && allFields.other == false){
+                if(allFields.link_curriculum == false && allFields.load_curriculum == false){
+                    $('.ui.form')
+                        .form({
+                            on: 'blur',
+                            fields: {
+                                name: {
+                                    identifier: 'name',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en País'
+                                        }
+                                    ]
                                 },
-                                {
-                                    type: 'maxLength[150]',
-                                    prompt: 'El título no puede ser mayor a 150 caracteres'
+                                last_name: {
+                                    identifier: 'last_name',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en País'
+                                        }
+                                    ]
+                                },
+                                link_curriculum: {
+                                    identifier: 'link_curriculum',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en País'
+                                        }
+                                    ]
+                                },
+                                load_curriculum: {
+                                    identifier: 'load_curriculum',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Ciudad'
+                                        }
+                                    ]
+                                },
+                                title_college: {
+                                    identifier: 'title_college',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Desde'
+                                        }
+                                    ]
+                                },
+                                level_training: {
+                                    identifier: 'level_training',
+                                    rules: [
+                                        {
+                                            type: 'checked',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                sector: {
+                                    identifier: 'sector',
+                                    rules: [
+                                        {
+                                            type: 'checked',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                country: {
+                                    identifier: 'country',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                city: {
+                                    identifier: 'city',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                institution: {
+                                    identifier: 'institution',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                other: {
+                                    identifier: 'other',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                large_area: {
+                                    identifier: 'large_area',
+                                    rules: [
+                                        {
+                                            type   : 'minCount[1]',
+                                            prompt : 'Porfavor seleccione al menos un valor en Gran Área'
+                                        }
+                                    ]
+                                },
+                                area: {
+                                    identifier: 'area',
+                                    rules: [
+                                        {
+                                            type   : 'minCount[1]',
+                                            prompt : 'Porfavor seleccione al menos un valor en Área'
+                                        }
+                                    ]
+                                },
+                                discipline: {
+                                    identifier: 'discipline',
+                                    rules: [
+                                        {
+                                            type   : 'minCount[1]',
+                                            prompt : 'Porfavor seleccione al menos un valor en Disciplina'
+                                        }
+                                    ]
+                                },
+                                email: {
+                                    identifier: 'email',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un valor en Enlace'
+                                        }
+                                    ]
+                                },
+                                password: {
+                                    identifier: 'password',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un valor en Enlace'
+                                        }
+                                    ]
+                                },
+                                repeat_password: {
+                                    identifier: 'repeat_password',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un valor en Enlace'
+                                        }
+                                    ]
+                                },
+                                notification_type: {
+                                    identifier: 'notification_type',
+                                    rules: [
+                                        {
+                                            type: 'checked',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                terms_conditions: {
+                                    identifier: 'terms_conditions',
+                                    rules: [
+                                        {
+                                            type: 'checked',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
                                 }
-                            ]
-                        }
-                    }
-                })
-            ;
+                            }
+                        })
+                    ;
+                }else {
+                    $('.ui.form')
+                        .form({
+                            on: 'blur',
+                            fields: {
+                                name: {
+                                    identifier: 'name',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en País'
+                                        }
+                                    ]
+                                },
+                                last_name: {
+                                    identifier: 'last_name',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en País'
+                                        }
+                                    ]
+                                },
+                                title_college: {
+                                    identifier: 'title_college',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Desde'
+                                        }
+                                    ]
+                                },
+                                level_training: {
+                                    identifier: 'level_training',
+                                    rules: [
+                                        {
+                                            type: 'checked',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                sector: {
+                                    identifier: 'sector',
+                                    rules: [
+                                        {
+                                            type: 'checked',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                country: {
+                                    identifier: 'country',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                city: {
+                                    identifier: 'city',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                institution: {
+                                    identifier: 'institution',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                other: {
+                                    identifier: 'other',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                large_area: {
+                                    identifier: 'large_area',
+                                    rules: [
+                                        {
+                                            type   : 'minCount[1]',
+                                            prompt : 'Porfavor seleccione al menos un valor en Gran Área'
+                                        }
+                                    ]
+                                },
+                                area: {
+                                    identifier: 'area',
+                                    rules: [
+                                        {
+                                            type   : 'minCount[1]',
+                                            prompt : 'Porfavor seleccione al menos un valor en Área'
+                                        }
+                                    ]
+                                },
+                                discipline: {
+                                    identifier: 'discipline',
+                                    rules: [
+                                        {
+                                            type   : 'minCount[1]',
+                                            prompt : 'Porfavor seleccione al menos un valor en Disciplina'
+                                        }
+                                    ]
+                                },
+                                email: {
+                                    identifier: 'email',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un valor en Enlace'
+                                        }
+                                    ]
+                                },
+                                password: {
+                                    identifier: 'password',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un valor en Enlace'
+                                        }
+                                    ]
+                                },
+                                repeat_password: {
+                                    identifier: 'repeat_password',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un valor en Enlace'
+                                        }
+                                    ]
+                                },
+                                notification_type: {
+                                    identifier: 'notification_type',
+                                    rules: [
+                                        {
+                                            type: 'checked',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                terms_conditions: {
+                                    identifier: 'terms_conditions',
+                                    rules: [
+                                        {
+                                            type: 'checked',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                }
+                            }
+                        })
+                    ;
+                }
+            }else {
+                if(allFields.link_curriculum == false && allFields.load_curriculum == false){
+                    $('.ui.form')
+                        .form({
+                            on: 'blur',
+                            fields: {
+                                name: {
+                                    identifier: 'name',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en País'
+                                        }
+                                    ]
+                                },
+                                last_name: {
+                                    identifier: 'last_name',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en País'
+                                        }
+                                    ]
+                                },
+                                link_curriculum: {
+                                    identifier: 'link_curriculum',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en País'
+                                        }
+                                    ]
+                                },
+                                load_curriculum: {
+                                    identifier: 'load_curriculum',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Ciudad'
+                                        }
+                                    ]
+                                },
+                                title_college: {
+                                    identifier: 'title_college',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Desde'
+                                        }
+                                    ]
+                                },
+                                level_training: {
+                                    identifier: 'level_training',
+                                    rules: [
+                                        {
+                                            type: 'checked',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                sector: {
+                                    identifier: 'sector',
+                                    rules: [
+                                        {
+                                            type: 'checked',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                country: {
+                                    identifier: 'country',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                city: {
+                                    identifier: 'city',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                large_area: {
+                                    identifier: 'large_area',
+                                    rules: [
+                                        {
+                                            type   : 'minCount[1]',
+                                            prompt : 'Porfavor seleccione al menos un valor en Gran Área'
+                                        }
+                                    ]
+                                },
+                                area: {
+                                    identifier: 'area',
+                                    rules: [
+                                        {
+                                            type   : 'minCount[1]',
+                                            prompt : 'Porfavor seleccione al menos un valor en Área'
+                                        }
+                                    ]
+                                },
+                                discipline: {
+                                    identifier: 'discipline',
+                                    rules: [
+                                        {
+                                            type   : 'minCount[1]',
+                                            prompt : 'Porfavor seleccione al menos un valor en Disciplina'
+                                        }
+                                    ]
+                                },
+                                email: {
+                                    identifier: 'email',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un valor en Enlace'
+                                        }
+                                    ]
+                                },
+                                password: {
+                                    identifier: 'password',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un valor en Enlace'
+                                        }
+                                    ]
+                                },
+                                repeat_password: {
+                                    identifier: 'repeat_password',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un valor en Enlace'
+                                        }
+                                    ]
+                                },
+                                notification_type: {
+                                    identifier: 'notification_type',
+                                    rules: [
+                                        {
+                                            type: 'checked',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                terms_conditions: {
+                                    identifier: 'terms_conditions',
+                                    rules: [
+                                        {
+                                            type: 'checked',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                }
+                            }
+                        })
+                    ;
+                }else {
+                    $('.ui.form')
+                        .form({
+                            on: 'blur',
+                            fields: {
+                                name: {
+                                    identifier: 'name',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en País'
+                                        }
+                                    ]
+                                },
+                                last_name: {
+                                    identifier: 'last_name',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en País'
+                                        }
+                                    ]
+                                },
+                                title_college: {
+                                    identifier: 'title_college',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Desde'
+                                        }
+                                    ]
+                                },
+                                level_training: {
+                                    identifier: 'level_training',
+                                    rules: [
+                                        {
+                                            type: 'checked',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                sector: {
+                                    identifier: 'sector',
+                                    rules: [
+                                        {
+                                            type: 'checked',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                country: {
+                                    identifier: 'country',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                city: {
+                                    identifier: 'city',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                large_area: {
+                                    identifier: 'large_area',
+                                    rules: [
+                                        {
+                                            type   : 'minCount[1]',
+                                            prompt : 'Porfavor seleccione al menos un valor en Gran Área'
+                                        }
+                                    ]
+                                },
+                                area: {
+                                    identifier: 'area',
+                                    rules: [
+                                        {
+                                            type   : 'minCount[1]',
+                                            prompt : 'Porfavor seleccione al menos un valor en Área'
+                                        }
+                                    ]
+                                },
+                                discipline: {
+                                    identifier: 'discipline',
+                                    rules: [
+                                        {
+                                            type   : 'minCount[1]',
+                                            prompt : 'Porfavor seleccione al menos un valor en Disciplina'
+                                        }
+                                    ]
+                                },
+                                email: {
+                                    identifier: 'email',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un valor en Enlace'
+                                        }
+                                    ]
+                                },
+                                password: {
+                                    identifier: 'password',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un valor en Enlace'
+                                        }
+                                    ]
+                                },
+                                repeat_password: {
+                                    identifier: 'repeat_password',
+                                    rules: [
+                                        {
+                                            type: 'empty',
+                                            prompt: 'Porfavor introduzca un valor en Enlace'
+                                        }
+                                    ]
+                                },
+                                notification_type: {
+                                    identifier: 'notification_type',
+                                    value: '5',
+                                    rules: [
+                                        {
+                                            type: 'checked',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                },
+                                terms_conditions: {
+                                    identifier: 'terms_conditions',
+                                    rules: [
+                                        {
+                                            type: 'checked',
+                                            prompt: 'Porfavor seleccione un valor en Hasta'
+                                        }
+                                    ]
+                                }
+                            }
+                        })
+                    ;
+                }
+            }
         }
+
+        /*console.log(notifications);
+        var cont = 0;
+        for (a in notifications){
+            if(notifications[a] == false){
+                cont++;
+            }
+        }
+        if(cont == 5){
+            console.log("Seleccione uno");
+        }else{
+            console.log("Esta bien"  + cont);
+        }*/
+
     }
 
-    var today = new Date();
-    $('#from').calendar({
-        type: 'date',
-        minDate: new Date(today.getFullYear(), today.getMonth(), today.getDate())
-    });
-    $('#until').calendar({
-        type: 'date',
-        minDate: new Date(today.getFullYear(), today.getMonth(), today.getDate())
-    });
+    function showNotificationType() {
+        $('#notification_type').toggle("slow");
+    }
+
     $('.ui.radio.checkbox')
         .checkbox()
     ;
+
+    $('.ui.checkbox')
+        .checkbox()
+    ;
+
     $('.ui.sidebar')
         .sidebar('attach events', '.menu.fixed .launch.item')
     ;
@@ -872,6 +2047,45 @@
             transition: 'scale'
         })
     ;
+
+    /*INPUT FILE */
+    var fileExtentionRange = '.zip .rar .tar .pdf .doc .docx .xls .xlsx .ppt .pptx';
+    var MAX_SIZE = 30; // MB
+
+    $(document).on('change', '.btn-file :file', function() {
+        var input = $(this);
+
+        if (navigator.appVersion.indexOf("MSIE") != -1) { // IE
+            var label = input.val();
+
+            input.trigger('fileselect', [ 1, label, 0 ]);
+        } else {
+            var label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+            var numFiles = input.get(0).files ? input.get(0).files.length : 1;
+            var size = input.get(0).files[0].size;
+
+            input.trigger('fileselect', [ numFiles, label, size ]);
+        }
+    });
+
+    $('.btn-file :file').on('fileselect', function(event, numFiles, label, size) {
+        $('#attachmentName').attr('name', 'attachmentName'); // allow upload.
+
+        var postfix = label.substr(label.lastIndexOf('.'));
+        if (fileExtentionRange.indexOf(postfix.toLowerCase()) > -1) {
+            if (size > 1024 * 1024 * MAX_SIZE ) {
+                alert('max size：<strong>' + MAX_SIZE + '</strong> MB.');
+
+                $('#attachmentName').removeAttr('name'); // cancel upload file.
+            } else {
+                $('#_attachmentName').val(label);
+            }
+        } else {
+            alert('El archivo debe ser tipo: ' + fileExtentionRange);
+
+            $('#attachmentName').removeAttr('name'); // cancel upload file.
+        }
+    });
 </script>
 </body>
 </html>

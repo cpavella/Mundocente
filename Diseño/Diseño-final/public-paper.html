@@ -262,17 +262,19 @@
                     <label>Titulo (Mínimo 150 caracteres )</label>
                     <input name="titleMaxLength" type="text">
                 </div>
-                <label style="font-size:.92307692em;"><b>¿La revista se encuentra indexada?</b></label>
-                <div class="inline field">
-                    <label>
-                        No
-                    </label>
-                    <div class="ui toggle checkbox" onclick="showAdvancedSearch()">
-                        <input type="checkbox" name="indexed_paper" tabindex="0" class="hidden">
+                <div class="field">
+                    <label>¿La revista se encuentra indexada?</label>
+                    <div class="inline field">
+                        <label>
+                            No
+                        </label>
+                        <div class="ui toggle checkbox" onclick="showAdvancedSearch()">
+                            <input type="checkbox" name="indexed_paper" tabindex="0" class="hidden">
+                        </div>
+                        <label>
+                            Si
+                        </label>
                     </div>
-                    <label>
-                        Si
-                    </label>
                 </div>
                 <!--Datos de indexación-->
                 <div id="indexing-data" class="ui segment" style="display: none;">
