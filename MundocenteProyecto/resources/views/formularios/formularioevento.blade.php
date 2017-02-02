@@ -32,14 +32,14 @@
                 <div class="grouped fields">
                     <label>Sector educativo</label>
                     <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="sector">
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="sector">
                             <label>Universitario</label>
                         </div>
                     </div>
                     <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="sector">
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="sector">
                             <label>Preescolar, básica y media</label>
                         </div>
                     </div>
@@ -362,7 +362,7 @@
                             <option value="name-2">Gran área-2</option>
                         </select>
                     </div>
-                    <div class="required field">
+                    <div class="field">
                         <label>Área</label>
                         <select name="area" class="ui multiple dropdown">
                             <option value="">Área</option>
@@ -370,7 +370,7 @@
                             <option value="lvl-2">Área-2</option>
                         </select>
                     </div>
-                    <div class="required field">
+                    <div class="field">
                         <label>Disciplina</label>
                         <select name="discipline" class="ui multiple dropdown">
                             <option value="">Disciplina</option>
@@ -381,7 +381,7 @@
                 </div>
                 <h4 class="ui dividing header">Detalles</h4>
                 <div class="required field">
-                    <label>Título (Mínimo 150 caracteres )</label>
+                    <label>Título (Máximo 150 caracteres )</label>
                     <input name="title" type="text">
                 </div>
                 <div class="field">
@@ -392,6 +392,9 @@
                 <div class="field">
                     <label>Descripción</label>
                     <textarea name="description" rows="3"></textarea>
+                </div>
+                <div class="ui info compact small message" style="margin-top: 0; margin-bottom: 5px;">
+                    <p>Debe ingresar al menos uno de los dos campos correspondientes a currículo.</p>
                 </div>
                 <div class="two fields">
                     <div class="required field">
@@ -455,15 +458,6 @@
                                 }
                             ]
                         },
-                        time_from: {
-                            identifier: 'time_from',
-                            rules: [
-                                {
-                                    type: 'empty',
-                                    prompt: 'Porfavor seleccione una hora en Desde'
-                                }
-                            ]
-                        },
                         until: {
                             identifier: 'until',
                             rules: [
@@ -473,39 +467,12 @@
                                 }
                             ]
                         },
-                        time_until: {
-                            identifier: 'time_until',
-                            rules: [
-                                {
-                                    type: 'empty',
-                                    prompt: 'Porfavor seleccione una hora en Desde'
-                                }
-                            ]
-                        },
                         large_area: {
                             identifier: 'large_area',
                             rules: [
                                 {
                                     type   : 'minCount[1]',
                                     prompt : 'Porfavor seleccione al menos un valor en Gran Área'
-                                }
-                            ]
-                        },
-                        area: {
-                            identifier: 'area',
-                            rules: [
-                                {
-                                    type   : 'minCount[1]',
-                                    prompt : 'Porfavor seleccione al menos un valor en Área'
-                                }
-                            ]
-                        },
-                        discipline: {
-                            identifier: 'discipline',
-                            rules: [
-                                {
-                                    type   : 'minCount[1]',
-                                    prompt : 'Porfavor seleccione al menos un valor en Disciplina'
                                 }
                             ]
                         },
@@ -575,15 +542,6 @@
                                 }
                             ]
                         },
-                        time_from: {
-                            identifier: 'time_from',
-                            rules: [
-                                {
-                                    type: 'empty',
-                                    prompt: 'Porfavor seleccione una hora en Desde'
-                                }
-                            ]
-                        },
                         until: {
                             identifier: 'until',
                             rules: [
@@ -593,39 +551,12 @@
                                 }
                             ]
                         },
-                        time_until: {
-                            identifier: 'time_until',
-                            rules: [
-                                {
-                                    type: 'empty',
-                                    prompt: 'Porfavor seleccione una hora en Desde'
-                                }
-                            ]
-                        },
                         large_area: {
                             identifier: 'large_area',
                             rules: [
                                 {
                                     type   : 'minCount[1]',
                                     prompt : 'Porfavor seleccione al menos un valor en Gran Área'
-                                }
-                            ]
-                        },
-                        area: {
-                            identifier: 'area',
-                            rules: [
-                                {
-                                    type   : 'minCount[1]',
-                                    prompt : 'Porfavor seleccione al menos un valor en Área'
-                                }
-                            ]
-                        },
-                        discipline: {
-                            identifier: 'discipline',
-                            rules: [
-                                {
-                                    type   : 'minCount[1]',
-                                    prompt : 'Porfavor seleccione al menos un valor en Disciplina'
                                 }
                             ]
                         },
@@ -647,7 +578,6 @@
             ;
         }
     }
-
     var today = new Date();
     $('#from').calendar({
         type: 'date',
@@ -663,7 +593,7 @@
     $('#time_until').calendar({
         type: 'time'
     });
-    $('.ui.radio.checkbox')
+    $('.ui.checkbox')
         .checkbox()
     ;
     $('.ui.sidebar')

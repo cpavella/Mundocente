@@ -145,10 +145,16 @@
                         Inicie sesión con Facebook
                     </a>
                 </div>
-                <div class="row" style="padding-top: 5px;">
+                <div class="row" style="padding-top: 5px; padding-bottom: 5px;">
                     <a class="ui google plus button" href="authgoogle">
                         <i class="google plus icon"></i>
                         Inicie sesión con Google +
+                    </a>
+                </div>
+                <div class="row" style="padding-top: 5px;">
+                    <a class="ui linkedin button">
+                        <i class="linkedin icon"></i>
+                        Regístrese con LinkedIn
                     </a>
                 </div>
             </div>
