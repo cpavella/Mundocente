@@ -36,3 +36,6 @@ Route::get('loginfacebook', 'SessionController@sesionfacebook');
 
 Route::get('authgoogle', 'SessionController@authgoogle');
 Route::get('logingoogle', 'SessionController@sesiongoogle');
+
+Route::get('authlinkedin', 'SessionController@authlinkedin');
+Route::get('loginlinkedin', 'SessionController@sesionlinkedin');

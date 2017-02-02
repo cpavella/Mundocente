@@ -461,6 +461,12 @@
                         Inicie sesión con Google +
                     </a>
                 </div>
+                <div class="row" style="padding-top: 5px;">
+                    <a class="ui linkedin button" href="authlinkedin">
+                        <i class="linkedin icon"></i>
+                        Regístrese con LinkedIn
+                    </a>
+                </div>
             </div>
         </div>
         <div class="ui  message">
@@ -551,7 +557,7 @@
                     </a>
                 </div>
                 <div class="row" style="padding-top: 5px;">
-                    <a class="ui linkedin button">
+                    <a class="ui linkedin button" href="authlinkedin">
                         <i class="linkedin icon"></i>
                         Regístrese con LinkedIn
                     </a>

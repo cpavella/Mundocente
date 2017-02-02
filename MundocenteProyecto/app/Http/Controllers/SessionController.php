@@ -125,6 +125,43 @@ class SessionController extends Controller
     }
 
 
+
+
+
+
+         /**
+     * Ingesa con linkedin
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function authlinkedin()
+    {     
+        return OAuth::authorize('linkedin');
+    }
+
+
+
+
+
+       /**
+     * Inicia sesión con linkedin
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function sesionlinkedin()
+    {
+       OAuth::login('linkedin',  function($user, $details) {
+        $user->name = $details->nickname;
+        $user->email = $details->email;
+        $user->photo_url = $details->avatar;
+        $user->save();
+        });
+         return Redirect::to('publications');
+        
+        dd(Auth::user());
+    }
+
+
         /**
      * Cierra sesión
      *

@@ -22,9 +22,9 @@ return [
 			'scope' => [],
 		],
 		'linkedin' => [
-			'client_id' => '12345678',
-			'client_secret' => 'y0ur53cr374ppk3y',
-			'redirect_uri' => 'https://example.com/your/linkedin/redirect',
+			'client_id' => '77l8uj116kkmgl',
+			'client_secret' => 'f1U4P96hWI0kDHS6',
+			'redirect_uri' => 'http://mundocente.co/MundocenteProyecto/public/loginlinkedin',
 			'scope' => [],
 		],
 		'instagram' => [

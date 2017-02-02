@@ -172,6 +172,12 @@
                         Regístrese con Google +
                     </a>
                 </div>
+                <div class="row" style="padding-top: 5px;">
+                    <a class="ui linkedin button" href="authlinkedin">
+                        <i class="linkedin icon"></i>
+                        Regístrese con LinkedIn
+                    </a>
+                </div>
             </div>
         </div>
         <div class="ui  message">
