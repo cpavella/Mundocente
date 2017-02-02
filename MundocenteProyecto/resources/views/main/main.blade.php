@@ -43,16 +43,16 @@
 </div>
 <!--Menu visible-->
 <div class="ui vertical inverted large fixed pointing sticky menu">
-    <div class="item">
-        <img src="images/nombre.png">
+    <div class="item item_logo">
+        <img src="images/logo.png">
     </div>
-    <div class="item" style="background: url(images/fondo-user.png) no-repeat 0% 0%/cover;">
-        <img class="ui tiny centered circular image" src="{!!Auth::user()->photo_url!!}">
+    <div class="item item_profile">
+        <img class="ui tiny centered circular image" src="{{--{!!Auth::user()->photo_url!!}--}}images/user.png">
         <div class="ui aligned center inverted tiny header" >{!!Auth::user()->name!!}</div>
     </div>
     <div class="ui dropdown item">
         Cuenta
-        <i  class="ui middle aligned dropdown icon"></i>
+        <i  class="ui dropdown icon"></i>
         <div class="menu">
             <a class="item" href="edit-perfil"><i class="user icon"></i>Perfil</a>
             <a class="item"><i class="star icon"></i>Favoritos</a>
@@ -69,7 +69,7 @@
             <a class="item" href="publicar-revista">Revista</a>
             <a class="item" href="publicar-convocatoria">Convocatorias</a>
             <a class="item" href="publicar-evento">Eventos</a>
-            <a class="item" href="publicar-invitacion">Invitación</a>
+            <a class="item" href="publicar-invitacion">Solicitud</a>
         </div>
     </div>
      <a class=" item" href="publications">
@@ -103,40 +103,16 @@
     </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!--   Aquí está todo el contenido de publication.blade.php-->
 
 @yield('content')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<script>
+    $('.dropdown')
+        .dropdown({
+            transition: 'scale'
+        })
+    ;
+</script>
 </body>
 </html>

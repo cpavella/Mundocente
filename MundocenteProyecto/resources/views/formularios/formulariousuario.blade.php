@@ -11,7 +11,7 @@
                      style="display: inline-block; vertical-align: middle; line-height: 0; width: 79px; height: 27px;">
                     <svg height="27" width="79">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.2 26.4">
-                            <path fill="none" stroke="#CC4452" stroke-width="2" d="
+                            <path fill="none" stroke="#A54686" stroke-width="2" d="
                             M57.3,13.1c-3.2,10.4,10.4,16.1,16.8,8.7c7.1-8.2,0.6-17.8-7-20.1c-19.6-5.2-31.9,18-49,23.1C9.3,27.5-1.7,20.4,1.6,9.8
                             c3.8-12.4,23.3-9,19.3,4"></path>
                         </svg>
@@ -26,14 +26,13 @@
                     <div class="equal width fields">
                         <div class="field">
                             <label>Foto de perfil</label>
-                            <img class="ui bottom aligned rounded image" src="../images/public-image.png"
-                                 style="width: 180px;">
+                            <img class="ui middle aligned small circular image" src="../images/user.png">
                             <span>
-                            <label for="file" class="ui blue button" style="color: #EEEEEE">
-                                Cargar
-                                <input type="file" id="file" style="display:none">
-                            </label>
-                        </span>
+                                <label for="file" class="ui inverted button button_load">
+                                    Cargar Foto
+                                    <input type="file" id="file" style="display:none">
+                                </label>
+                            </span>
                         </div>
                     </div>
                     <div class="equal width fields">
@@ -49,7 +48,7 @@
                     </div>
                     <div class="required field">
                         <label>Currículo</label>
-                        <div class="ui info compact small message" style="margin-top: 0; margin-bottom: 5px;">
+                        <div class="ui info compact small message">
                             <p>Debe ingresar al menos uno de los dos campos correspondientes a currículo.</p>
                         </div>
                         <div class="two fields">
@@ -110,22 +109,24 @@
                     <h4 class="ui dividing header">Vinculación laboral</h4>
                     <div class="required field">
                         <label>Intitución en que labora</label>
-                        <div class="ui info compact small message" style="margin-top: 0; margin-bottom: 5px;">
+                        <div class="ui info compact small message">
                             <p>Si su institución no se encuentra en la lista, podrá suministrarla en el campo
                                 "Otra". </p>
                         </div>
-                        <div class="equal width fields">
-                            <div class="required field">
-                                <select name="institution" class="ui search dropdown">
-                                    <option value="">Seleccionar institución</option>
-                                    <option value="institution_1">Afghanistan</option>
-                                    <option value="institution_2">Åland Islands</option>
-                                    <option value="institution_3">Albania</option>
+                        <div class="two fields">
+                            <div class="field">
+                                <label>Institución</label>
+                                <select class="ui fluid search dropdown email" multiple="" name="institution">
+                                    <option value="">Nombre</option>
+                                    <option value="test">test</option>
                                 </select>
                             </div>
-                            <div class="required field">
-                                <!--<label>Otra institución: </label>-->
-                                <input type="text" name="other" placeholder="Otra">
+                            <div class="field">
+                                <label>Otro</label>
+                                <div class="ui action input">
+                                    <input placeholder="Nombre" name="other" type="text">
+                                    <div class="ui button" onclick="addEmail()">Nuevo</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -160,7 +161,7 @@
                     <div class="equal width fields">
                         <div class="required field">
                             <label>Correo electrónico</label>
-                            <input type="email" name="email">
+                            <input type="text" name="email">
                         </div>
                         <div class="required field">
                             <label>Contraseña</label>
@@ -222,19 +223,33 @@
                     </div>
                     <div class="ui right aligned stackable grid">
                         <div class="sixteen wide column">
-                            <button type="submit" form="form" onclick="validateFormAccount()"
+                            <div form="form" onclick="validateFormAccount()"
                                     class="ui submit teal button">
                                 Guardar
-                            </button>
+                            </div>
                         </div>
                     </div>
-                    <!--<div class="ui error message"></div>-->
+                    <div class="ui error message"></div>
                 </form>
             </div>
         </div>
     </div>
 
     <script type="text/javascript">
+        function addEmail() {
+            var institution = $('.ui.form').form('get value', 'other');
+            var institutions = $('.ui.form .field .dropdown.email').dropdown('get value');
+            institutions.push(institution);
+
+            $('.ui.form .field .dropdown.email select').append('<option value="' + institution + '" selected="">' + institution + '</option>');
+            $('.ui.form .field .dropdown.email .menu').append('<div class="item" data-value="' + institution + '">' + institution + '</div>');
+
+            $('.ui.form .field .dropdown.email').dropdown('set value', institutions);
+            $('.ui.form .field .dropdown.email').dropdown('set selected', institution);
+            $('.ui.form .field .dropdown.email').dropdown();
+
+            $('.ui.form .field.dropdown.email').dropdown();
+        }
 
         function validateFormAccount() {
             var $form = $('.ui.form'),
@@ -242,474 +257,246 @@
                 notifications = $form.form('get value', 'notification_type')
                 ;
 
-            if (allFields.institution == false && allFields.other == false) {
-                if (allFields.link_curriculum == false && allFields.load_curriculum == false) {
-                    $('.ui.form')
-                        .form({
-                            on: 'blur',
-                            fields: {
-                                name: {
-                                    identifier: 'name',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor introduzca un valor en Nombres'
-                                        }
-                                    ]
-                                },
-                                last_name: {
-                                    identifier: 'last_name',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor introduzca un valor en Apellidos'
-                                        }
-                                    ]
-                                },
-                                link_curriculum: {
-                                    identifier: 'link_curriculum',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor introduzca un Enlace en Currículo'
-                                        }
-                                    ]
-                                },
-                                load_curriculum: {
-                                    identifier: 'load_curriculum',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor introduzca un Archivo en Currículo'
-                                        }
-                                    ]
-                                },
-                                title_college: {
-                                    identifier: 'title_college',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor introduzca un valor en Estudios'
-                                        }
-                                    ]
-                                },
-                                level_training: {
-                                    identifier: 'level_training',
-                                    rules: [
-                                        {
-                                            type: 'checked',
-                                            prompt: 'Porfavor seleccione un valor en Nivel de formación'
-                                        }
-                                    ]
-                                },
-                                institution: {
-                                    identifier: 'institution',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor seleccione un valor en Institución'
-                                        }
-                                    ]
-                                },
-                                other: {
-                                    identifier: 'other',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor introduzca un valor en Otro'
-                                        }
-                                    ]
-                                },
-                                large_area: {
-                                    identifier: 'large_area',
-                                    rules: [
-                                        {
-                                            type: 'minCount[1]',
-                                            prompt: 'Porfavor seleccione al menos un valor en Gran Área'
-                                        }
-                                    ]
-                                },
-                                area: {
-                                    identifier: 'area',
-                                    rules: [
-                                        {
-                                            type: 'minCount[1]',
-                                            prompt: 'Porfavor seleccione al menos un valor en Área'
-                                        }
-                                    ]
-                                },
-                                discipline: {
-                                    identifier: 'discipline',
-                                    rules: [
-                                        {
-                                            type: 'minCount[1]',
-                                            prompt: 'Porfavor seleccione al menos un valor en Disciplina'
-                                        }
-                                    ]
-                                },
-                                email: {
-                                    identifier: 'email',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor introduzca un valor en Correo electrónico'
-                                        }
-                                    ]
-                                },
-                                password: {
-                                    identifier: 'password',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor introduzca un valor en Contraseña'
-                                        }
-                                    ]
-                                },
-                                repeat_password: {
-                                    identifier: 'repeat_password',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor introduzca un valor en Repetir contraseña'
-                                        }
-                                    ]
-                                }
-                            }
-                        })
-                    ;
-                } else {
-                    $('.ui.form')
-                        .form({
-                            on: 'blur',
-                            fields: {
-                                name: {
-                                    identifier: 'name',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor seleccione un valor en País'
-                                        }
-                                    ]
-                                },
-                                last_name: {
-                                    identifier: 'last_name',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor seleccione un valor en País'
-                                        }
-                                    ]
-                                },
-                                title_college: {
-                                    identifier: 'title_college',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor seleccione un valor en Desde'
-                                        }
-                                    ]
-                                },
-                                level_training: {
-                                    identifier: 'level_training',
-                                    rules: [
-                                        {
-                                            type: 'checked',
-                                            prompt: 'Porfavor seleccione un valor en Hasta'
-                                        }
-                                    ]
-                                },
-                                institution: {
-                                    identifier: 'institution',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor seleccione un valor en Hasta'
-                                        }
-                                    ]
-                                },
-                                other: {
-                                    identifier: 'other',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor seleccione un valor en Hasta'
-                                        }
-                                    ]
-                                },
-                                large_area: {
-                                    identifier: 'large_area',
-                                    rules: [
-                                        {
-                                            type: 'minCount[1]',
-                                            prompt: 'Porfavor seleccione al menos un valor en Gran Área'
-                                        }
-                                    ]
-                                },
-                                area: {
-                                    identifier: 'area',
-                                    rules: [
-                                        {
-                                            type: 'minCount[1]',
-                                            prompt: 'Porfavor seleccione al menos un valor en Área'
-                                        }
-                                    ]
-                                },
-                                discipline: {
-                                    identifier: 'discipline',
-                                    rules: [
-                                        {
-                                            type: 'minCount[1]',
-                                            prompt: 'Porfavor seleccione al menos un valor en Disciplina'
-                                        }
-                                    ]
-                                },
-                                email: {
-                                    identifier: 'email',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor introduzca un valor en Enlace'
-                                        }
-                                    ]
-                                },
-                                password: {
-                                    identifier: 'password',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor introduzca un valor en Enlace'
-                                        }
-                                    ]
-                                },
-                                repeat_password: {
-                                    identifier: 'repeat_password',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor introduzca un valor en Enlace'
-                                        }
-                                    ]
-                                }
-                            }
-                        })
-                    ;
-                }
-            } else {
-                if (allFields.link_curriculum == false && allFields.load_curriculum == false) {
-                    $('.ui.form')
-                        .form({
-                            on: 'blur',
-                            fields: {
-                                name: {
-                                    identifier: 'name',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor seleccione un valor en País'
-                                        }
-                                    ]
-                                },
-                                last_name: {
-                                    identifier: 'last_name',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor seleccione un valor en País'
-                                        }
-                                    ]
-                                },
-                                link_curriculum: {
-                                    identifier: 'link_curriculum',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor seleccione un valor en País'
-                                        }
-                                    ]
-                                },
-                                load_curriculum: {
-                                    identifier: 'load_curriculum',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor seleccione un valor en Ciudad'
-                                        }
-                                    ]
-                                },
-                                title_college: {
-                                    identifier: 'title_college',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor seleccione un valor en Desde'
-                                        }
-                                    ]
-                                },
-                                level_training: {
-                                    identifier: 'level_training',
-                                    rules: [
-                                        {
-                                            type: 'checked',
-                                            prompt: 'Porfavor seleccione un valor en Hasta'
-                                        }
-                                    ]
-                                },
-                                large_area: {
-                                    identifier: 'large_area',
-                                    rules: [
-                                        {
-                                            type: 'minCount[1]',
-                                            prompt: 'Porfavor seleccione al menos un valor en Gran Área'
-                                        }
-                                    ]
-                                },
-                                area: {
-                                    identifier: 'area',
-                                    rules: [
-                                        {
-                                            type: 'minCount[1]',
-                                            prompt: 'Porfavor seleccione al menos un valor en Área'
-                                        }
-                                    ]
-                                },
-                                discipline: {
-                                    identifier: 'discipline',
-                                    rules: [
-                                        {
-                                            type: 'minCount[1]',
-                                            prompt: 'Porfavor seleccione al menos un valor en Disciplina'
-                                        }
-                                    ]
-                                },
-                                email: {
-                                    identifier: 'email',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor introduzca un valor en Enlace'
-                                        }
-                                    ]
-                                },
-                                password: {
-                                    identifier: 'password',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor introduzca un valor en Enlace'
-                                        }
-                                    ]
-                                },
-                                repeat_password: {
-                                    identifier: 'repeat_password',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor introduzca un valor en Enlace'
-                                        }
-                                    ]
-                                }
-                            }
-                        })
-                    ;
-                } else {
-                    $('.ui.form')
-                        .form({
-                            on: 'blur',
-                            fields: {
-                                name: {
-                                    identifier: 'name',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor seleccione un valor en País'
-                                        }
-                                    ]
-                                },
-                                last_name: {
-                                    identifier: 'last_name',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor seleccione un valor en País'
-                                        }
-                                    ]
-                                },
-                                title_college: {
-                                    identifier: 'title_college',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor seleccione un valor en Desde'
-                                        }
-                                    ]
-                                },
-                                level_training: {
-                                    identifier: 'level_training',
-                                    rules: [
-                                        {
-                                            type: 'checked',
-                                            prompt: 'Porfavor seleccione un valor en Hasta'
-                                        }
-                                    ]
-                                },
-                                large_area: {
-                                    identifier: 'large_area',
-                                    rules: [
-                                        {
-                                            type: 'minCount[1]',
-                                            prompt: 'Porfavor seleccione al menos un valor en Gran Área'
-                                        }
-                                    ]
-                                },
-                                area: {
-                                    identifier: 'area',
-                                    rules: [
-                                        {
-                                            type: 'minCount[1]',
-                                            prompt: 'Porfavor seleccione al menos un valor en Área'
-                                        }
-                                    ]
-                                },
-                                discipline: {
-                                    identifier: 'discipline',
-                                    rules: [
-                                        {
-                                            type: 'minCount[1]',
-                                            prompt: 'Porfavor seleccione al menos un valor en Disciplina'
-                                        }
-                                    ]
-                                },
-                                email: {
-                                    identifier: 'email',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor introduzca un valor en Enlace'
-                                        }
-                                    ]
-                                },
-                                password: {
-                                    identifier: 'password',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor introduzca un valor en Enlace'
-                                        }
-                                    ]
-                                },
-                                repeat_password: {
-                                    identifier: 'repeat_password',
-                                    rules: [
-                                        {
-                                            type: 'empty',
-                                            prompt: 'Porfavor introduzca un valor en Enlace'
-                                        }
-                                    ]
-                                }
-                            }
-                        })
-                    ;
-                }
+            if (allFields.link_curriculum == false && allFields.load_curriculum == false) {
+                $('.ui.form')
+                    .form({
+                        on: 'blur',
+                        fields: {
+                            name: {
+                                identifier: 'name',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                        prompt: 'Porfavor introduzca un valor en Nombres'
+                                    }
+                                ]
+                            },
+                            last_name: {
+                                identifier: 'last_name',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                        prompt: 'Porfavor introduzca un valor en Apellidos'
+                                    }
+                                ]
+                            },
+                            link_curriculum: {
+                                identifier: 'link_curriculum',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                        prompt: 'Porfavor introduzca un Enlace en Currículo'
+                                    }
+                                ]
+                            },
+                            load_curriculum: {
+                                identifier: 'load_curriculum',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                        prompt: 'Porfavor introduzca un Archivo en Currículo'
+                                    }
+                                ]
+                            },
+                            title_college: {
+                                identifier: 'title_college',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                        prompt: 'Porfavor introduzca un valor en Estudios'
+                                    }
+                                ]
+                            },
+                            level_training: {
+                                identifier: 'level_training',
+                                rules: [
+                                    {
+                                        type: 'checked',
+                                        prompt: 'Porfavor seleccione un valor en Nivel de formación'
+                                    }
+                                ]
+                            },
+                            institution: {
+                                identifier: 'institution',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                        prompt: 'Porfavor seleccione un valor en Institución'
+                                    }
+                                ]
+                            },
+                            large_area: {
+                                identifier: 'large_area',
+                                rules: [
+                                    {
+                                        type: 'minCount[1]',
+                                        prompt: 'Porfavor seleccione al menos un valor en Gran Área'
+                                    }
+                                ]
+                            },
+                            area: {
+                                identifier: 'area',
+                                rules: [
+                                    {
+                                        type: 'minCount[1]',
+                                        prompt: 'Porfavor seleccione al menos un valor en Área'
+                                    }
+                                ]
+                            },
+                            discipline: {
+                                identifier: 'discipline',
+                                rules: [
+                                    {
+                                        type: 'minCount[1]',
+                                        prompt: 'Porfavor seleccione al menos un valor en Disciplina'
+                                    }
+                                ]
+                            },
+                            email: {
+                                identifier: 'email',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                        prompt: 'Porfavor introduzca un valor en Correo electrónico'
+                                    },
+                                    {
+                                        type: 'email',
+                                        prompt: 'Porfavor introduzca un valor valido en Correo electrónico'
+                                    }
+                                ]
+                            },
+                            password: {
+                                identifier: 'password',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                        prompt: 'Porfavor introduzca un valor en Contraseña'
+                                    }
+                                ]
+                            },
+                            repeat_password: {
+                                identifier: 'repeat_password',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                        prompt: 'Porfavor introduzca un valor en Repetir contraseña'
+                                    }
+                                ]
+                            },
+                        }
+                    })
+                ;
+            }else{
+                $('.ui.form')
+                    .form({
+                        on: 'blur',
+                        fields: {
+                            name: {
+                                identifier: 'name',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                        prompt: 'Porfavor introduzca un valor en Nombres'
+                                    }
+                                ]
+                            },
+                            last_name: {
+                                identifier: 'last_name',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                        prompt: 'Porfavor introduzca un valor en Apellidos'
+                                    }
+                                ]
+                            },
+                            title_college: {
+                                identifier: 'title_college',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                        prompt: 'Porfavor introduzca un valor en Estudios'
+                                    }
+                                ]
+                            },
+                            level_training: {
+                                identifier: 'level_training',
+                                rules: [
+                                    {
+                                        type: 'checked',
+                                        prompt: 'Porfavor seleccione un valor en Nivel de formación'
+                                    }
+                                ]
+                            },
+                            institution: {
+                                identifier: 'institution',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                        prompt: 'Porfavor seleccione un valor en Institución'
+                                    }
+                                ]
+                            },
+                            large_area: {
+                                identifier: 'large_area',
+                                rules: [
+                                    {
+                                        type: 'minCount[1]',
+                                        prompt: 'Porfavor seleccione al menos un valor en Gran Área'
+                                    }
+                                ]
+                            },
+                            area: {
+                                identifier: 'area',
+                                rules: [
+                                    {
+                                        type: 'minCount[1]',
+                                        prompt: 'Porfavor seleccione al menos un valor en Área'
+                                    }
+                                ]
+                            },
+                            discipline: {
+                                identifier: 'discipline',
+                                rules: [
+                                    {
+                                        type: 'minCount[1]',
+                                        prompt: 'Porfavor seleccione al menos un valor en Disciplina'
+                                    }
+                                ]
+                            },
+                            email: {
+                                identifier: 'email',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                        prompt: 'Porfavor introduzca un valor en Correo electrónico'
+                                    },
+                                    {
+                                        type: 'email',
+                                        prompt: 'Porfavor introduzca un valor valido en Correo electrónico'
+                                    }
+                                ]
+                            },
+                            password: {
+                                identifier: 'password',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                        prompt: 'Porfavor introduzca un valor en Contraseña'
+                                    }
+                                ]
+                            },
+                            repeat_password: {
+                                identifier: 'repeat_password',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                        prompt: 'Porfavor introduzca un valor en Repetir contraseña'
+                                    }
+                                ]
+                            },
+                        }
+                    })
+                ;
             }
 
             /*console.log(notifications);

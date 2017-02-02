@@ -429,7 +429,7 @@
 /* services */
 
 .line {
-    background: #CC4452;
+    background: #A54686;
     display: inline-block;
     height: 0.15em;
     max-width: 15em;
@@ -444,7 +444,7 @@
 
 .services h1.ui.header {
     font-size: 3.40em;
-    color: #CC4452;
+    color: #A54686;
 }
 
 .services div.ui.header.inverted {
@@ -452,7 +452,7 @@
 }
 
 .services .ui.two.column.grid h2 {
-    color: #CC4452;
+    color: #A54686;
 }
 
 .services .ui.two.column.grid h2 .sub.header {

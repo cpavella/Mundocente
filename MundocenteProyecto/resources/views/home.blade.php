@@ -95,7 +95,7 @@
                 <a class="ui button primary item-menu" style="background-color: #242533" onclick="mostrarModelregistro()">Registrarse</a>
             </div>
             <div class="item">
-                <a class="ui button primary item-menu" style="background-color: #CC4452"  onclick="mostrarModellogin()">Iniciar sesión</a>
+                <a class="ui button primary item-menu" style="background-color: #A54686"  onclick="mostrarModellogin()">Iniciar sesión</a>
             </div>
         </div>
     </div>
@@ -155,7 +155,7 @@
             <div class="title">
                 <h1 class="ui header inverted" style="font-size: 4em; color: #F2EDE4;">
                     Mundocente
-                    <div class="sub header" style="color: #CC4452; font-size: 0.45em;">La Web de los docentes investigadores
+                    <div class="sub header" style="color: #F1AFDC; font-size: 0.45em;">La Web de los docentes investigadores
                     </div>
                 </h1>
                 <a class="ui large grey inverted button">Registrarse <i class="right arrow icon"></i></a>
@@ -175,7 +175,7 @@
                  style="display: inline-block; vertical-align: middle; line-height: 0; width: 79px; height: 27px;">
                 <svg height="27" width="79">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.2 26.4">
-                        <path fill="none" stroke="#CC4452" stroke-width="2" d="
+                        <path fill="none" stroke="#A54686" stroke-width="2" d="
                             M57.3,13.1c-3.2,10.4,10.4,16.1,16.8,8.7c7.1-8.2,0.6-17.8-7-20.1c-19.6-5.2-31.9,18-49,23.1C9.3,27.5-1.7,20.4,1.6,9.8
                             c3.8-12.4,23.3-9,19.3,4"></path>
                     </svg>
@@ -263,7 +263,7 @@
                  style="display: inline-block; vertical-align: middle; line-height: 0; width: 79px; height: 27px;">
                 <svg height="27" width="79">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.2 26.4">
-                        <path fill="none" stroke="#CC4452" stroke-width="2" d="
+                        <path fill="none" stroke="#A54686" stroke-width="2" d="
                             M57.3,13.1c-3.2,10.4,10.4,16.1,16.8,8.7c7.1-8.2,0.6-17.8-7-20.1c-19.6-5.2-31.9,18-49,23.1C9.3,27.5-1.7,20.4,1.6,9.8
                             c3.8-12.4,23.3-9,19.3,4"></path>
                     </svg>
@@ -294,7 +294,7 @@
                         <label>Mensaje</label>
                         <textarea rows="2"></textarea>
                     </div>
-                    <button class="ui large active button" style="background-color: #CC4452; color: #F2EDE4;">
+                    <button class="ui large active button" style="background-color: #600B40; color: #F2EDE4;">
                         <i class="send icon"></i>
                         Enviar
                     </button>

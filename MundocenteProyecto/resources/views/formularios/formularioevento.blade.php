@@ -13,7 +13,7 @@
                  style="display: inline-block; vertical-align: middle; line-height: 0; width: 79px; height: 27px;">
                 <svg height="27" width="79">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.2 26.4">
-                        <path fill="none" stroke="#CC4452" stroke-width="2" d="
+                        <path fill="none" stroke="#A54686" stroke-width="2" d="
                             M57.3,13.1c-3.2,10.4,10.4,16.1,16.8,8.7c7.1-8.2,0.6-17.8-7-20.1c-19.6-5.2-31.9,18-49,23.1C9.3,27.5-1.7,20.4,1.6,9.8
                             c3.8-12.4,23.3-9,19.3,4"></path>
                     </svg>
@@ -25,11 +25,11 @@
             <form class="ui form" id="form">
                 <h4 class="ui dividing header">Información general</h4>
                 <div class="field">
-                    <div class="ui blue large horizontal label">Institución:
+                    <div class="ui inverted large horizontal label color_1">Institución:
                         <div class="detail">Nombre del Instituto</div>
                     </div>
                 </div>
-                <div class="grouped fields">
+                <div class="required grouped fields">
                     <label>Sector educativo</label>
                     <div class="field">
                         <div class="ui checkbox">
@@ -381,25 +381,30 @@
                 </div>
                 <h4 class="ui dividing header">Detalles</h4>
                 <div class="required field">
-                    <label>Título (Máximo 150 caracteres )</label>
-                    <input name="title" type="text">
+                    <label>Nombre</label>
+                    <input name="name" type="text">
                 </div>
                 <div class="field">
                     <label>Imagen o logo del evento</label>
-                    <img class="ui bottom aligned medium rounded image" src="../images/public-image.png">
-                    <div class="ui blue button">Cargar</div>
+                    <img class="ui middle aligned medium rounded image" src="../images/public-image.png">
+                    <span>
+                        <label for="file" class="ui blue button button_load">
+                            Cargar
+                            <input type="file" id="file" style="display:none">
+                        </label>
+                    </span>
                 </div>
                 <div class="field">
                     <label>Descripción</label>
                     <textarea name="description" rows="3"></textarea>
                 </div>
-                <div class="ui info compact small message" style="margin-top: 0; margin-bottom: 5px;">
-                    <p>Debe ingresar al menos uno de los dos campos correspondientes a currículo.</p>
+                <div class="ui info compact small message">
+                    <p>Debe ingresar al menos uno de los campos correspondientes a contacto.</p>
                 </div>
                 <div class="two fields">
                     <div class="required field">
-                        <label>Enlace - link</label>
-                        <input name="link" type="text">
+                        <label>Enlace</label>
+                        <input name="link" type="url" placeholder="URL">
                     </div>
                     <div class="required field">
                         <label>Datos de contacto </label>
@@ -409,7 +414,7 @@
                 <div class="ui right aligned stackable grid">
                     <div class="sixteen wide column">
                         <button type="submit" form="form" onclick="validateFormAnnouncement()"
-                                class="ui submit green button">
+                                class="ui submit inverted button button_submit">
                             Publicar
                         </button>
                     </div>
@@ -431,6 +436,15 @@
                 .form({
                     on: 'blur',
                     fields: {
+                        sector: {
+                            identifier: 'sector',
+                            rules: [
+                                {
+                                    type: 'checked',
+                                    prompt: 'Porfavor seleccione un valor en Sector educativo'
+                                }
+                            ]
+                        },
                         country: {
                             identifier: 'country',
                             rules: [
@@ -476,16 +490,25 @@
                                 }
                             ]
                         },
-                        title: {
-                            identifier: 'title',
+                        name: {
+                            identifier: 'name',
                             rules: [
                                 {
                                     type: 'empty',
-                                    prompt: 'Porfavor introduzca un valor en Título'
+                                    prompt: 'Porfavor introduzca un valor en Nombre'
                                 },
                                 {
                                     type: 'maxLength[150]',
-                                    prompt: 'El título no puede ser mayor a 150 caracteres'
+                                    prompt: 'El nombre no puede ser mayor a 150 caracteres'
+                                }
+                            ]
+                        },
+                        description: {
+                            identifier: 'description',
+                            rules: [
+                                {
+                                    type: 'maxLength[500]',
+                                    prompt: 'La descripción no puede ser mayor a 500 caracteres'
                                 }
                             ]
                         },
@@ -515,6 +538,15 @@
                 .form({
                     on: 'blur',
                     fields: {
+                        sector: {
+                            identifier: 'sector',
+                            rules: [
+                                {
+                                    type: 'checked',
+                                    prompt: 'Porfavor seleccione un valor en Sector educativo'
+                                }
+                            ]
+                        },
                         country: {
                             identifier: 'country',
                             rules: [
@@ -560,16 +592,25 @@
                                 }
                             ]
                         },
-                        title: {
-                            identifier: 'title',
+                        name: {
+                            identifier: 'name',
                             rules: [
                                 {
                                     type: 'empty',
-                                    prompt: 'Porfavor introduzca un valor en Título'
+                                    prompt: 'Porfavor introduzca un valor en Nombre'
                                 },
                                 {
                                     type: 'maxLength[150]',
-                                    prompt: 'El título no puede ser mayor a 150 caracteres'
+                                    prompt: 'El nombre no puede ser mayor a 150 caracteres'
+                                }
+                            ]
+                        },
+                        description: {
+                            identifier: 'description',
+                            rules: [
+                                {
+                                    type: 'maxLength[500]',
+                                    prompt: 'La descripción no puede ser mayor a 500 caracteres'
                                 }
                             ]
                         }
