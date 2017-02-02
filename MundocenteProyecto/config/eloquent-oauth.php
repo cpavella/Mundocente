@@ -10,9 +10,9 @@ return [
 			'scope' => [],
 		],
 		'google' => [
-			'client_id' => '12345678',
-			'client_secret' => 'y0ur53cr374ppk3y',
-			'redirect_uri' => 'https://example.com/your/google/redirect',
+			'client_id' => '548784604583-8r026mhrf7me8ucgojspho0orr76q6f6.apps.googleusercontent.com',
+			'client_secret' => 'XV7GsTc9buWZvoPUDtZGpi9R',
+			'redirect_uri' => 'http://mundocente.co/MundocenteProyecto/public/logingoogle',
 			'scope' => [],
 		],
 		'github' => [

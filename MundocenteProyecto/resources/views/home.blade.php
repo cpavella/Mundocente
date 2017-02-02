@@ -450,16 +450,16 @@
             </h5>
             <div class="ui stackable center aligned grid">
                 <div class="row" style="padding-bottom: 5px;">
-                    <button class="ui facebook button">
+                    <a class="ui facebook button" href="authfacebook">
                         <i class="facebook icon"></i>
                         Inicie sesión con Facebook
-                    </button>
+                    </a>
                 </div>
                 <div class="row" style="padding-top: 5px;">
-                    <button class="ui google plus button">
+                    <a class="ui google plus button" href="authgoogle">
                         <i class="google plus icon"></i>
                         Inicie sesión con Google +
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -539,16 +539,16 @@
             </h5>
             <div class="ui stackable center aligned grid">
                 <div class="row" style="padding-bottom: 5px;">
-                    <button class="ui facebook button">
+                    <a class="ui facebook button" href="authfacebook">
                         <i class="facebook icon"></i>
                         Regístrese con Facebook
-                    </button>
+                    </a>
                 </div>
                 <div class="row" style="padding-top: 5px;">
-                    <button class="ui google plus button">
+                    <a class="ui google plus button" href="authgoogle">
                         <i class="google plus icon"></i>
                         Regístrese con Google +
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>

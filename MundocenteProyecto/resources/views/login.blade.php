@@ -11,7 +11,7 @@
     {!!Html::style('semantic/out/semantic.min.css')!!}
     {!!Html::style('css/style-index.css')!!}
     {!!Html::style('css/scrollbar.css')!!}
-    
+
 
     {!!Html::script('js/jquery.min.js')!!}
     {!!Html::script('js/ScrollMagic.min.js')!!}
@@ -146,10 +146,10 @@
                     </a>
                 </div>
                 <div class="row" style="padding-top: 5px;">
-                    <button class="ui google plus button">
+                    <a class="ui google plus button" href="authgoogle">
                         <i class="google plus icon"></i>
                         Inicie sesión con Google +
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>

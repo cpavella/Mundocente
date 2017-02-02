@@ -33,3 +33,6 @@ Route::resource('session', 'SessionController');
 Route::resource('logout', 'SessionController@cerrarsesion');
 Route::get('authfacebook', 'SessionController@authfacebook');
 Route::get('loginfacebook', 'SessionController@sesionfacebook');
+
+Route::get('authgoogle', 'SessionController@authgoogle');
+Route::get('logingoogle', 'SessionController@sesiongoogle');

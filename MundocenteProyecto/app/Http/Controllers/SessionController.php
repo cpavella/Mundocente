@@ -88,6 +88,43 @@ class SessionController extends Controller
     }
 
 
+
+
+
+
+     /**
+     * Ingesa con google
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function authgoogle()
+    {     
+        return OAuth::authorize('google');
+    }
+
+
+
+
+
+       /**
+     * Inicia sesión con google
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function sesiongoogle()
+    {
+       OAuth::login('google',  function($user, $details) {
+        $user->name = $details->nickname;
+        $user->email = $details->email;
+        $user->photo_url = $details->avatar;
+        $user->save();
+        });
+         return Redirect::to('publications');
+        
+        dd(Auth::user());
+    }
+
+
         /**
      * Cierra sesión
      *
