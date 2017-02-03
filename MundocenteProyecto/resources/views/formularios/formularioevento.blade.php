@@ -386,7 +386,7 @@
                 </div>
                 <div class="field">
                     <label>Imagen o logo del evento</label>
-                    <img class="ui middle aligned medium rounded image" src="../images/public-image.png">
+                    <img class="ui middle aligned medium rounded image" src="images/public-image.png">
                     <span>
                         <label for="file" class="ui blue button button_load">
                             Cargar

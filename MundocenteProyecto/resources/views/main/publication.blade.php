@@ -5,7 +5,7 @@
 
 
             
-                <h1 class="ui header center aligned" style="padding-top: 15%;padding-left: 5%;">Busqueda</h1>
+                <h1 class="ui header center aligned" style="padding-top: 15%;padding-left: 5%;">Búsqueda</h1>
                 <div class="ui two column centered stackable grid">
                     <div class="column">
                         <div class="ui form">

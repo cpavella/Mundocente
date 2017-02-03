@@ -87,6 +87,9 @@ OAuth::login('facebook',  function($user, $details) {
             $user->name = $details->nickname;
             $user->email = $details->email;
             $user->photo_url = $details->avatar;
+            $user->rol = 'seeker';
+            $user->recibe_not='no';
+            $user->nivel_formacion='ninguno';
             $user->save();
         }
 
@@ -134,6 +137,9 @@ OAuth::login('facebook',  function($user, $details) {
             $user->name = $details->full_name;
             $user->email = $details->email;
             $user->photo_url = $details->avatar;
+            $user->rol = 'seeker';
+            $user->recibe_not='no';
+            $user->nivel_formacion='ninguno';
             $user->save();
         }
 
@@ -181,6 +187,9 @@ OAuth::login('facebook',  function($user, $details) {
             $user->name = $details->full_name;
             $user->email = $details->email;
             $user->photo_url = $details->avatar;
+            $user->rol = 'seeker';
+            $user->recibe_not='no';
+            $user->nivel_formacion='ninguno';
             $user->save();
         }
 

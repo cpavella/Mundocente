@@ -51,11 +51,12 @@
         <div class="ui aligned center inverted tiny header" >{!!Auth::user()->name!!}</div>
     </div>
     <div class="ui dropdown item">
-        Cuenta
+        Perfil
         <i  class="ui dropdown icon"></i>
         <div class="menu">
-            <a class="item" href="edit-perfil"><i class="user icon"></i>Perfil</a>
+            <a class="item" href="edit-perfil"><i class="user icon"></i>Cuenta</a>
             <a class="item"><i class="star icon"></i>Favoritos</a>
+            <a class="item"><i class="bookmark icon"></i>Guardados</a>
             <a class="item" href="logout"><i class="close icon"></i>Salir</a>
         </div>
     </div>
@@ -97,6 +98,7 @@
             <div class="menu">
                 <a href="edit-perfil"><div class="item">Cuenta</div></a>
                 <div class="item">Favoritos</div>
+                <a class="item"><i class="bookmark icon"></i>Guardados</a>
             </div>
         </div>
         <a class="item" href="logout">Salir</a>

@@ -54,7 +54,12 @@ class UserController extends Controller
                  User::create([
                     'name'=>$request['username'],
                     'email'=>$request['email'],
+                    'rol'=>'seeker',
                     'password'=>bcrypt($request['password']),
+                    'recibe_not'=>'no',
+                    'nivel_formacion'=>'ninguno',
+                    'photo_url'=>'images/user.png',
+                    
                 ]);
              if(Auth::attempt(['email'=>$request['email'], 'password'=> $request['password']])){
             return Redirect::to('publications');

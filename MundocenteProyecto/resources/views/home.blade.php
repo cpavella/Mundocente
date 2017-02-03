@@ -89,7 +89,7 @@
         </div>
         <a class="item-menu item" href="#banner">Inicio</a>
         <a class="item-menu item" href="#services">Servicios</a>
-        <a class="item-menu item" href="#contact">Contáctanos</a>
+        <a class="item-menu item" href="#contact">Contáctenos</a>
         <div class="right menu">
             <div class="item">
                 <a class="ui button primary item-menu" style="background-color: #242533" onclick="mostrarModelregistro()">Registrarse</a>

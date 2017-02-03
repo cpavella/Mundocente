@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('password', 60);
             $table->string('curriculo_url');
             $table->enum('recibe_not', ['si', 'no']);
-            $table->enum('nivel_formacion', ['universitario', 'especializacion', 'maestria', 'doctorado', 'post_doctorado']);
+            $table->enum('nivel_formacion', ['ninguno','universitario', 'especializacion', 'maestria', 'doctorado', 'post_doctorado']);
             $table->string('photo_url');
             $table->rememberToken();
             $table->timestamps();
