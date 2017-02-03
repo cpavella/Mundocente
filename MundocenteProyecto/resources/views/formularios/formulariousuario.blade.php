@@ -19,14 +19,14 @@
                 </div>
                 <div class="line"></div>
             </div>
-            <!--Contenido -- Segment -->
+            <!--Contenido Segment -->
             <div class="ui piled very padded left aligned segment">
                 <form class="ui form" id="form">
                     <h4 class="ui dividing header">Información general</h4>
                     <div class="equal width fields">
                         <div class="field">
                             <label>Foto de perfil</label>
-                            <img class="ui middle aligned small circular image" src="../images/user.png">
+                            <img class="ui middle aligned small circular image" src="{!!Auth::user()->photo_url!!}">
                             <span>
                                 <label for="file" class="ui inverted button button_load">
                                     Cargar Foto
@@ -38,7 +38,7 @@
                     <div class="equal width fields">
                         <div class="required field">
                             <label>Nombres</label>
-                            <input name="name" type="text" placeholder="Nombres">
+                            <input name="name" type="text" placeholder="Nombres" value="{!!Auth::user()->name!!}">
                         </div>
 
                         <div class="required field">
@@ -161,7 +161,7 @@
                     <div class="equal width fields">
                         <div class="required field">
                             <label>Correo electrónico</label>
-                            <input type="text" name="email">
+                            <input type="text" name="email" value="{!!Auth::user()->email!!}" disabled="true">
                         </div>
                         <div class="required field">
                             <label>Contraseña</label>

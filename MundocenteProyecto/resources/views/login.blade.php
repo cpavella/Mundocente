@@ -160,7 +160,7 @@
             </div>
         </div>
         <div class="ui  message">
-            ¿No está registrado? <a href="/signup">Registrarse</a>
+            ¿No está registrado? <a href="signup">Registrarse</a>
         </div>
     </div>
 </div>

@@ -158,7 +158,7 @@
                     <div class="sub header" style="color: #F1AFDC; font-size: 0.45em;">La Web de los docentes investigadores
                     </div>
                 </h1>
-                <a class="ui large grey inverted button">Registrarse <i class="right arrow icon"></i></a>
+                <a class="ui large grey inverted button" href="signup">Registrarse <i class="right arrow icon"></i></a>
             </div>
         </div>
     </div>

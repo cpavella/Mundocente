@@ -5,6 +5,7 @@ namespace Mundocente\Http\Controllers;
 use Illuminate\Http\Request;
 use Auth;
 use DB;
+use Redirect;
 
 
 use Mundocente\Http\Requests;
@@ -68,7 +69,8 @@ class HomeController extends Controller
     {
         
             if(Auth::user()->email==''){
-                return view('registro', ['existe' => '1']);
+                Auth::logout();
+                return Redirect::to('userExist');
             }else{
                 return view('main.publication');
             }

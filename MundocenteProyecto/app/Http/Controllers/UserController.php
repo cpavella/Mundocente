@@ -48,14 +48,14 @@ class UserController extends Controller
             ->count();
 
         if($usersQuantity==1){
-
+            
             return view('registro', ['existe' => '1']);
         }else{
-             User::create([
-            'name'=>$request['username'],
-            'email'=>$request['email'],
-            'password'=>bcrypt($request['password']),
-            ]);
+                 User::create([
+                    'name'=>$request['username'],
+                    'email'=>$request['email'],
+                    'password'=>bcrypt($request['password']),
+                ]);
              if(Auth::attempt(['email'=>$request['email'], 'password'=> $request['password']])){
             return Redirect::to('publications');
             }

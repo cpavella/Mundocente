@@ -131,7 +131,7 @@ OAuth::login('facebook',  function($user, $details) {
             ->where('email', $details->email)
             ->count();
         if($usersQuantity==0){
-            $user->name = $details->nickname;
+            $user->name = $details->full_name;
             $user->email = $details->email;
             $user->photo_url = $details->avatar;
             $user->save();
@@ -178,7 +178,7 @@ OAuth::login('facebook',  function($user, $details) {
             ->where('email', $details->email)
             ->count();
         if($usersQuantity==0){
-            $user->name = $details->nickname;
+            $user->name = $details->full_name;
             $user->email = $details->email;
             $user->photo_url = $details->avatar;
             $user->save();

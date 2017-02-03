@@ -47,7 +47,7 @@
         <img src="images/logo.png">
     </div>
     <div class="item item_profile">
-        <img class="ui tiny centered circular image" src="{{--{!!Auth::user()->photo_url!!}--}}images/user.png">
+        <img class="ui tiny centered circular image" src="{!!Auth::user()->photo_url!!}">
         <div class="ui aligned center inverted tiny header" >{!!Auth::user()->name!!}</div>
     </div>
     <div class="ui dropdown item">
