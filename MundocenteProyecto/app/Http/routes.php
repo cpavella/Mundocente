@@ -30,6 +30,8 @@ Route::resource('user', 'UserController');
 
 
 Route::resource('session', 'SessionController');
+Route::get('userExist', 'SessionController@enviarexistente');
+
 Route::resource('logout', 'SessionController@cerrarsesion');
 Route::get('authfacebook', 'SessionController@authfacebook');
 Route::get('loginfacebook', 'SessionController@sesionfacebook');

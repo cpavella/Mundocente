@@ -76,16 +76,29 @@ class SessionController extends Controller
      */
     public function sesionfacebook()
     {
-       OAuth::login('facebook',  function($user, $details) {
-        $user->name = $details->nickname;
-        $user->email = $details->email;
-        $user->photo_url = $details->avatar;
-        $user->save();
-        });
-         return Redirect::to('publications');
+
         
+    
+OAuth::login('facebook',  function($user, $details) {
+    $usersQuantity = DB::table('users')
+            ->where('email', $details->email)
+            ->count();
+        if($usersQuantity==0){
+            $user->name = $details->nickname;
+            $user->email = $details->email;
+            $user->photo_url = $details->avatar;
+            $user->save();
+        }
+
+        });
+    return Redirect::to('publications');
+
+
         dd(Auth::user());
+       
+        
     }
+
 
 
 
@@ -114,14 +127,24 @@ class SessionController extends Controller
     public function sesiongoogle()
     {
        OAuth::login('google',  function($user, $details) {
-        $user->name = $details->nickname;
-        $user->email = $details->email;
-        $user->photo_url = $details->avatar;
-        $user->save();
+    $usersQuantity = DB::table('users')
+            ->where('email', $details->email)
+            ->count();
+        if($usersQuantity==0){
+            $user->name = $details->nickname;
+            $user->email = $details->email;
+            $user->photo_url = $details->avatar;
+            $user->save();
+        }
+
         });
-         return Redirect::to('publications');
-        
+    return Redirect::to('publications');
+
+
         dd(Auth::user());
+         
+        
+        
     }
 
 
@@ -151,15 +174,40 @@ class SessionController extends Controller
     public function sesionlinkedin()
     {
        OAuth::login('linkedin',  function($user, $details) {
-        $user->name = $details->nickname;
-        $user->email = $details->email;
-        $user->photo_url = $details->avatar;
-        $user->save();
+    $usersQuantity = DB::table('users')
+            ->where('email', $details->email)
+            ->count();
+        if($usersQuantity==0){
+            $user->name = $details->nickname;
+            $user->email = $details->email;
+            $user->photo_url = $details->avatar;
+            $user->save();
+        }
+
         });
-         return Redirect::to('publications');
-        
+    return Redirect::to('publications');
+
+
         dd(Auth::user());
+         
+         
+        
+        
     }
+
+
+
+        /**
+     * Cierra sesión
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function enviarexistente()
+    {
+        return view('registro', ['existe' => '1']);
+    }
+
+
 
 
         /**
